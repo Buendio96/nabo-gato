@@ -1,0 +1,97 @@
+@font-face {
+	font-family: "Ando Inline";
+	src: url("./assets/fonts/Ando-Inline.eot");
+	src:
+		local("Ando Inline"),
+		local("Ando-Inline"),
+		url("./assets/fonts/Ando-Inline.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/Ando-Inline.woff2") format("woff2"),
+		url("./assets/fonts/Ando-Inline.woff") format("woff"),
+		url("./assets/fonts/Ando-Inline.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/AndoLight.eot");
+	src:
+		local("Ando Light"),
+		local("AndoLight"),
+		url("./assets/fonts/AndoLight.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/AndoLight.woff2") format("woff2"),
+		url("./assets/fonts/AndoLight.woff") format("woff"),
+		url("./assets/fonts/AndoLight.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/Ando-Bold.eot");
+	src:
+		local("Ando Bold"),
+		local("Ando-Bold"),
+		url("./assets/fonts/Ando-Bold.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/Ando-Bold.woff2") format("woff2"),
+		url("./assets/fonts/Ando-Bold.woff") format("woff"),
+		url("./assets/fonts/Ando-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/Ando-Regular.eot");
+	src:
+		local("Ando"),
+		local("Ando-Regular"),
+		url("./assets/fonts/Ando-Regular.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/Ando-Regular.woff2") format("woff2"),
+		url("./assets/fonts/Ando-Regular.woff") format("woff"),
+		url("./assets/fonts/Ando-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/Ando-Semibold.eot");
+	src:
+		local("Ando Semibold"),
+		local("Ando-Semibold"),
+		url("./assets/fonts/Ando-Semibold.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/Ando-Semibold.woff2") format("woff2"),
+		url("./assets/fonts/Ando-Semibold.woff") format("woff"),
+		url("./assets/fonts/") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/Ando-Thin.eot");
+	src:
+		local("Ando Thin"),
+		local("Ando-Thin"),
+		url("./assets/fonts/Ando-Thin.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/Ando-Thin.woff2") format("woff2"),
+		url("./assets/fonts/Ando-Thin.woff") format("woff"),
+		url("./assets/fonts/Ando-Thin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/Ando-Black.eot");
+	src:
+		local("Ando Black"),
+		local("Ando-Black"),
+		url("./assets/fonts/Ando-Black.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/Ando-Black.woff2") format("woff2"),
+		url("./assets/fonts/Ando-Black.woff") format("woff"),
+		url("./assets/fonts/Ando-Black.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}

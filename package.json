@@ -1,49 +1,21 @@
 {
-	"name": "babel-vanila",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"dev": "webpack --mode development",
-		"serve": "webpack serve --stats-error-details --mode development",
-		"build": "webpack --mode production"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"core-js": "3.37.1",
-		"gsap": "^3.12.5",
-		"i18n": "^0.15.1",
-		"i18next": "^23.11.5",
-		"lenis": "^1.1.1",
-		"swiper": "^11.1.4"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.24.5",
-		"@babel/preset-env": "^7.24.5",
-		"babel-loader": "^9.1.3",
-		"copy-webpack-plugin": "^12.0.2",
-		"css-loader": "^7.1.2",
-		"css-minimizer-webpack-plugin": "^7.0.0",
-		"file-loader": "^6.2.0",
-		"filemanager-webpack-plugin": "^8.0.0",
-		"html-loader": "^5.0.0",
-		"html-webpack-plugin": "^5.6.0",
-		"image-minimizer-webpack-plugin": "^4.0.0",
-		"image-webpack-loader": "^8.1.0",
-		"imagemin": "^9.0.0",
-		"imagemin-gifsicle": "^7.0.0",
-		"imagemin-jpegtran": "^7.0.0",
-		"imagemin-optipng": "^8.0.0",
-		"imagemin-svgo": "^11.0.0",
-		"mini-css-extract-plugin": "^2.9.0",
-		"postcss-loader": "^8.1.1",
-		"sass": "^1.77.2",
-		"sass-loader": "^14.2.1",
-		"style-loader": "^4.0.0",
-		"webpack": "^5.91.0",
-		"webpack-cli": "^5.1.4",
-		"webpack-dev-server": "^5.0.4"
-	}
+  "name": "nabo_gato",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "vite": "^6.2.0",
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-static-copy": "^2.3.0"
+  },
+  "dependencies": {
+    "sass": "^1.86.0"
+  }
 }
