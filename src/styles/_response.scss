@@ -1,0 +1,47 @@
+@mixin respond($media_names_args) {
+	$media_names: ("mobile-small", "mobile-medium", "mobile-large", "desktop-small", "desktop-medium", "desktop-large");
+
+	$media_values: (
+		"only screen and (max-width:420.98px)",
+		"only screen and (max-width:740.98px)",
+		"only screen and (max-width:1023.98px)",
+		"only screen and (max-width:1280.98px)",
+		"only screen and (max-width:1600.98px)",
+		"only screen and (min-width:1601px)"
+	);
+	$media_result: "";
+
+	@if ($media_names_args) {
+		@each $arg in $media_names_args {
+			@if ($arg == mobile or $arg == desktop) {
+				$media_result: $media_result +
+					nth($media_values, index($media_names, $arg + "-small")) +
+					", " +
+					nth($media_values, index($media_names, $arg + "-medium")) +
+					", " +
+					nth($media_values, index($media_names, $arg + "-large"));
+			} @else {
+				$media_result: $media_result + nth($media_values, index($media_names, $arg));
+			}
+
+			@if (length($media_names_args) >1 and length($media_names_args) > index($media_names_args, $arg)) {
+				$media_result: $media_result + ", ";
+			}
+		}
+
+		@media #{$media_result} {
+			@content;
+		}
+	}
+}
+
+$maxWidth: 1920;
+@mixin ad-font($pcSize, $mobSize) {
+	font-size: $pcSize + px;
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+
+	@include respond(desktop-medium) {
+		font-size: calc(#{$mobSize}px + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+}

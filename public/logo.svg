@@ -1,0 +1,11 @@
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 3 1" clip-path="url(#clip0_59_9834)">
+<path id="Vector" d="M125 230C182.99 230 230 182.99 230 125C230 67.0101 182.99 20 125 20C67.0101 20 20 67.0101 20 125C20 182.99 67.0101 230 125 230Z" stroke="#FCB700" stroke-width="40"/>
+<path id="Vector_2" d="M125 155C141.569 155 155 141.569 155 125C155 108.431 141.569 95 125 95C108.431 95 95 108.431 95 125C95 141.569 108.431 155 125 155Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_59_9834">
+<rect width="250" height="250" fill="white"/>
+</clipPath>
+</defs>
+</svg>

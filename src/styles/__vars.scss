@@ -1,12 +1,26 @@
 //Backgrounds-color
 $main-bg-color: linear-gradient(270deg, #313131 0%, #515151 53.67%, #363636 100%);
+
 $fir-popup-bg-color: #fcb700;
 $sec-popup-bg-color: linear-gradient(270deg, #313131 0%, #515151 53.67%, #363636 100%);
 
+//Text-color
+$main-text-color: #ffffff;
+$title-text-color: #fcb700;
+
+$link-color: #ffffff;
+$hov-link-color: #fcb700;
+
+//Element-color
+
+$main-brd-color: #fcb700;
+
+//Buttons
 $btn-bg-color: #fcb700;
 $hov-btn-bg-color: #313131;
 
-$alt-btn-bg-color: #fcb700;
-$hov-alt-btn-bg-color: #313131;
-//Text-color
-//Element-color
+$alt-btn-bg-color: #313131;
+$hov-alt-btn-bg-color: #fcb700;
+
+$btn-text-color: #fcb700;
+$alt-btn-text-color: #313131;

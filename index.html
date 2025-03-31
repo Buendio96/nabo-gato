@@ -3,18 +3,76 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>NABO-GATO</title>
+
+  <script type="module" defer src="/src/main.js"></script>
 </head>
 
 <body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <span class="header__logo-left">NABO GATO</span>
+          <img src="/logo.svg" alt="NABO-GATO">
+          <span class="header__logo-right">SUSHI BAR</span>
+        </div>
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link" data-i18n="about-us">O nas</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link" data-i18n="menu">Menu</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link" data-i18n="communication">Komunikacja</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                <img src="/Facebook.svg" alt="Facebook">
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                <img src="/Instagram.svg" alt="Facebook">
+              </a>
+            </li>
+          </ul>
+          <div class="header__leng">
+            <button id="languageToggle" class="header__leng-item" type="button">
+              <img id="languageFlag" src="./src/assets/icons/pl.svg" alt="PL">
+            </button>
+
+          </div>
+          <div class="header__contacts">
+            <button id="contactsToggle" class="header__contacts-btn" data-i18n="contacts" type="button">
+              Kontakty
+            </button>
+            <div id="contactsBox" class="header__contacts-box">
+              <a class="header__contacts-link" href="tel:+48583800909">
+                Gdynia
+                <br>
+                <span>583 800 909</span>
+              </a>
+              <a class="header__contacts-link" href="tel:+48583800085">
+                Gdansk
+                <br>
+                <span>583 800 085</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+
+  </main>
+  <footer></footer>
 </body>
-<main>
-  <img src="./src/assets/images/12.jpg" alt="">
-  <h1>NaboGato</h1>
-</main>
 
 </html>

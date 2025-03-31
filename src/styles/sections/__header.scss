@@ -1,0 +1,134 @@
+@use "../_vars" as *;
+@use "../response" as *;
+
+.header {
+	display: flex;
+	border-bottom: 2px solid $main-brd-color;
+	padding: 10px 0;
+	&__container {
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 40px;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		padding: 4px 0;
+		column-gap: 15px;
+		font-weight: 300;
+		img {
+			width: 52px;
+		}
+		@include ad-font(60, 24);
+	}
+	&__logo-left {
+		font-weight: 400;
+		color: $title-text-color;
+	}
+	&__logo-right {
+	}
+	&__navigation {
+		display: flex;
+		align-items: center;
+		column-gap: 32px;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+	}
+	&__item {
+		transition: all 0.5s ease;
+		padding: 10px 6px;
+		@media (hover: hover) {
+			&:hover {
+				.header__link {
+					color: $hov-link-color;
+				}
+				transform: translateY(-10%) scale(1.1);
+			}
+		}
+	}
+	&__link {
+		font-weight: 600;
+		letter-spacing: 0.7px;
+		white-space: nowrap;
+		position: relative;
+		transition: all 0.3s ease;
+		text-shadow: 0 0 2px black;
+		@include ad-font(20, 16);
+	}
+	&__leng {
+		width: 33px;
+		height: 33px;
+		border: 2px solid $main-brd-color;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	&__leng-item {
+		height: 100%;
+		width: 100%;
+	}
+	&__contacts {
+		position: relative;
+		@media (hover: hover) {
+			&:hover {
+				.header__contacts-box {
+					opacity: 1;
+					transform: translateY(0%) scaleY(1);
+					visibility: visible;
+				}
+				.header__contacts-btn {
+					border-radius: 15px 15px 0 0;
+				}
+			}
+		}
+	}
+	&__contacts-btn {
+		padding: 8px 20px;
+		background-color: $btn-bg-color;
+		color: $alt-btn-text-color;
+		font-weight: 600;
+		border-radius: 15px;
+		letter-spacing: 0.7px;
+		transition: all 0.4s ease;
+		z-index: 1;
+		@include ad-font(20, 16);
+	}
+	&__contacts-box {
+		position: absolute;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		background-color: $btn-bg-color;
+		color: $alt-btn-text-color;
+		overflow: hidden;
+		border-radius: 0 0 15px 15px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		transform: translateY(-60%) scaleY(0);
+		transition: all 0.4s ease;
+		z-index: 0;
+		@include ad-font(20, 16);
+	}
+	&__contacts-link {
+		padding: 10px;
+		width: 100%;
+		display: block;
+		span {
+			color: $link-color;
+			display: block;
+			transition: all 0.1s ease;
+		}
+		@media (hover: hover) {
+			&:hover > span {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
