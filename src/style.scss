@@ -4,14 +4,19 @@
 @use "./styles/sections/_header";
 
 body {
-	font-family: "Ando";
-	min-width: 100%;
+	width: 100%;
 	min-height: 100%;
 	color: $main-text-color;
 	background: $main-bg-color 0 0 no-repeat;
+	overflow: hidden;
 	line-height: 150%;
 }
-
+html[lang="ua"] {
+	font-family: "Courier New", Courier, monospace;
+}
+html {
+	font-family: "Ando";
+}
 .container {
 	width: 100%;
 	max-width: 1890px;

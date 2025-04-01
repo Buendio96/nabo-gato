@@ -20,7 +20,14 @@
           <img src="/logo.svg" alt="NABO-GATO">
           <span class="header__logo-right">SUSHI BAR</span>
         </div>
-        <nav class="header__navigation">
+
+        <div class="header__burger" id="burgerBtn">
+          <div class="header__burger-element"></div>
+          <div class="header__burger-element"></div>
+          <div class="header__burger-element"></div>
+        </div>
+
+        <nav class="header__navigation" id="navigationList">
           <ul class="header__list">
             <li class="header__item">
               <a href="#" class="header__link" data-i18n="about-us">O nas</a>
@@ -31,23 +38,36 @@
             <li class="header__item">
               <a href="#" class="header__link" data-i18n="communication">Komunikacja</a>
             </li>
-            <li class="header__item">
-              <a href="#" class="header__link">
-                <img src="/Facebook.svg" alt="Facebook">
-              </a>
-            </li>
-            <li class="header__item">
-              <a href="#" class="header__link">
-                <img src="/Instagram.svg" alt="Facebook">
-              </a>
-            </li>
           </ul>
-          <div class="header__leng">
-            <button id="languageToggle" class="header__leng-item" type="button">
-              <img id="languageFlag" src="./src/assets/icons/pl.svg" alt="PL">
-            </button>
-
+          <div class="header__social">
+            <a href="#" class="header__social-link">
+              <img src="/Facebook.svg" alt="Facebook">
+            </a>
+            </li>
+            <a href="#" class="header__social-link">
+              <img src="/Instagram.svg" alt="Facebook">
+            </a>
+            <div class="header__leng">
+              <button id="languageButton" class="header__leng-toggle">
+                <img class="header__leng-toggle-image" alt="PL" />
+              </button>
+              <div id="languageDropdown" class="header__leng-dropdown">
+                <button class="header__leng-dropdown-item" data-lang="en">
+                  <img src="./src/assets/icons/gb.svg" alt="EN" />
+                </button>
+                <button class="header__leng-dropdown-item" data-lang="ua">
+                  <img src="./src/assets/icons/ua.svg" alt="UA" />
+                </button>
+                <button class="header__leng-dropdown-item" data-lang="de">
+                  <img src="./src/assets/icons/de.svg" alt="DE" />
+                </button>
+                <button class="header__leng-dropdown-item" data-lang="pl">
+                  <img src="./src/assets/icons/pl.svg" alt="PL" />
+                </button>
+              </div>
+            </div>
           </div>
+
           <div class="header__contacts">
             <button id="contactsToggle" class="header__contacts-btn" data-i18n="contacts" type="button">
               Kontakty
