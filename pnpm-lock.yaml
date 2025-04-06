@@ -24,6 +24,9 @@ importers:
       svgo:
         specifier: ^3.3.2
         version: 3.3.2
+      swiper:
+        specifier: ^11.2.6
+        version: 11.2.6
       vite:
         specifier: ^6.2.0
         version: 6.2.3(@types/node@22.13.14)(sass@1.86.0)
@@ -808,6 +811,10 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  swiper@11.2.6:
+    resolution: {integrity: sha512-8aXpYKtjy3DjcbzZfz+/OX/GhcU5h+looA6PbAzHMZT6ESSycSp9nAjPCenczgJyslV+rUGse64LMGpWE3PX9Q==}
+    engines: {node: '>= 4.7.0'}
+
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -1539,6 +1546,8 @@ snapshots:
       css-what: 6.1.0
       csso: 5.0.5
       picocolors: 1.1.1
+
+  swiper@11.2.6: {}
 
   to-regex-range@5.0.1:
     dependencies:

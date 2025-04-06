@@ -2,5 +2,10 @@
 	"about-us": "O nas",
 	"menu": "Menu",
 	"communication": "Komunikacja",
-	"contacts": "Kontakty"
+	"contacts": "Kontakty",
+	"hero": {
+		"title": "Pyszne Sushi z dostawą na terenie Trójmiasta",
+		"subtitle": "Sprawdź i pokochaj nasze rolki i zestawy! Świeże składniki, autentyczne smaki i kunszt naszych sushi masterów sprawią, że każda rolka to małe dzieło sztuki. Wybierz swój ulubiony zestaw, delektuj się delikatnym smakiem ryb i aromatycznym ryżem. Zapraszamy do świata japońskich doznań kulinarnych – smakuj, odkrywaj i ciesz się każdą chwilą!"
+	},
+	"toggle-city": "Wybierz swoje miasto:"
 }

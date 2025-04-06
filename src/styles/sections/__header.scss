@@ -9,6 +9,7 @@
 	z-index: 2;
 	width: 100%;
 	&__container {
+		width: 100%;
 	}
 	&__wrapper {
 		display: flex;
@@ -16,7 +17,6 @@
 		align-items: center;
 	}
 	&__logo {
-		font-family: "Ando";
 		display: flex;
 		align-items: center;
 		white-space: nowrap;
@@ -85,7 +85,6 @@
 	}
 	.open-navigation {
 		transform: translate(0, 100%) scaleY(1);
-
 		visibility: visible;
 		opacity: 1;
 	}
@@ -122,12 +121,12 @@
 		}
 	}
 	&__link {
-		font-weight: 600;
+		font-family: $second-font-family;
+		font-weight: 500;
 		letter-spacing: 0.7px;
 		white-space: nowrap;
 		transition: all 0.3s ease;
 		text-shadow: 0 0 2px black;
-		@include ad-font(20, 16);
 	}
 	&__social {
 		display: flex;
@@ -145,6 +144,7 @@
 		position: relative;
 		height: 100%;
 		width: 30px;
+		transition: all 0.3s ease;
 		img {
 			position: absolute;
 			width: 100%;
@@ -156,6 +156,11 @@
 		&:nth-child(2) {
 			img {
 				transform: scale(1.35);
+			}
+		}
+		@media (hover: hover) {
+			&:hover {
+				transform: translateY(-10%) scale(1.1);
 			}
 		}
 	}
@@ -170,9 +175,7 @@
 		border-radius: 50%;
 		overflow: hidden;
 		display: flex;
-		border: 2px solid $main-brd-color;
 	}
-
 	&__leng-dropdown {
 		position: absolute;
 		top: 0;
@@ -197,7 +200,9 @@
 		opacity: 1;
 		transform: translateY(0) translateX(-50%) scaleY(1);
 		border-radius: 10px;
-		border: 2px solid $alt-bg-color;
+		@include respond(mobile-medium) {
+			border: 2px solid $main-brd-color;
+		}
 	}
 
 	&__leng-dropdown-item {
@@ -235,7 +240,8 @@
 		letter-spacing: 0.7px;
 		transition: all 0.4s ease;
 		z-index: 1;
-		@include ad-font(20, 16);
+		font-family: $second-font-family;
+		font-weight: 600;
 		@include respond(mobile-medium) {
 			margin: 20px 0 0;
 			width: 100%;
@@ -258,8 +264,9 @@
 		letter-spacing: 0.5px;
 		transform: translateY(-60%) scaleY(0);
 		transition: all 0.4s ease;
+		font-family: $second-font-family;
+		font-size: 15px;
 		z-index: 0;
-		@include ad-font(20, 16);
 	}
 
 	.active-box {

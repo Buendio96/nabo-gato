@@ -2,6 +2,7 @@
 @use "./styles/_reset";
 @use "./styles/_vars" as *;
 @use "./styles/sections/_header";
+@use "./styles/sections/_hero";
 
 body {
 	width: 100%;
@@ -17,12 +18,16 @@ html[lang="ua"] {
 html {
 	font-family: "Ando";
 }
-.container {
-	width: 100%;
+[class*="__container"] {
 	max-width: 1890px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
-main {
-	height: 100vh;
+
+.swiper {
+}
+.swiper-wrapper {
+}
+
+.swiper-slide {
 }

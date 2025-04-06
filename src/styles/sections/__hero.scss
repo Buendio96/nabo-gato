@@ -1,0 +1,149 @@
+@use "../_vars" as *;
+@use "../response" as *;
+
+.hero {
+	height: 100vh;
+	&__container {
+	}
+	&__wrapper {
+		padding: 100px 0;
+	}
+	&__top {
+		display: flex;
+		column-gap: 20px;
+	}
+	&__title {
+		flex: 0 1 50%;
+		text-transform: uppercase;
+		color: $title-text-color;
+		line-height: 1.2;
+		@include ad-font(96, 58);
+	}
+	&__content {
+		flex: 0 1 50%;
+		font-family: $second-font-family;
+		letter-spacing: 1px;
+		font-weight: 400;
+		@include ad-font(18, 16);
+	}
+	&__content-text {
+		line-height: 1.5;
+	}
+	&__toggle {
+		margin: 32px 0 0;
+	}
+	&__toggle-title {
+		font-weight: 600;
+		@include ad-font(26, 20);
+		letter-spacing: 1px;
+	}
+	&__toggle-button {
+		margin: 15px 0 0;
+		padding: 12px 30px;
+		border-radius: 15px;
+		border: 2px solid $main-brd-color;
+		color: $btn-text-color;
+		font-family: Montserrat;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		transition: all 0.2s ease-in;
+		@include ad-font(18, 16);
+		@media (hover: hover) {
+			&:hover {
+				background-color: $hov-alt-btn-bg-color;
+				color: $hov-btn-text-color;
+			}
+		}
+	}
+	&__toggle-button:last-child {
+		margin: 15px 0 0 15px;
+	}
+}
+
+.heroSwiper {
+	margin: 80px 0 0;
+	&__slide {
+		border: 3px solid $main-brd-color;
+		border-radius: 35px;
+		display: flex;
+		position: relative;
+		background-color: $alt-bg-color;
+		overflow: hidden;
+	}
+	&__navigation {
+		margin: 50px 0 0;
+		height: 50px;
+		.swiper-pagination {
+			width: auto;
+			bottom: 15px;
+			left: 10px;
+		}
+		.swiper-pagination-bullet {
+			background: $btn-bg-color;
+		}
+	}
+	&__buttons {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 120px;
+		display: flex;
+		justify-content: space-between;
+		div {
+			position: relative;
+			left: 0;
+			&::after,
+			&::before {
+				display: none;
+			}
+			width: 48px;
+			background-color: $btn-bg-color;
+			border-radius: 50%;
+			color: $btn-bg-color;
+			transition: all 0.2s ease;
+			border: 2px solid $main-brd-color;
+			img {
+				transition: all 0.2s ease;
+			}
+			&:hover {
+				img {
+					transform: scale(1.5);
+				}
+				background-color: $alt-bg-color;
+			}
+		}
+	}
+}
+.heroSlide {
+	&__logo {
+		position: absolute;
+	}
+	&__description {
+	}
+	&__description-title {
+	}
+	&__description-text {
+	}
+	&__box {
+	}
+	&__box-img {
+		display: none;
+	}
+	&__information {
+		display: none;
+	}
+	&__information-title {
+	}
+	&__information-text {
+	}
+}
+
+.easter {
+	&__logo {
+	}
+	&__box {
+	}
+}
