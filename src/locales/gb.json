@@ -2,5 +2,44 @@
 	"about-us": "About Us",
 	"menu": "Menu",
 	"communication": "Communication",
-	"contacts": "Contacts"
+	"contacts": "Contacts",
+	"hero": {
+		"title": "Delicious Sushi with Delivery in the Tri-City Area",
+		"subtitle": "Check out and love our rolls and sets! Fresh ingredients, authentic flavors, and the craftsmanship of our sushi masters make every roll a small work of art. Choose your favorite set, enjoy the delicate taste of fish and aromatic rice. Welcome to the world of Japanese culinary experiences – taste, explore, and enjoy every moment!"
+	},
+	"toggle-city": "Select your city:",
+	"easter": {
+		"title": "Easter Specials at Nabo Gato!",
+		"description": "For Easter, we invite you to Nabo Gato Sushi Bar for exceptional sushi that will surprise your taste buds.",
+		"backTitle": "Easter Specials at Nabo Gato Sushi Bar! 🐣🌸",
+		"backText": {
+			"0": "For Easter, we invite you to Nabo Gato Sushi Bar for exceptional sushi that will surprise your taste buds! 🎉 Fresh ingredients, authentic flavors, and unforgettable culinary experiences await you.",
+			"1": "🌟 Special Easter offer: When you order a sushi set, you’ll get <span>20% off</span> on the second set! It’s a great opportunity to try something new and indulge in our carefully prepared rolls.",
+			"2": "We make every sushi with passion and attention to the smallest details, so that every bite delivers unforgettable sensations. From traditional nigiri to creative fusion rolls, you’ll find something perfect for you!",
+			"3": "It’s the perfect opportunity to try our delicious compositions and share them with loved ones. Nabo Gato Sushi Bar – taste Easter at its best! 🍣✨ We invite you to place orders online or visit our restaurant, where you’ll find a unique atmosphere and hospitality.",
+			"4": "Celebrate with us and treat yourself to a moment of pleasure with the best sushi in town! 🎊🥢"
+		}
+	},
+	"catering": {
+		"title": "Our Sushi Will Turn Any Event into a Remarkable Feast!",
+		"description": "Order catering for family gatherings, corporate events, or other special occasions",
+		"backTitle": "Discover the taste of perfect sushi at your event 🍱🍣",
+		"backText": {
+			"0": "Planning a business meeting, birthday, wedding, or an intimate gathering with friends? Nabo Gato Sushi Bar will make every moment exceptional with exquisite dishes that will amaze your guests. Our catering is not just food – it’s a culinary journey filled with fresh ingredients, original flavor combinations, and impeccable presentation.",
+			"1": "Professionalism and flexibility – we will tailor to your needs 🌟",
+			"2": "At Nabo Gato, we understand that each event is unique. That’s why our catering offering is fully tailored to your needs and expectations. Whether it’s a full menu with a variety of sushi sets or delicate finger food snacks, we ensure quality that leaves an impression. We operate throughout the entire Trójmiasto area, delivering culinary excellence right to your table."
+		}
+	},
+	"tort": {
+		"title": "Sushi Cakes – A Unique Idea for the Biggest Lovers of Japanese Flavors",
+		"description": "If traditional cakes are not enough for you, discover our specialty – sushi cakes! A spectacular alternative that combines the exceptional taste of sushi with a striking appearance.",
+		"backTitle": "Wow Effect Guaranteed! 🎂🍣",
+		"backText": {
+			"0": "Our sushi cakes are more than just food – they are a true centerpiece for any table. Multi-layered constructions, carefully arranged sushi pieces, and additions such as fresh herbs, shrimp, or caviar make each composition unique. Your guests will be delighted with both the taste and the look of the cake, which will become the focal point of your event.",
+			"1": "The perfect choice for special moments🥢",
+			"2": "Sushi cakes are a great way to make any occasion unforgettable. Whether you're hosting an intimate dinner or a large party, a sushi cake from ‘Nabo Gato’ will be a special addition. Surprise your loved ones or coworkers with something they definitely wouldn't expect, and make sure the memories of that day stay with them for a long time.",
+			"3": "Contact us and order your sushi cake today!✨",
+			"4": "Dreaming of a unique sushi cake? Call or message ‘Nabo Gato’ to place an order and discuss the details. We operate in Gdańsk, Gdynia, and the entire Tri-City area, delivering our masterpieces straight to your table. Your perfect sushi cake is within reach!"
+		}
+	}
 }

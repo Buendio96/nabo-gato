@@ -1,0 +1,9 @@
+@use "./vars" as *;
+@use "./response" as *;
+
+html[lang="ua"] {
+	font-family: $second-font-family;
+	.hero__title {
+		@include ad-font(65, 58);
+	}
+}

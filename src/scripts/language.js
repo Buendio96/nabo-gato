@@ -13,7 +13,6 @@ const mainImage = document.querySelector('.header__leng-toggle-image')
 const dropdownElement = document.getElementById('languageDropdown')
 const toggleButton = document.getElementById('languageButton')
 const languagesElements = document.querySelectorAll('.header__leng-dropdown-item')
-const elementsForTranslate = document.querySelectorAll('[data-i18n]')
 
 const savedLanguage = localStorage.getItem('language') || 'pl'
 document.documentElement.lang = savedLanguage
@@ -46,7 +45,9 @@ function changeLanguage(newLanguage) {
 	})
 }
 
-function translateElements() {
+export function translateElements() {
+	const elementsForTranslate = document.querySelectorAll('[data-i18n]')
+
 	elementsForTranslate.forEach(element => {
 		const key = element.dataset.i18n
 		if (key) element.textContent = i18next.t(key)

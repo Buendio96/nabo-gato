@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/ando/Ando-Bold.eot");
+	src:
+		local("Ando Bold"),
+		local("Ando-Bold"),
+		url("./assets/fonts/ando/Ando-Bold.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/ando/Ando-Bold.woff2") format("woff2"),
+		url("./assets/fonts/ando/Ando-Bold.woff") format("woff"),
+		url("./assets/fonts/ando/Ando-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/ando/Ando-Regular.eot");
+	src:
+		local("Ando"),
+		local("Ando-Regular"),
+		url("./assets/fonts/ando/Ando-Regular.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/ando/Ando-Regular.woff2") format("woff2"),
+		url("./assets/fonts/ando/Ando-Regular.woff") format("woff"),
+		url("./assets/fonts/ando/Ando-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/ando/Ando-Semibold.eot");
+	src:
+		local("Ando Semibold"),
+		local("Ando-Semibold"),
+		url("./assets/fonts/ando/Ando-Semibold.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/ando/Ando-Semibold.woff2") format("woff2"),
+		url("./assets/fonts/ando/Ando-Semibold.woff") format("woff"),
+		url("./assets/fonts/ando/") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ando";
+	src: url("./assets/fonts/ando/Ando-Thin.eot");
+	src:
+		local("Ando Thin"),
+		local("Ando-Thin"),
+		url("./assets/fonts/ando/Ando-Thin.eot?#iefix") format("embedded-opentype"),
+		url("./assets/fonts/ando/Ando-Thin.woff2") format("woff2"),
+		url("./assets/fonts/ando/Ando-Thin.woff") format("woff"),
+		url("./assets/fonts/ando/Ando-Thin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/montserrat/Montserrat-Semibold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/montserrat/Montserrat-Thin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal;
+}
