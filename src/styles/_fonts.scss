@@ -11,7 +11,6 @@
 	font-weight: bold;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Ando";
 	src: url("./assets/fonts/ando/Ando-Regular.eot");
@@ -25,7 +24,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Ando";
 	src: url("./assets/fonts/ando/Ando-Semibold.eot");
@@ -39,7 +37,6 @@
 	font-weight: 600;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Ando";
 	src: url("./assets/fonts/ando/Ando-Thin.eot");
@@ -53,30 +50,57 @@
 	font-weight: 100;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: "Montserrat";
 	src: url("./assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Montserrat";
 	src: url("./assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Montserrat";
 	src: url("./assets/fonts/montserrat/Montserrat-Semibold.ttf") format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Montserrat";
 	src: url("./assets/fonts/montserrat/Montserrat-Thin.ttf") format("truetype");
 	font-weight: 100;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: "AlumniSans";
+	src: url("./assets/fonts/alumni/AlumniSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	unicode-range: U+0400-04FF;
+}
+@font-face {
+	font-family: "AlumniSans";
+	src: url("./assets/fonts/alumni/AlumniSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	unicode-range: U+0400-04FF;
+}
+@font-face {
+	font-family: "AlumniSans";
+	src: url("./assets/fonts/alumni/AlumniSans-Semibold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	unicode-range: U+0400-04FF;
+}
+@font-face {
+	font-family: "AlumniSans";
+	src: url("./assets/fonts/alumni/AlumniSans-Thin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal;
+	unicode-range: U+0400-04FF;
 }

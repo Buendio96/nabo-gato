@@ -7,15 +7,17 @@
 @use "./styles/sections/hero";
 
 body {
-	width: 100%;
-	min-height: 100%;
 	color: $main-text-color;
 	background: $main-bg-color 0 0 no-repeat;
 	line-height: 150%;
+	font-size: 16px;
 }
-html {
+html[lang="pl"],
+html[lang="en"],
+html[lang="de"] {
 	font-family: "Ando";
 }
+
 [class*="__container"] {
 	max-width: 1890px;
 	padding: 0 15px;
@@ -26,11 +28,10 @@ html {
 }
 .swiper-wrapper {
 }
-
 .swiper-slide {
 }
+
 main {
-	height: 2000px;
 }
 ::-webkit-scrollbar {
 	width: 8px;

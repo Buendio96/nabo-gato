@@ -50,7 +50,7 @@ export function translateElements() {
 
 	elementsForTranslate.forEach(element => {
 		const key = element.dataset.i18n
-		if (key) element.textContent = i18next.t(key)
+		if (key) element.innerHTML = i18next.t(key)
 	})
 }
 

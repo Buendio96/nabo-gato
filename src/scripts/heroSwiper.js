@@ -34,10 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	const slidesHtml = banerList.map(item => sliderItem(item))
 	swiperContainer.innerHTML = slidesHtml.join('')
 
+	const isMobile = window.innerWidth <= 850
+
 	const swiper = new Swiper(".heroSwiper", {
 		modules: [Navigation, Keyboard, Pagination],
-		spaceBetween: 32,
-		slidesPerView: 1.3,
+		spaceBetween: isMobile ? 20 : 32,
+		slidesPerView: isMobile ? 1 : 1.3,
 		loop: true,
 		navigation: {
 			nextEl: ".swiper-button-next",

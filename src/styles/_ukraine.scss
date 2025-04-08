@@ -2,8 +2,18 @@
 @use "./response" as *;
 
 html[lang="ua"] {
-	font-family: $second-font-family;
-	.hero__title {
-		@include ad-font(65, 58);
+	font-family: "AlumniSans", "Ando", sans-serif;
+
+	.header {
+		&__logo {
+		}
+	}
+	.hero {
+		&__title {
+		}
+		&__content-text {
+		}
+		&__toggle-title {
+		}
 	}
 }

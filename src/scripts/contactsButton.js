@@ -2,7 +2,7 @@ let isListenerAdded = false
 const button = document.getElementById('contactsToggle')
 const box = document.getElementById('contactsBox')
 function handleResize() {
-	const isMobile = window.innerWidth <= 768
+	const isMobile = window.innerWidth <= 850
 
 
 	if (!button || !box) return

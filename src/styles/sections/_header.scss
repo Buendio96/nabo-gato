@@ -40,7 +40,7 @@
 
 	&__burger {
 		display: none;
-		@include respond(mobile-medium) {
+		@media (max-width: 850px) {
 			width: 35px;
 			height: 25px;
 			display: flex;
@@ -62,7 +62,7 @@
 		@include respond(mobile-large) {
 			column-gap: 15px;
 		}
-		@include respond(mobile-medium) {
+		@media (max-width: 850px) {
 			width: 33.333%;
 			height: 100vh;
 			opacity: 0;
@@ -95,7 +95,7 @@
 		@include respond(mobile-large) {
 			column-gap: 10px;
 		}
-		@include respond(mobile-medium) {
+		@media (max-width: 850px) {
 			flex-direction: column;
 			width: 100%;
 		}
@@ -133,7 +133,7 @@
 		align-items: center;
 		height: 30px;
 		column-gap: 20px;
-		@include respond(mobile-medium) {
+		@media (max-width: 850px) {
 			width: 100%;
 			margin: 20px 0 0;
 			column-gap: 0;
@@ -188,7 +188,7 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 10px;
-		@include respond(mobile-medium) {
+		@media (max-width: 850px) {
 			padding: 10px 5px;
 			z-index: 1;
 			background-color: $alt-brd-color;
@@ -200,7 +200,7 @@
 		opacity: 1;
 		transform: translateY(0) translateX(-50%) scaleY(1);
 		border-radius: 10px;
-		@include respond(mobile-medium) {
+		@media (max-width: 850px) {
 			border: 2px solid $main-brd-color;
 		}
 	}
@@ -242,7 +242,7 @@
 		z-index: 1;
 		font-family: $second-font-family;
 		font-weight: 600;
-		@include respond(mobile-medium) {
+		@media (max-width: 850px) {
 			margin: 20px 0 0;
 			width: 100%;
 		}
