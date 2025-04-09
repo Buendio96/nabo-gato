@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8" />
@@ -54,21 +54,20 @@
               </button>
               <div id="languageDropdown" class="header__leng-dropdown">
                 <button class="header__leng-dropdown-item" data-lang="en">
-                  <img src="./src/assets/icons/gb.svg" alt="EN" />
+                  <img src="./src/assets/icons/locales/gb.svg" alt="EN" />
                 </button>
                 <button class="header__leng-dropdown-item" data-lang="ua">
-                  <img src="./src/assets/icons/ua.svg" alt="UA" />
+                  <img src="./src/assets/icons/locales/ua.svg" alt="UA" />
                 </button>
                 <button class="header__leng-dropdown-item" data-lang="de">
-                  <img src="./src/assets/icons/de.svg" alt="DE" />
+                  <img src="./src/assets/icons/locales/de.svg" alt="DE" />
                 </button>
                 <button class="header__leng-dropdown-item" data-lang="pl">
-                  <img src="./src/assets/icons/pl.svg" alt="PL" />
+                  <img src="./src/assets/icons/locales/pl.svg" alt="PL" />
                 </button>
               </div>
             </div>
           </div>
-
           <div class="header__contacts">
             <button id="contactsToggle" class="header__contacts-btn" data-i18n="contacts" type="button">
               Kontakty
@@ -127,11 +126,21 @@
               </div>
             </div>
           </div>
-
         </div>
+      </div>
+    </section>
+    <section class="legend">
+      <div class="legend__container">
+        <div class="legend__wrapper">
+          <nav class="legend__nav">
+            <ul class="legend__list" id="legendList">
 
-      </div>
-      </div>
+            </ul>
+            <h3 class="legend__allergens-title" data-i18n="allergensTitle">Alergeny</h3>
+            <ul class="legend__allergens-list" id="allergensList">
+            </ul>
+          </nav>
+        </div>
       </div>
     </section>
   </main>

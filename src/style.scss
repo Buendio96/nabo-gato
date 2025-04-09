@@ -1,16 +1,18 @@
+@use "@styles/reset";
 @use "./styles/fonts";
-@use "./styles/reset";
-@use "./styles/ukraine";
-@use "./styles/vars" as *;
-@use "./styles/response" as *;
-@use "./styles/sections/header";
-@use "./styles/sections/hero";
+@use "@styles/ukraine";
+@use "@styles/vars" as *;
+@use "@styles/response" as *;
+@use "@styles/sections/header";
+@use "@styles/sections/hero";
+@use "@styles/sections/legend";
 
 body {
 	color: $main-text-color;
 	background: $main-bg-color 0 0 no-repeat;
 	line-height: 150%;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 html[lang="pl"],
 html[lang="en"],

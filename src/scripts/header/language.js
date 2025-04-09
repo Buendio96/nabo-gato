@@ -1,13 +1,13 @@
+import lang_de from '@assets/icons/locales/de.svg'
+import lang_gb from '@assets/icons/locales/gb.svg'
+import lang_pl from '@assets/icons/locales/pl.svg'
+import lang_ua from '@assets/icons/locales/ua.svg'
 import i18next from 'i18next'
-import lang_de from '../assets/icons/de.svg'
-import lang_gb from '../assets/icons/gb.svg'
-import lang_pl from '../assets/icons/pl.svg'
-import lang_ua from '../assets/icons/ua.svg'
 
-import langDE from '../locales/de'
-import langEN from '../locales/gb'
-import langPL from '../locales/pl'
-import langUA from '../locales/ua'
+import langDE from '@locales/de'
+import langEN from '@locales/gb'
+import langPL from '@locales/pl'
+import langUA from '@locales/ua'
 
 const mainImage = document.querySelector('.header__leng-toggle-image')
 const dropdownElement = document.getElementById('languageDropdown')
@@ -54,7 +54,7 @@ export function translateElements() {
 	})
 }
 
-function updateMainFlag() {
+export function updateMainFlag() {
 	if (mainImage) {
 		mainImage.src = flags[i18next.language]
 		mainImage.alt = i18next.language.toUpperCase()
@@ -95,9 +95,5 @@ document.addEventListener('click', (e) => {
 	}
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-	translateElements()
-	updateMainFlag()
-})
 
 

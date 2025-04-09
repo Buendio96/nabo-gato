@@ -28,7 +28,7 @@ const sliderItem = (item) => `
 	</div >
 	`
 
-document.addEventListener('DOMContentLoaded', () => {
+export const createdHeroSwiper = () => {
 	const swiperContainer = document.getElementById('heroSwiper')
 
 	const slidesHtml = banerList.map(item => sliderItem(item))
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			onlyInViewport: true
 		}
 	})
+}
 
-})
 
 

@@ -1,0 +1,16 @@
+export const legendlist = [
+	{ text: "Pokaż wszystko", id: 'all' },
+	{ text: "Ramen", id: 'ramen' },
+	{ text: "Przystawki", id: 'przystawki' },
+	{ text: "Zestawy sushi", id: 'zestawySushi' },
+	{ text: "Futomaki", id: 'futomaki' },
+	{ text: "Californie", id: 'californie' },
+	{ text: "Hosomaki", id: 'hosomaki' },
+	{ text: "Nigiri", id: 'nigiri' },
+	{ text: "Tatary", id: 'tatary' },
+	{ text: "Gunkany", id: 'gunkany' },
+	{ text: "Sashimi", id: 'sashimi' },
+	{ text: "O-Nigiri", id: 'oNigiri' },
+	{ text: "Zupy Misoshiru", id: 'zupyMisoshiru' },
+	{ text: "Dodatki", id: 'dodatki' },
+]

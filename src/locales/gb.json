@@ -41,5 +41,36 @@
 			"3": "Contact us and order your sushi cake today!✨",
 			"4": "Dreaming of a unique sushi cake? Call or message ‘Nabo Gato’ to place an order and discuss the details. We operate in Gdańsk, Gdynia, and the entire Tri-City area, delivering our masterpieces straight to your table. Your perfect sushi cake is within reach!"
 		}
+	},
+	"legend": {
+		"0": "Show all",
+		"1": "Ramen",
+		"2": "Appetizers",
+		"3": "Sets",
+		"4": "Futomaki",
+		"5": "California",
+		"6": "Hosomaki",
+		"7": "Nigiri",
+		"8": "Tatars",
+		"9": "Gunkan",
+		"10": "Sashimi",
+		"11": "O-Nigiri",
+		"12": "Miso Soup",
+		"13": "Extras"
+	},
+	"allergensTitle": "Allergens",
+	"allergens": {
+		"0": "Gluten-containing cereals",
+		"1": "Fish",
+		"2": "Eggs",
+		"3": "Soy",
+		"4": "Citrus fruits",
+		"5": "Nuts",
+		"6": "Crustaceans",
+		"7": "Sesame",
+		"8": "Honey",
+		"9": "Milk",
+		"10": "Mustard",
+		"11": "Molluscs"
 	}
 }

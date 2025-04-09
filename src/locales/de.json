@@ -41,5 +41,36 @@
 			"3": "Kontaktieren Sie uns und bestellen Sie Ihre Sushi-Torte noch heute! ✨",
 			"4": "Träumen Sie von einer einzigartigen Sushi-Torte? Rufen Sie uns an oder schreiben Sie uns bei „Nabo Gato“, um Ihre Bestellung aufzugeben und Details zu klären. Wir liefern in Danzig, Gdynia und ganz Trójmiasto und bringen unsere Kunstwerke direkt auf Ihren Tisch. Ihre perfekte Sushi-Torte ist nur einen Anruf entfernt!"
 		}
+	},
+	"legend": {
+		"0": "Alles anzeigen",
+		"1": "Ramen",
+		"2": "Vorspeisen",
+		"3": "Sets",
+		"4": "Futomaki",
+		"5": "California",
+		"6": "Hosomaki",
+		"7": "Nigiri",
+		"8": "Tatar",
+		"9": "Gunkani",
+		"10": "Sashimi",
+		"11": "O-Nigiri",
+		"12": "Miso-Suppen",
+		"13": "Extras"
+	},
+	"allergensTitle": "Allergene",
+	"allergens": {
+		"0": "Glutenhaltige Getreidearten",
+		"1": "Fische",
+		"2": "Eier",
+		"3": "Soja",
+		"4": "Zitrusfrüchte",
+		"5": "Nüsse",
+		"6": "Krebstiere",
+		"7": "Sesam",
+		"8": "Honig",
+		"9": "Milch",
+		"10": "Senf",
+		"11": "Weichtiere"
 	}
 }

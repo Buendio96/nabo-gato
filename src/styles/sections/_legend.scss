@@ -1,0 +1,75 @@
+@use "@styles/vars" as *;
+@use "@styles/response" as *;
+
+.legend {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	&__container {
+	}
+	&__wrapper {
+		padding: 10px 0 0;
+		margin: 50px 0;
+	}
+	&__nav {
+		display: flex;
+		flex-direction: column;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item {
+		transition: all 0.4s ease;
+		outline: 2px solid rgba($color: $main-brd-color, $alpha: 0);
+		border-radius: 15px;
+		padding: 6px 16px;
+		text-wrap: nowrap;
+		@media (hover: hover) {
+			&:hover {
+				outline: 2px solid rgba($color: $main-brd-color, $alpha: 1);
+				.legend__link {
+					color: $hov-link-color;
+				}
+			}
+		}
+	}
+	&__link {
+		font-family: Montserrat;
+		line-height: 1.5;
+		letter-spacing: 0.4px;
+		font-weight: 500;
+		font-size: 18px;
+		transition: all 0.4s ease;
+	}
+	&__allergens-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__allergens-title {
+		color: $title-text-color;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		padding: 0 0 0 15px;
+		@include ad-font(32, 20);
+	}
+	&__allergens-item {
+		font-family: Montserrat;
+		line-height: 1.5;
+		letter-spacing: 0.4px;
+		display: flex;
+		align-items: center;
+	}
+	&__allergens-icon {
+		background-color: $card-bg-color;
+		width: 20px;
+		height: 20px;
+		padding: 4px;
+		margin: 0 8px 0 0;
+		border-radius: 50%;
+	}
+}
