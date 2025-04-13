@@ -1,4 +1,4 @@
-import { legendlist } from './legendList'
+import { legendlist } from './legendList.js'
 
 
 export const createdLegendList = () => {

@@ -1,11 +1,11 @@
-import { allrgensList } from './allergensList'
+import { allrgensList } from './allergensList.js'
 
 export const createdAllergensList = () => {
 	const list = document.getElementById("allergensList")
 
 	list.innerHTML = ""
 
-	allrgensList.forEach(({ id, text }, index) => {
+	allrgensList.forEach(({ text, image }, index) => {
 		const li = document.createElement("li")
 		li.classList.add("legend__allergens-item")
 
@@ -15,10 +15,8 @@ export const createdAllergensList = () => {
 		span.textContent = text
 
 
-		const div = document.createElement("div")
-
 		const img = document.createElement("img")
-		img.src = `/src/assets/icons/allergens/${id}.svg`
+		img.src = image
 		img.classList.add("legend__allergens-icon")
 
 

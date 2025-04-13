@@ -1,7 +1,4 @@
-import '@scripts/header/burger'
-import '@scripts/header/contactsButton'
-import '@scripts/header/language'
-import '@scripts/hero/heroSwiper'
+
 import { toggleBurgerMenu } from './scripts/header/burger'
 import { handleResize } from './scripts/header/contactsButton'
 import { translateElements, updateMainFlag } from './scripts/header/language'
@@ -16,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	createdLegendList()
 	handleResize()
 	createdAllergensList()
-
 	translateElements()
 	updateMainFlag()
 

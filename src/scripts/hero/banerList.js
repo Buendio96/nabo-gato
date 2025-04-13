@@ -1,10 +1,15 @@
+import slide1 from '../../assets/images/hero/slide1.png'
+import slide2 from '../../assets/images/hero/slide2.png'
+import slide3 from '../../assets/images/hero/slide3.png'
+
+
 export const banerList = [
 	{
 		name: 'easter',
 		title: 'Wielkanocne Specjalności w Nabo Gato!',
 		description: 'Z okazji Świąt Wielkanocnych zapraszamy do Nabo Gato Sushi Bar na wyjątkowe sushi, które zaskoczy Twoje podniebienie',
 		backTitle: 'Wielkanocne Specjalności w Nabo Gato Sushi Bar! 🐣🌸',
-		image: 'slide1.png',
+		image: slide1,
 		backTexts: [
 			'Z okazji Świąt Wielkanocnych zapraszamy do Nabo Gato Sushi Bar na wyjątkowe sushi, które zaskoczy Twoje podniebienie! 🎉 Czekają na Ciebie świeże składniki, autentyczne smaki i niezapomniane doznania kulinarne.',
 			'🌟 Specjalna oferta wielkanocna: Przy zamówieniu zestawu sushi otrzymasz <span>20% zniżki</span> na drugi zestaw! To doskonała okazja, aby spróbować czegoś nowego i delektować się naszymi starannie przygotowanymi rolkami.',
@@ -18,7 +23,7 @@ export const banerList = [
 		title: "Nasze Sushi zamieni każdą imprezę w wyjątkową ucztę!",
 		description: "Zamów catering na imprezy rodzinne, firmowe lub inne specjalne okazje",
 		backTitle: "Odkryj smak perfekcyjnego sushi na swoim wydarzeniu 🍱🍣",
-		image: 'slide2.png',
+		image: slide2,
 		backTexts: [
 			"Planujesz spotkanie biznesowe, urodziny, wesele czy kameralne przyjęcie w gronie przyjaciół? Restauracja sushi Nabo Gato zadba o to, by każda chwila była wyjątkowa dzięki wyśmienitym daniom, które zachwycą Twoich gości. Nasz catering to nie tylko jedzenie – to prawdziwa podróż kulinarna pełna świeżych składników, oryginalnych kompozycji smakowych i perfekcyjnej prezentacji.",
 			"Profesjonalizm i elastyczność – dopasujemy się do Twoich potrzeb🌟 ",
@@ -30,7 +35,7 @@ export const banerList = [
 		title: "Torty sushi – wyjątkowy pomysł dla największych miłośników japońskich smaków",
 		description: "Jeśli tradycyjne torty to dla Ciebie za mało, poznaj naszą specjalność – torty sushi! To spektakularna alternatywa, która łączy wyjątkowy smak sushi z efektownym wyglądem.",
 		backTitle: "Efekt wow gwarantowany! 🎂🍣",
-		image: 'slide3.png',
+		image: slide3,
 		backTexts: [
 			"Nasze torty sushi to coś więcej niż jedzenie – to prawdziwa ozdoba każdego stołu. Wielopoziomowe konstrukcje, starannie ułożone kawałki sushi i dodatki, takie jak świeże zioła, krewetki czy ikra, sprawiają, że każda kompozycja jest unikatowa. Goście będą zachwyceni zarówno smakiem, jak i wyglądem tortu, który stanie się centralnym punktem Twojego wydarzenia.",
 			"Idealny wybór na wyjątkowe chwile🥢",

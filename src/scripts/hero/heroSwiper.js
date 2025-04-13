@@ -3,7 +3,9 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Keyboard, Navigation, Pagination } from 'swiper/modules'
+import byDefault from '../../assets/images/hero/default.png'
 import { banerList } from './banerList'
+
 
 const sliderItem = (item) => `
 	<div class="swiper-slide heroSwiper__slide heroSlide ${item.name}">
@@ -15,7 +17,7 @@ const sliderItem = (item) => `
 					<p class="heroSlide__description-text" data-i18n="${item.name}.description">${item.description}</p>
 				</div>
 				<div class="heroSlide__box ${item.name}__box">
-				<img onerror="this.onerror=null;this.src='/src/assets/images/hero/default.png'"  class="heroSlide__box-img" src="/src/assets/images/hero/${item.image || 'default.png'}" alt="">
+				<img onerror="this.onerror=null;this.src=${byDefault}" class="heroSlide__box-img" src=${item.image || byDefault} alt="${item.name}">
 				</div >
 			</div >
 	<div class="heroSlide__back">
