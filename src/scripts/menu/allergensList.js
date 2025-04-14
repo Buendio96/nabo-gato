@@ -15,7 +15,7 @@ import soya from '../../assets/icons/allergens/Soya.svg'
 
 
 export const allrgensList = [
-	{ id: "gluten", text: "Zboża zawierające gluten", image: gluten },
+	{ id: "gluten", text: "Gluten", image: gluten },
 	{ id: "fish", text: "Ryby", image: fish },
 	{ id: "eggs", text: "Jajka", image: eggs },
 	{ id: "soya", text: "Soja", image: soya },

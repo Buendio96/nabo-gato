@@ -1,23 +1,38 @@
-import { legendlist } from './legendList.js'
+import Swiper from 'swiper'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { Pagination } from 'swiper/modules'
+import { legendlist } from './legendList'
+
+const legendItem = (item, index) =>
+	`
+	<li class="swiper-slide legend__item">
+		<a href="#${item.id}" data-i18n="legend.${index}" class="legend__link">
+			${item.text}
+		</a>
+	</li>
+	`
 
 
-export const createdLegendList = () => {
-	const list = document.getElementById("legendList")
+export const createdLegendSwiper = () => {
+	const swiperContainer = document.getElementById('legendSwiper')
 
-	list.innerHTML = ""
+	const slidesHtml = legendlist.map((item, index) => legendItem(item, index))
+	swiperContainer.innerHTML = slidesHtml.join('')
 
-	legendlist.forEach(({ id, text }, index) => {
-		const li = document.createElement("li")
-		li.classList.add("legend__item")
 
-		const a = document.createElement("a")
-		a.href = `#${id}`
-		a.classList.add("legend__link")
+	const isMobile = window.innerWidth <= 768
 
-		a.setAttribute("data-i18n", `legend.${index}`)
-		a.textContent = text
-
-		li.appendChild(a)
-		list.appendChild(li)
-	})
+	if (isMobile) {
+		const swiper = new Swiper(".legendSwiper", {
+			slidesPerView: 3,
+			spaceBetween: 10,
+			modules: [Pagination],
+			pagination: {
+				el: ".swiper-pagination",
+				type: "progressbar",
+			},
+		})
+	}
 }
+

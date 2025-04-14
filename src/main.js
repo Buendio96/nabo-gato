@@ -4,14 +4,14 @@ import { handleResize } from './scripts/header/contactsButton'
 import { translateElements, updateMainFlag } from './scripts/header/language'
 import { createdHeroSwiper } from './scripts/hero/heroSwiper'
 import { createdAllergensList } from './scripts/menu/allergens'
-import { createdLegendList } from './scripts/menu/legend'
+import { createdLegendSwiper } from './scripts/menu/legend'
 import './style.scss'
 
 document.addEventListener("DOMContentLoaded", () => {
 	toggleBurgerMenu()
 	createdHeroSwiper()
-	createdLegendList()
 	handleResize()
+	createdLegendSwiper()
 	createdAllergensList()
 	translateElements()
 	updateMainFlag()

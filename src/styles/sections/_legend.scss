@@ -10,29 +10,65 @@
 	&__wrapper {
 		padding: 10px 0 0;
 		margin: 50px 0;
-	}
-	&__nav {
 		display: flex;
 		flex-direction: column;
+		@include respond(mobile-medium) {
+			padding: 5px 0 0;
+		}
+	}
+	&__nav {
+		width: 100%;
+		padding: 0 5px;
+		margin: 0 -5px;
+		@include respond(mobile-medium) {
+			.swiper-pagination {
+				background-color: rgba($color: $main-brd-color, $alpha: 0.4);
+				border-radius: 10px;
+				overflow: hidden;
+				span {
+					background-color: $main-brd-color;
+				}
+			}
+		}
 	}
 	&__list {
-		display: flex;
+		column-gap: 10px;
+		padding: 2px 0;
 		justify-content: space-between;
-		align-items: center;
+		@media (max-width: 1800px) {
+			flex-wrap: wrap;
+			row-gap: 10px;
+			justify-content: center;
+		}
+		@include respond(mobile-medium) {
+			margin: 10px 0 0;
+			column-gap: inherit;
+			flex-wrap: nowrap;
+			justify-content: unset;
+		}
 	}
 	&__item {
+		width: auto;
 		transition: all 0.4s ease;
 		outline: 2px solid rgba($color: $main-brd-color, $alpha: 0);
 		border-radius: 15px;
-		padding: 6px 16px;
-		text-wrap: nowrap;
-		@media (hover: hover) {
-			&:hover {
-				outline: 2px solid rgba($color: $main-brd-color, $alpha: 1);
-				.legend__link {
-					color: $hov-link-color;
-				}
+		text-align: center;
+		padding: 5px 15px;
+		&:hover {
+			outline: 2px solid rgba($color: $main-brd-color, $alpha: 1);
+			.legend__link {
+				color: $hov-link-color;
 			}
+		}
+		@media (max-width: 1800px) {
+			flex: 1 0 calc(14% - 25px);
+			text-wrap: nowrap;
+			padding: 0 5px;
+		}
+		@include respond(mobile-large) {
+			flex: none;
+			padding: 0;
+			text-wrap: wrap;
 		}
 	}
 	&__link {
@@ -40,13 +76,40 @@
 		line-height: 1.5;
 		letter-spacing: 0.4px;
 		font-weight: 500;
-		font-size: 18px;
+		@include ad-font(18, 14);
 		transition: all 0.4s ease;
 	}
 	&__allergens-list {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include respond(mobile-large) {
+			margin: 10px 0 0;
+			row-gap: 10px;
+			flex-wrap: wrap;
+		}
+		@include respond(mobile-medium) {
+			row-gap: 5px;
+		}
+	}
+	&__allergens-item {
+		font-family: Montserrat;
+		line-height: 1.5;
+		letter-spacing: 0.4px;
+		display: flex;
+		align-items: center;
+		span {
+			@include ad-font(18, 13);
+		}
+		@media (max-width: 1320px) {
+			flex-direction: column;
+		}
+		@include respond(mobile-large) {
+			flex: 0 1 15%;
+		}
+		@include respond(mobile-medium) {
+			flex: 0 1 13%;
+		}
 	}
 	&__allergens-title {
 		color: $title-text-color;
@@ -56,13 +119,9 @@
 		letter-spacing: 1px;
 		padding: 0 0 0 15px;
 		@include ad-font(32, 20);
-	}
-	&__allergens-item {
-		font-family: Montserrat;
-		line-height: 1.5;
-		letter-spacing: 0.4px;
-		display: flex;
-		align-items: center;
+		@include respond(mobile-medium) {
+			padding: 0;
+		}
 	}
 	&__allergens-icon {
 		background-color: $card-bg-color;
@@ -71,5 +130,12 @@
 		padding: 4px;
 		margin: 0 8px 0 0;
 		border-radius: 50%;
+		@media (max-width: 1320px) {
+			margin: 0;
+		}
+		@include respond(mobile-medium) {
+			width: 15px;
+			height: 15px;
+		}
 	}
 }
