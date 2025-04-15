@@ -4,18 +4,18 @@
 .hero {
 	padding: 30px 0 20px;
 	@include respond(mobile-small) {
-		padding: 20px 0;
+		padding: 10px 0 0;
 	}
 	// &__container {
 	// }
 	&__wrapper {
-		min-height: calc(100vh - 130px);
-		max-height: 1500px;
+		height: calc(100vh - 130px);
+		max-height: 1000px;
 		display: grid;
-		grid-template: minmax(200px, auto) minmax(350px, 1fr) / 1fr;
+		grid-template: minmax(250px, auto) minmax(350px, 1fr) / 1fr;
 		@include respond(mobile-small) {
-			min-height: calc(100vh - 110px);
-			grid-template: minmax(200px, auto) minmax(300px, 1fr) / 1fr;
+			height: calc(100vh - 110px);
+			grid-template: auto minmax(280px, 1fr) / 1fr;
 		}
 	}
 	&__top {
@@ -153,6 +153,9 @@
 		}
 		.swiper-pagination-bullet {
 			background: $btn-bg-color;
+		}
+		@include respond(mobile-small) {
+			margin: 25px 0 0;
 		}
 	}
 	&__buttons {
@@ -343,15 +346,13 @@
 		height: 100%;
 		background-color: $card-bg-color;
 		img {
-			max-width: 80%;
 			right: 0;
+			top: 50%;
+			transform: translateY(-40%);
 		}
 		@include respond(mobile-small) {
 			img {
-				object-fit: cover;
-				right: -30px;
-				min-width: 170px;
-				top: 10%;
+				object-fit: contain;
 				bottom: 0;
 			}
 		}

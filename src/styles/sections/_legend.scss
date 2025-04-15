@@ -20,14 +20,12 @@
 		width: 100%;
 		padding: 0 5px;
 		margin: 0 -5px;
-		@include respond(mobile-medium) {
-			.swiper-pagination {
-				background-color: rgba($color: $main-brd-color, $alpha: 0.4);
-				border-radius: 10px;
-				overflow: hidden;
-				span {
-					background-color: $main-brd-color;
-				}
+		.swiper-pagination {
+			background-color: rgba($color: $main-brd-color, $alpha: 0.4);
+			border-radius: 10px;
+			overflow: hidden;
+			span {
+				background-color: $main-brd-color;
 			}
 		}
 	}
@@ -66,9 +64,12 @@
 			padding: 0 5px;
 		}
 		@include respond(mobile-large) {
-			flex: none;
+			flex: 1 0 calc(14% - 15px);
 			padding: 0;
 			text-wrap: wrap;
+		}
+		@include respond(mobile-medium) {
+			flex: none;
 		}
 	}
 	&__link {
@@ -76,7 +77,7 @@
 		line-height: 1.5;
 		letter-spacing: 0.4px;
 		font-weight: 500;
-		@include ad-font(18, 14);
+		@include ad-font(18, 13);
 		transition: all 0.4s ease;
 	}
 	&__allergens-list {
@@ -89,7 +90,11 @@
 			flex-wrap: wrap;
 		}
 		@include respond(mobile-medium) {
-			row-gap: 5px;
+			display: grid;
+			grid-template-rows: repeat(2, auto);
+			grid-auto-flow: column;
+			row-gap: 3px;
+			margin: 5px -10px 0;
 		}
 	}
 	&__allergens-item {
@@ -106,9 +111,6 @@
 		}
 		@include respond(mobile-large) {
 			flex: 0 1 15%;
-		}
-		@include respond(mobile-medium) {
-			flex: 0 1 13%;
 		}
 	}
 	&__allergens-title {

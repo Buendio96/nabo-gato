@@ -5,16 +5,20 @@ import { translateElements, updateMainFlag } from './scripts/header/language'
 import { createdHeroSwiper } from './scripts/hero/heroSwiper'
 import { createdAllergensList } from './scripts/menu/allergens'
 import { createdLegendSwiper } from './scripts/menu/legend'
+import { createdMenuSwipers } from './scripts/menu/menu'
 import './style.scss'
 
 document.addEventListener("DOMContentLoaded", () => {
 	toggleBurgerMenu()
-	createdHeroSwiper()
+	updateMainFlag()
 	handleResize()
+	translateElements()
+
+	createdHeroSwiper()
+
 	createdLegendSwiper()
 	createdAllergensList()
-	translateElements()
-	updateMainFlag()
 
+	createdMenuSwipers()
 	window.addEventListener('resize', handleResize)
 })

@@ -1,0 +1,128 @@
+@use "../vars" as *;
+@use "../response" as *;
+
+.menu {
+	padding: 50px 0;
+	&__container {
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		row-gap: 50px;
+	}
+	&__section {
+	}
+	&__section-title {
+		text-transform: uppercase;
+		color: $title-text-color;
+		line-height: 1.2;
+		@include ad-font(72, 24);
+	}
+	&__section-description {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__description-text {
+		flex: 0 1 50%;
+		font-family: $second-font-family;
+		line-height: 1.5;
+		@include ad-font(18, 14);
+	}
+	&__description-button {
+		border: 2px solid $main-brd-color;
+		border-radius: 15px;
+		padding: 12px 24px;
+		letter-spacing: 1.2px;
+		transition: all 0.3s ease;
+		@media (hover: hover) {
+			&:hover {
+				background-color: $btn-bg-color;
+				color: $alt-text-color;
+			}
+		}
+	}
+	&__section-swiper {
+		margin: 60px 0 0;
+	}
+	&__swiper-slide {
+	}
+
+	.menuSlide {
+		&__wrapper {
+		}
+		&__image {
+			position: relative;
+			height: 365px;
+			border-radius: 20px;
+			overflow: hidden;
+			> img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+			}
+		}
+		&__allergens {
+			position: absolute;
+			z-index: 1;
+			top: 10px;
+			right: 10px;
+			display: flex;
+			column-gap: 5px;
+			padding: 5px;
+			background-color: $alt-bg-color;
+			border-radius: 15px;
+		}
+		&__allergens-item {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			padding: 3px;
+			background-color: $card-bg-color;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__info {
+			margin: 25px 0 0;
+			display: grid;
+		}
+		&__info-name {
+			grid-column: 1/2;
+			grid-row: 1/2;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			@include ad-font(32, 18);
+		}
+		&__info-price {
+			grid-column: 2/3;
+			grid-row: 1/2;
+			color: $title-text-color;
+			@include ad-font(32, 18);
+		}
+		&__info-description {
+			grid-column: 1/3;
+			margin: 25px 0 0;
+			max-height: 100px;
+			font-family: $second-font-family;
+			font-size: 14px;
+			letter-spacing: 0.5px;
+			line-height: 1.5;
+			overflow-y: auto;
+		}
+		&__button-add {
+		}
+	}
+
+	&__swiper-navigation {
+		.swiper-pagination {
+		}
+	}
+	&__navigation-buttons {
+	}
+	&__buttons-btn {
+	}
+}

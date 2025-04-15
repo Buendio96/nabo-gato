@@ -6,6 +6,7 @@
 @use "./styles/sections/header";
 @use "./styles/sections/hero";
 @use "./styles/sections/legend";
+@use "./styles/sections/menu";
 
 body {
 	color: $main-text-color;
