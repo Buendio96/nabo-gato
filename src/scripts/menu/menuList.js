@@ -21,6 +21,46 @@ export const menu = [
 				price: '49,00 zł',
 				description: 'klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen',
 				link: '#'
+			},
+			{
+				image: image,
+				allergens: ['gluten', 'fish', 'eggs', 'soya', 'orange'],
+				name: 'Shoyu Ramen',
+				price: '49,00 zł',
+				description: 'klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen',
+				link: '#'
+			},
+			{
+				image: image,
+				allergens: ['gluten', 'fish', 'eggs', 'soya', 'orange'],
+				name: 'Shoyu Ramen',
+				price: '49,00 zł',
+				description: 'klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen',
+				link: '#'
+			},
+			{
+				image: image,
+				allergens: ['gluten', 'fish', 'eggs', 'soya', 'orange'],
+				name: 'Shoyu Ramen',
+				price: '49,00 zł',
+				description: 'klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen',
+				link: '#'
+			},
+			{
+				image: image,
+				allergens: ['gluten', 'fish', 'eggs', 'soya', 'orange'],
+				name: 'Shoyu Ramen',
+				price: '49,00 zł',
+				description: 'klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen',
+				link: '#'
+			},
+			{
+				image: image,
+				allergens: ['gluten', 'fish', 'eggs', 'soya', 'orange'],
+				name: 'Shoyu Ramen',
+				price: '49,00 zł',
+				description: 'klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen',
+				link: '#'
 			}
 		]
 	},

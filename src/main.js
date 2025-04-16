@@ -5,7 +5,7 @@ import { translateElements, updateMainFlag } from './scripts/header/language'
 import { createdHeroSwiper } from './scripts/hero/heroSwiper'
 import { createdAllergensList } from './scripts/menu/allergens'
 import { createdLegendSwiper } from './scripts/menu/legend'
-import { createdMenuSwipers } from './scripts/menu/menu'
+import { createdMenu } from './scripts/menu/menu'
 import './style.scss'
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	createdLegendSwiper()
 	createdAllergensList()
 
-	createdMenuSwipers()
+	createdMenu()
 	window.addEventListener('resize', handleResize)
 })

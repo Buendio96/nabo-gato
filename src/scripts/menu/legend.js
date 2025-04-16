@@ -4,6 +4,21 @@ import 'swiper/css/pagination'
 import { Pagination } from 'swiper/modules'
 import { legendlist } from './legendList'
 
+const toggleBackground = () => {
+	const stickyElement = document.querySelector('.legend')
+
+	window.addEventListener('scroll', () => {
+		const rect = stickyElement.getBoundingClientRect()
+
+		if (rect.top <= 0) {
+			stickyElement.classList.add('background-active')
+		} else {
+			stickyElement.classList.remove('background-active')
+		}
+	})
+}
+
+
 const legendItem = (item, index) =>
 	`
 	<li class="swiper-slide legend__item">
@@ -19,7 +34,7 @@ export const createdLegendSwiper = () => {
 
 	const slidesHtml = legendlist.map((item, index) => legendItem(item, index))
 	swiperContainer.innerHTML = slidesHtml.join('')
-
+	toggleBackground()
 
 	const isMobile = window.innerWidth <= 768
 

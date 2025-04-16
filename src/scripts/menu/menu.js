@@ -2,7 +2,7 @@ import Swiper from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { Keyboard, Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Pagination } from 'swiper/modules'
 import { allrgensList } from './allergensList'
 import { menu } from './menuList'
 
@@ -30,19 +30,20 @@ const sectionSlide = (item, index) =>
 								<span class="menuSlide__info-price">${item.price}</span>
 								<p class="menuSlide__info-description" data-i18n='menu.${item.id}.slides.${index}.description'>${item.description}</p>
 							</div>
-							<a href="#" class="menuSlide__button-add" data-i18n="button-add">+ Dodać</a>
+							<a href="#" class="menuSlide__button-add" data-i18n="button-add"><span>+ Dodać</span>	</a>
 						</div>
 					</div>
 				`
 
+const menuSection = (item, currentSpv) => {
+	const showNavigation = item.slides.length > currentSpv
 
-
-const menuSection = (item) => `
+	return `
 	<section class="menu__section" id="${item.id}">
-        <h3 class="menu__section-title" data-i18n="menu.${item.id}.title">
+		<h3 class="menu__section-title" data-i18n="menu.${item.id}.title">
 			${item.title}
-        </h3>
-        <div class="menu__section-description">
+		</h3>
+		<div class="menu__section-description">
 			<p class="menu__description-text" data-i18n="menu.${item.id}.subtitle">
 				${item.subtitle}
 			</p>
@@ -50,50 +51,120 @@ const menuSection = (item) => `
 				Pokaż wszystko
 			</button>
 		</div>
-        <div class="swiper menu__section-swiper">
+		<div class="swiper menu__section-swiper">
 			<div class="swiper-wrapper">
-					${item.slides.map((slide, index) => sectionSlide(slide, index)).join('')}
-			</div >
-			<div class="menu__swiper-navigation">
-				<div class="swiper-pagination"></div>
-				<div class="menu__navigation-buttons">
-					<div class="menu__buttons-btn swiper-button-prev">
-						<img src="./src/assets/icons/left-arrow.svg" alt="LEFT">
-					</div>
-					<div class="menu__buttons-btn swiper-button-next">
-						<img src="./src/assets/icons/right-arrow.svg" alt="RIGHT">
-					</div>
-				</div>
+				${item.slides.map((slide, index) => sectionSlide(slide, index)).join('')}
 			</div>
-		</div >
-	</section >
-	`
-
-
-export const createdMenuSwipers = () => {
-	const swiperContainer = document.getElementById('menu')
-
-	const slidesHtml = menu.map(item => menuSection(item))
-	swiperContainer.innerHTML = slidesHtml.join('')
-
-
-	const swiper = new Swiper('.menu__section-swiper', {
-		modules: [Navigation, Keyboard, Pagination],
-		loop: true,
-		slidesPerView: 5.1,
-		spaceBetween: 32,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true
-		},
-		keyboard: {
-			enabled: true,
-			onlyInViewport: true
+			${showNavigation ? `
+				<div class="menu__swiper-navigation">
+					<div class="swiper-pagination"></div>
+					<div class="menu__navigation-buttons">
+						<div class="menu__buttons-btn swiper-button-prev">
+							<img src="./src/assets/icons/left-arrow.svg" alt="LEFT">
+						</div>
+						<div class="menu__buttons-btn swiper-button-next">
+							<img src="./src/assets/icons/right-arrow.svg" alt="RIGHT">
+						</div>
+					</div>
+				</div>` : ''
 		}
+		</div>
+	</section>
+	`
+}
+export const toggleMoreInfo = () => {
+	const infoBlocks = document.querySelectorAll('.menuSlide__info')
+
+	infoBlocks.forEach(block => {
+		block.addEventListener('click', (e) => {
+			e.stopPropagation()
+
+			const clickedDescription = block.querySelector('.menuSlide__info-description')
+
+			const isAlreadyOpen = clickedDescription.classList.contains('show-more-info')
+
+			document.querySelectorAll('.menuSlide__info-description.show-more-info')
+				.forEach(item => item.classList.remove('show-more-info'))
+
+			if (!isAlreadyOpen) {
+				clickedDescription.classList.add('show-more-info')
+			}
+		})
 	})
 }
 
+
+const breakpoints = {
+	426: {
+		slidesPerView: 2.1,
+		spaceBetween: 16
+	},
+	769: {
+		slidesPerView: 3.1,
+		spaceBetween: 24
+	},
+	1025: {
+		slidesPerView: 4.1,
+		spaceBetween: 24
+	},
+	1441: {
+		slidesPerView: 5.2,
+		spaceBetween: 32
+	}
+}
+
+const getCurrentSlidesPerView = () => {
+	const width = window.innerWidth
+	let currentSpv = 1.2
+
+	Object.keys(breakpoints)
+		.map(Number)
+		.sort((a, b) => a - b)
+		.forEach(bp => {
+			if (width >= bp) {
+				currentSpv = breakpoints[bp].slidesPerView
+			}
+		})
+	return currentSpv
+}
+
+
+const createdMenuSwipers = (section, counter) => {
+	const currentSpv = getCurrentSlidesPerView()
+
+	const enableFeatures = counter > currentSpv
+
+	const swiper = new Swiper(section, {
+		modules: [Navigation, Pagination],
+
+		navigation: enableFeatures ? {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev"
+		} : false,
+
+		pagination: enableFeatures ? {
+			el: ".swiper-pagination",
+			clickable: true,
+		} : false,
+
+		breakpoints: breakpoints
+	})
+
+}
+
+
+export const createdMenu = () => {
+	const currentSpv = getCurrentSlidesPerView()
+
+	const swiperContainer = document.getElementById('menu')
+	const slidesHtml = menu.map(item => menuSection(item, currentSpv))
+	swiperContainer.innerHTML = slidesHtml.join('')
+
+	toggleMoreInfo()
+
+	document.querySelectorAll('.menu__section-swiper')
+		.forEach(section => {
+			const counter = section.querySelectorAll('.swiper-slide').length
+			createdMenuSwipers(section, counter)
+		})
+}
