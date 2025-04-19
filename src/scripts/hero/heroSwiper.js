@@ -56,6 +56,8 @@ export const createdHeroSwiper = () => {
 			onlyInViewport: true
 		}
 	})
+
+
 }
 
 

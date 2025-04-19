@@ -37,6 +37,7 @@ const sectionSlide = (item, index) =>
 
 const menuSection = (item, currentSpv) => {
 	const showNavigation = item.slides.length > currentSpv
+	const isMobile = window.innerWidth <= 768
 
 	return `
 	<section class="menu__section" id="${item.id}">
@@ -47,12 +48,16 @@ const menuSection = (item, currentSpv) => {
 			<p class="menu__description-text" data-i18n="menu.${item.id}.subtitle">
 				${item.subtitle}
 			</p>
-			<button class="menu__description-button" data-i18n="button-all">
-				Pokaż wszystko
-			</button>
+			${showNavigation && !isMobile
+			? `
+				<button class="menu__description-button" data-i18n="button-all">
+					Pokaż wszystko
+				</button>
+				`: ''
+		}
 		</div>
 		<div class="swiper menu__section-swiper">
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper menu__swiper-wrapper">
 				${item.slides.map((slide, index) => sectionSlide(slide, index)).join('')}
 			</div>
 			${showNavigation ? `
@@ -72,7 +77,8 @@ const menuSection = (item, currentSpv) => {
 	</section>
 	`
 }
-export const toggleMoreInfo = () => {
+
+const toggleMoreInfo = () => {
 	const infoBlocks = document.querySelectorAll('.menuSlide__info')
 
 	infoBlocks.forEach(block => {
@@ -93,6 +99,20 @@ export const toggleMoreInfo = () => {
 	})
 }
 
+const getCurrentSlidesPerView = () => {
+	const width = window.innerWidth
+	let currentSpv = 1.2
+
+	Object.keys(breakpoints)
+		.map(Number)
+		.sort((a, b) => a - b)
+		.forEach(bp => {
+			if (width >= bp) {
+				currentSpv = breakpoints[bp].slidesPerView
+			}
+		})
+	return currentSpv
+}
 
 const breakpoints = {
 	426: {
@@ -113,58 +133,55 @@ const breakpoints = {
 	}
 }
 
-const getCurrentSlidesPerView = () => {
-	const width = window.innerWidth
-	let currentSpv = 1.2
-
-	Object.keys(breakpoints)
-		.map(Number)
-		.sort((a, b) => a - b)
-		.forEach(bp => {
-			if (width >= bp) {
-				currentSpv = breakpoints[bp].slidesPerView
-			}
-		})
-	return currentSpv
-}
-
-
-const createdMenuSwipers = (section, counter) => {
-	const currentSpv = getCurrentSlidesPerView()
-
-	const enableFeatures = counter > currentSpv
-
-	const swiper = new Swiper(section, {
-		modules: [Navigation, Pagination],
-
-		navigation: enableFeatures ? {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev"
-		} : false,
-
-		pagination: enableFeatures ? {
-			el: ".swiper-pagination",
-			clickable: true,
-		} : false,
-
-		breakpoints: breakpoints
-	})
-
-}
-
-
 export const createdMenu = () => {
 	const currentSpv = getCurrentSlidesPerView()
 
 	const swiperContainer = document.getElementById('menu')
+
 	const slidesHtml = menu.map(item => menuSection(item, currentSpv))
 	swiperContainer.innerHTML = slidesHtml.join('')
 
 	toggleMoreInfo()
 
-	document.querySelectorAll('.menu__section-swiper')
-		.forEach(section => {
-			const counter = section.querySelectorAll('.swiper-slide').length
-			createdMenuSwipers(section, counter)
+	document.querySelectorAll('.menu__section-swiper').forEach(section => {
+		const parentSection = section.parentElement
+		const button = parentSection.querySelector('.menu__description-button')
+
+		const slides = section.querySelectorAll('.swiper-slide')
+		const currentSpv = getCurrentSlidesPerView()
+		const enableFeatures = slides.length > currentSpv
+
+
+		const wrapper = section.querySelector('.menu__swiper-wrapper')
+		const navigation = section.querySelector('.menu__swiper-navigation')
+
+		const swiper = new Swiper(section, {
+			modules: [Navigation, Pagination],
+			navigation: enableFeatures ? {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			} : false,
+			pagination: enableFeatures ? {
+				el: ".swiper-pagination",
+				clickable: true,
+			} : false,
+
+			breakpoints: breakpoints,
 		})
+
+		if (button) button.addEventListener('click', () => {
+			wrapper.classList.toggle('show-all')
+			navigation.classList.toggle('hidden')
+			slides.forEach(slide => {
+				slide.removeAttribute('style')
+			})
+			if (swiper.enabled) {
+				swiper.slideTo(0, 0)
+				swiper.disable()
+
+			} else {
+				swiper.enable()
+			}
+		})
+	})
 }
