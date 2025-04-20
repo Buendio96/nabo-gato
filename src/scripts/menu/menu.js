@@ -7,11 +7,7 @@ import { allrgensList } from './allergensList'
 import { menu } from './menuList'
 
 
-export const getAllergensByIds = (ids) => {
-	return allrgensList.filter(item => ids.includes(item.id))
-}
-
-const sectionSlide = (item, index) =>
+const slideElement = (item, index) =>
 	`
 					<div class="swiper-slide menu__swiper-slide menuSlide">
 						<div class="menuSlide__wrapper">
@@ -35,15 +31,15 @@ const sectionSlide = (item, index) =>
 					</div>
 				`
 
-const menuSection = (item, currentSpv) => {
+const sectionElement = (item, currentSpv) => {
 	const showNavigation = item.slides.length > currentSpv
-	const isMobile = window.innerWidth <= 768
+	const isMobile = window.innerWidth <= 426
 
 	return `
 	<section class="menu__section" id="${item.id}">
-		<h3 class="menu__section-title" data-i18n="menu.${item.id}.title">
+		<h2 class="menu__section-title" data-i18n="menu.${item.id}.title">
 			${item.title}
-		</h3>
+		</h2>
 		<div class="menu__section-description">
 			<p class="menu__description-text" data-i18n="menu.${item.id}.subtitle">
 				${item.subtitle}
@@ -58,7 +54,7 @@ const menuSection = (item, currentSpv) => {
 		</div>
 		<div class="swiper menu__section-swiper">
 			<div class="swiper-wrapper menu__swiper-wrapper">
-				${item.slides.map((slide, index) => sectionSlide(slide, index)).join('')}
+				${item.slides.map((slide, index) => slideElement(slide, index)).join('')}
 			</div>
 			${showNavigation ? `
 				<div class="menu__swiper-navigation">
@@ -76,6 +72,10 @@ const menuSection = (item, currentSpv) => {
 		</div>
 	</section>
 	`
+}
+
+const getAllergensByIds = (ids) => {
+	return allrgensList.filter(item => ids.includes(item.id))
 }
 
 const toggleMoreInfo = () => {
@@ -117,19 +117,19 @@ const getCurrentSlidesPerView = () => {
 const breakpoints = {
 	426: {
 		slidesPerView: 2.1,
-		spaceBetween: 16
+		spaceBetween: 20
 	},
 	769: {
 		slidesPerView: 3.1,
-		spaceBetween: 24
+		spaceBetween: 16
 	},
 	1025: {
 		slidesPerView: 4.1,
-		spaceBetween: 24
+		spaceBetween: 18
 	},
-	1441: {
+	1300: {
 		slidesPerView: 5.2,
-		spaceBetween: 32
+		spaceBetween: 24
 	}
 }
 
@@ -138,7 +138,7 @@ export const createdMenu = () => {
 
 	const swiperContainer = document.getElementById('menu')
 
-	const slidesHtml = menu.map(item => menuSection(item, currentSpv))
+	const slidesHtml = menu.map(item => sectionElement(item, currentSpv))
 	swiperContainer.innerHTML = slidesHtml.join('')
 
 	toggleMoreInfo()
@@ -156,6 +156,8 @@ export const createdMenu = () => {
 		const navigation = section.querySelector('.menu__swiper-navigation')
 
 		const swiper = new Swiper(section, {
+			spaceBetween: 15,
+			slidesPerView: 1.1,
 			modules: [Navigation, Pagination],
 			navigation: enableFeatures ? {
 				nextEl: ".swiper-button-next",
@@ -165,7 +167,6 @@ export const createdMenu = () => {
 				el: ".swiper-pagination",
 				clickable: true,
 			} : false,
-
 			breakpoints: breakpoints,
 		})
 

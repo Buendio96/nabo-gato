@@ -1,4 +1,4 @@
-import image from '../../assets/images/hero/menu/byDefault.png'
+import image from '../../assets/images/menu/byDefault.png'
 
 export const menu = [
 	{

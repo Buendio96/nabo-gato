@@ -1,5 +1,6 @@
 @use "../vars" as *;
 @use "../response" as *;
+
 .background-active {
 	background-color: rgba($color: $main-brd-color, $alpha: 0.1);
 	backdrop-filter: blur(60px);
@@ -13,11 +14,14 @@
 	top: 0;
 	z-index: 999;
 	transition: all 0.5s ease;
+	padding-left: 2;
+	padding: 20px 0;
+	@include respond(mobile-medium) {
+		padding: 5px 0;
+	}
 	&__container {
 	}
 	&__wrapper {
-		padding: 10px 0;
-		margin: 50px 0;
 		display: flex;
 		flex-direction: column;
 		@include respond(mobile-medium) {
@@ -27,7 +31,7 @@
 
 	&__nav {
 		width: 100%;
-		padding: 0 5px;
+		padding: 10px 5px;
 		margin: 0 -5px;
 		.swiper-pagination {
 			background-color: rgba($color: $main-brd-color, $alpha: 0.4);
@@ -36,6 +40,10 @@
 			span {
 				background-color: $main-brd-color;
 			}
+		}
+
+		@include respond(mobile-medium) {
+			padding: 0 5px;
 		}
 	}
 	&__list {
@@ -47,7 +55,7 @@
 			row-gap: 10px;
 			justify-content: center;
 		}
-		@include respond(mobile-medium) {
+		@include respond(mobile-large) {
 			margin: 10px 0 0;
 			column-gap: inherit;
 			flex-wrap: nowrap;
@@ -73,12 +81,9 @@
 			padding: 0 5px;
 		}
 		@include respond(mobile-large) {
-			flex: 1 0 calc(14% - 15px);
+			flex: none;
 			padding: 0;
 			text-wrap: wrap;
-		}
-		@include respond(mobile-medium) {
-			flex: none;
 		}
 	}
 	&__link {
@@ -95,10 +100,11 @@
 		align-items: center;
 		@include respond(mobile-large) {
 			margin: 10px 0 0;
+			column-gap: 5px;
 			row-gap: 10px;
-			flex-wrap: wrap;
 		}
 		@include respond(mobile-medium) {
+			flex-wrap: wrap;
 			display: grid;
 			grid-template-rows: repeat(2, auto);
 			grid-auto-flow: column;

@@ -2,13 +2,25 @@
 @use "../response" as *;
 
 .menu {
-	padding: 30px 0;
+	padding: 50px 0;
+	@include respond(mobile-large) {
+		padding: 30px 0;
+	}
+	@include respond(mobile-small) {
+		padding: 10px 0 0;
+	}
 	&__container {
 	}
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
 		row-gap: 50px;
+		@include respond(mobile-large) {
+			row-gap: 30px;
+		}
+		@include respond(mobile-medium) {
+			row-gap: 15px;
+		}
 	}
 	&__section {
 	}
@@ -22,12 +34,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		column-gap: 15px;
 	}
 	&__description-text {
 		flex: 0 1 50%;
 		font-family: $second-font-family;
 		line-height: 1.5;
 		@include ad-font(18, 14);
+		@include respond(mobile-large) {
+			flex: 0 1 75%;
+		}
+		@include respond(mobile-small) {
+			flex: 0 1 100%;
+		}
 	}
 	&__description-button {
 		border: 2px solid $main-brd-color;
@@ -41,12 +60,21 @@
 				color: $alt-text-color;
 			}
 		}
+		@include respond(mobile-medium) {
+			padding: 10px 15px;
+		}
 	}
 	&__section-swiper {
 		margin: 60px 0 0;
 		display: flex;
 		flex-direction: column;
 		row-gap: 20px;
+		@include respond(mobile-large) {
+			margin: 30px 0 0;
+		}
+		@include respond(mobile-small) {
+			margin: 10px 0 0;
+		}
 	}
 	&__swiper-wrapper {
 	}
@@ -62,20 +90,23 @@
 			margin-right: 0 !important;
 			flex: 0 1 calc(20% - 20px);
 		}
-		@media (max-width: 426) {
-		}
-		@media (max-width: 769) {
-		}
-		@media (max-width: 1024) {
-		}
-		@media (max-width: 1440px) {
+		@media (max-width: 1300px) {
 			max-width: 100%;
 			flex-wrap: wrap;
 			column-gap: 25px;
-			row-gap: 20px;
+			row-gap: 24px;
 			> div {
-				margin-right: 0 !important;
-				flex: 0 1 calc(20% - 20px);
+				flex: 0 1 calc(25% - 20px);
+			}
+		}
+		@include respond(mobile-large) {
+			> div {
+				flex: 0 1 calc(33.333% - 18px);
+			}
+		}
+		@include respond(mobile-medium) {
+			> div {
+				flex: 0 1 calc(50% - 13px);
 			}
 		}
 	}
@@ -101,6 +132,17 @@
 				left: 0;
 				object-fit: cover;
 			}
+			@include respond(mobile-large) {
+				aspect-ratio: 16 / 11;
+			}
+			@include respond(mobile-medium) {
+				aspect-ratio: 16 / 9;
+				min-height: 200px;
+			}
+			@include respond(mobile-small) {
+				min-height: auto;
+				aspect-ratio: 16 / 8;
+			}
 		}
 		&__allergens {
 			position: absolute;
@@ -112,6 +154,10 @@
 			padding: 5px;
 			background-color: $alt-bg-color;
 			border-radius: 15px;
+			@include respond(mobile-large) {
+				top: 5px;
+				right: 5px;
+			}
 		}
 		&__allergens-item {
 			width: 20px;
@@ -122,12 +168,19 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@include respond(mobile-large) {
+				width: 15px;
+				height: 15px;
+			}
 		}
 		&__info {
 			margin: 25px 0 0;
 			display: grid;
 			align-items: start;
 			grid-template: auto auto / auto 30%;
+			@include respond(mobile-large) {
+				margin: 15px 0 0;
+			}
 		}
 		&__info-name {
 			grid-column: 1/2;
@@ -137,14 +190,17 @@
 			min-height: 50px;
 			display: flex;
 			align-items: flex-start;
-			@include ad-font(32, 18);
+			@include ad-font(32, 20);
+			@include respond(mobile-small) {
+				min-height: auto;
+			}
 		}
 		&__info-price {
 			grid-column: 2/3;
 			grid-row: 1/2;
 			color: $title-text-color;
 			justify-self: flex-end;
-			@include ad-font(32, 18);
+			@include ad-font(32, 20);
 		}
 		&__info-description {
 			grid-column: 1/3;
@@ -218,6 +274,9 @@
 					}
 				}
 			}
+			@include respond(mobile-medium) {
+				padding: 0;
+			}
 		}
 	}
 	&__swiper-navigation {
@@ -236,6 +295,9 @@
 			left: 0;
 			width: 100px;
 			height: 100%;
+			@include respond(mobile-medium) {
+				width: 80%;
+			}
 		}
 		.swiper-pagination-bullet {
 			background: $btn-bg-color;
@@ -252,7 +314,7 @@
 		padding: 5px;
 
 		@include respond(mobile-small) {
-			width: 100px;
+			width: 85px;
 		}
 	}
 	&__buttons-btn {
@@ -283,8 +345,8 @@
 			}
 		}
 		@include respond(mobile-small) {
-			width: 35px;
-			height: 35px;
+			width: 30px;
+			height: 30px;
 		}
 	}
 }

@@ -7,6 +7,7 @@
 @use "./styles/sections/hero";
 @use "./styles/sections/legend";
 @use "./styles/sections/menu";
+@use "./styles/sections/about";
 
 body {
 	color: $main-text-color;
@@ -27,15 +28,14 @@ html[lang="de"] {
 	margin: 0 auto;
 }
 
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
+// .swiper {
+// }
+// .swiper-wrapper {
+// }
+// .swiper-slide {
+// }
 
 main {
-	height: 5000px;
 }
 ::-webkit-scrollbar {
 	width: 8px;
