@@ -5,20 +5,37 @@ import { Pagination } from 'swiper/modules'
 import { legendlist } from './legendList'
 
 
-
 const toggleBackground = () => {
 	const stickyElement = document.querySelector('.legend')
+	const targetElement = document.getElementById('menu')
 
 	window.addEventListener('scroll', () => {
-		const rect = stickyElement.getBoundingClientRect()
+		const stickyRect = stickyElement.getBoundingClientRect()
+		const targetRect = targetElement.getBoundingClientRect()
 
-		if (rect.top <= 0) {
+		const targetHeight = targetElement.offsetHeight
+		const visibleBottom = targetRect.bottom
+		const visibleRatio = visibleBottom / targetHeight
+
+		const isNearEnd = visibleRatio < 0.2
+		const isSticky = stickyRect.top <= 0
+
+		if (isNearEnd) {
+			stickyElement.classList.remove('background-active')
+			stickyElement.style.position = 'relative'
+			return
+		}
+
+		stickyElement.style.position = ''
+
+		if (isSticky) {
 			stickyElement.classList.add('background-active')
 		} else {
 			stickyElement.classList.remove('background-active')
 		}
 	})
 }
+
 
 const legendItem = (item, index) =>
 	`

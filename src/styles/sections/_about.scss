@@ -1,2 +1,303 @@
 @use "../vars" as *;
 @use "../response" as *;
+.about {
+	padding: 30px 0;
+	&__container {
+	}
+	&__wrapper {
+	}
+	&__title {
+		color: $title-text-color;
+		line-height: 1.2;
+		@include ad-font(96, 30);
+	}
+	&__subtitle {
+		max-width: 60%;
+		line-height: 1.5;
+		font-family: $second-font-family;
+		@include ad-font(18, 14);
+		span {
+			color: $title-text-color;
+			font-weight: 700;
+			@include ad-font(22, 18);
+		}
+	}
+	&__body {
+		margin: 80px 0 0;
+		width: 100%;
+		display: flex;
+		position: relative;
+		overflow: hidden;
+		border-radius: 35px;
+		border: 4px solid $main-brd-color;
+		aspect-ratio: 2.5;
+	}
+	&__body-image {
+		flex: 1 0 50%;
+		position: relative;
+		transition: all 0.5s ease;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__body-content {
+		flex: 0 1 50%;
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: $hero-back-bg-color;
+		transition: all 0.6s ease;
+	}
+	.move-to-left {
+		transform: translateX(-100%);
+		opacity: 0;
+		visibility: hidden;
+	}
+	.move-to-right {
+		transform: translateX(100%);
+		opacity: 0;
+		visibility: hidden;
+	}
+	&__content-since {
+		font-family: $second-font-family;
+		font-size: 16px;
+		font-weight: 600;
+	}
+	&__content-title {
+		margin: 15px 0 0;
+		line-height: 1.2;
+		@include ad-font(64, 24);
+		span {
+			color: $title-text-color;
+		}
+	}
+	&__content-description {
+		line-height: 1.5;
+		font-family: $second-font-family;
+		@include ad-font(16, 14);
+	}
+	&__content-opinion {
+		display: flex;
+		flex: 1 0 0;
+		align-items: end;
+		column-gap: 32px;
+		> div {
+			flex: 0 1 50%;
+		}
+	}
+	&__opinion-item {
+		display: grid;
+		outline: 1px solid $main-brd-color;
+		border-radius: 20px;
+		height: 175px;
+	}
+	&__item-person {
+		width: 100%;
+		font-family: $second-font-family;
+		letter-spacing: 1px;
+		font-weight: 600;
+		line-height: 1.5;
+		font-size: 16px;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		padding: 20px 0 0 20px;
+	}
+	&__item-place {
+		font-family: $second-font-family;
+		letter-spacing: 0.5px;
+		line-height: 1.5;
+		font-size: 16px;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		text-wrap: nowrap;
+		padding: 0 0 0 20px;
+	}
+	&__item-stars {
+		grid-row: 1/3;
+		grid-column: 2/3;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		column-gap: 5px;
+		padding: 0 20px 0;
+		img {
+			width: 15px;
+			height: 15px;
+		}
+	}
+	&__item-text {
+		font-family: $second-font-family;
+		margin: 20px;
+		grid-row: 3/4;
+		grid-column: 1/3;
+		font-size: 14px;
+		letter-spacing: 01px;
+		line-height: 1.5;
+		display: -webkit-box;
+		height: 65px;
+		padding: 0 10px 0 0;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow-y: hidden;
+		text-overflow: ellipsis;
+	}
+	&__item-text.show-full-opinion {
+		display: block;
+		overflow-y: auto;
+	}
+	&__content-btn {
+		margin: 25px 0 0;
+		align-self: flex-start;
+		color: $btn-text-color;
+		font-family: $second-font-family;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		position: relative;
+		transition: transform 0.3s ease;
+		&::before {
+			content: "";
+			position: absolute;
+			border-top: 3px solid $main-brd-color;
+			border-right: 3px solid $main-brd-color;
+			width: 8px;
+			height: 8px;
+			right: -20px;
+			transform: translateY(50%) rotate(45deg);
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	&__body-back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 20px;
+		z-index: -1;
+		opacity: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.show-back {
+		transition: z-index 0s 1s;
+		z-index: 1;
+		opacity: 1;
+	}
+	&__back-btn {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		span {
+			background-color: $main-brd-color;
+			display: block;
+			width: 100%;
+			height: 5px;
+			border-radius: 10px;
+			position: absolute;
+		}
+		span:first-child {
+			transform: rotate(45deg);
+		}
+		span:last-child {
+			transform: rotate(-45deg);
+		}
+	}
+	&__back-title {
+		color: $title-text-color;
+		line-height: 1.2;
+		letter-spacing: 0.7px;
+		@include ad-font(72, 26);
+	}
+	&__back-subtitle {
+		letter-spacing: 0.5px;
+		font-family: $second-font-family;
+		@include ad-font(18, 16);
+	}
+}
+
+.aboutSwiper {
+	width: 100%;
+	padding: 2px;
+	max-height: 100%;
+	margin: 30px 0 0;
+	height: 75%;
+	.swiper-wrapper {
+		height: 80%;
+	}
+	&__navigation {
+		margin: 30px 0 0;
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.swiper-pagination {
+			position: relative;
+			display: flex;
+			top: 0;
+			height: 100%;
+		}
+		.swiper-pagination-bullet {
+			background: $btn-bg-color;
+		}
+		@include respond(mobile-small) {
+			height: 35px;
+		}
+	}
+
+	&__buttons {
+		height: 100%;
+		width: 130px;
+		display: flex;
+		justify-content: space-between;
+		padding: 5px;
+		@include respond(mobile-small) {
+			width: 100px;
+		}
+	}
+	&__button {
+		position: relative;
+		left: 0;
+		margin: 0;
+		width: 50px;
+		background-color: $btn-bg-color;
+		border-radius: 50%;
+		color: $btn-bg-color;
+		transition: all 0.2s ease;
+		outline: 2px solid $main-brd-color;
+		&::after,
+		&::before {
+			display: none;
+		}
+		img {
+			transition: all 0.2s ease;
+		}
+		@media (hover: hover) {
+			&:hover {
+				img {
+					transform: scale(1.5);
+				}
+				background-color: $alt-bg-color;
+			}
+		}
+		@include respond(mobile-small) {
+			width: 35px;
+		}
+	}
+}

@@ -1,4 +1,4 @@
-import { createdOpinionsSwiper, cretedTwoRandomOpinions } from './scripts/about/about'
+import { initAboutSection } from './scripts/about/about'
 import { toggleBurgerMenu } from './scripts/header/burger'
 import { handleResize } from './scripts/header/contactsButton'
 import { translateElements, updateMainFlag } from './scripts/header/language'
@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	createdMenu()
 
-	cretedTwoRandomOpinions()
-	createdOpinionsSwiper()
-
+	initAboutSection()
 	window.addEventListener('resize', handleResize)
 })

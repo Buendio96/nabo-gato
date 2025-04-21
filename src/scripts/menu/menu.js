@@ -3,9 +3,10 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Navigation, Pagination } from 'swiper/modules'
+import left from '../../assets/icons/left-arrow.svg'
+import right from '../../assets/icons/right-arrow.svg'
 import { allrgensList } from './allergensList'
 import { menu } from './menuList'
-
 
 const slideElement = (item, index) =>
 	`
@@ -61,10 +62,10 @@ const sectionElement = (item, currentSpv) => {
 					<div class="swiper-pagination"></div>
 					<div class="menu__navigation-buttons">
 						<div class="menu__buttons-btn swiper-button-prev">
-							<img src="./src/assets/icons/left-arrow.svg" alt="LEFT">
+							<img src="${left}" alt="LEFT">
 						</div>
 						<div class="menu__buttons-btn swiper-button-next">
-							<img src="./src/assets/icons/right-arrow.svg" alt="RIGHT">
+							<img src="${right}" alt="RIGHT">
 						</div>
 					</div>
 				</div>` : ''
@@ -89,9 +90,12 @@ const toggleMoreInfo = () => {
 
 			const isAlreadyOpen = clickedDescription.classList.contains('show-more-info')
 
-			document.querySelectorAll('.menuSlide__info-description.show-more-info')
-				.forEach(item => item.classList.remove('show-more-info'))
-
+			document
+				.querySelectorAll('.menuSlide__info-description.show-more-info')
+				.forEach(item => {
+					item.classList.remove('show-more-info')
+					item.scrollTop = 0
+				})
 			if (!isAlreadyOpen) {
 				clickedDescription.classList.add('show-more-info')
 			}
