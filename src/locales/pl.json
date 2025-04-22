@@ -102,5 +102,13 @@
 				"description": "klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen"
 			}
 		}
+	},
+	"about": {
+		"title": "O NABO GATO",
+		"subtitle": "Jesteśmy niewielkim zespołem, który po prostu lubi to, co robi. Codziennie z zaangażowaniem przygotowujemy jedzenie, które sami chcielibyśmy jeść. Zależy nam na luźnej, przyjaznej atmosferze i tym, żeby nasi goście czuli się u nas swobodnie. <br> <span>Nabo Gato</span> to miejsce tworzone z sercem – bez wielkich słów, za to z dużą dbałością o detale.",
+		"since": "Założona w 2023 roku",
+		"contentTitle": "<span>NABO GATO Sushi Bar</span> – smak, który zapamiętasz na długo! 🍣",
+		"contentDescription": "Zapraszamy do NABO GATO Sushi Bar w Gdańsku i Gdyni! Oferujemy świeże sushi, w tym klasyczne rolki, zestawy specjalne i opcje wegańskie. Każde danie przygotowujemy z pasją, łącząc tradycyjne smaki z nowoczesnymi akcentami.",
+		"btnMoreOpinion": "Więcej recenzji"
 	}
 }

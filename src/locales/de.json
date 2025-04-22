@@ -72,5 +72,13 @@
 		"9": "Milch",
 		"10": "Senf",
 		"11": "Weichtiere"
+	},
+	"about": {
+		"title": "ÜBER NABO GATO",
+		"subtitle": "Wir sind ein kleines Team, das einfach liebt, was es tut. Jeden Tag bereiten wir mit Engagement Essen zu, das wir selbst gerne essen würden. Uns ist eine lockere, freundliche Atmosphäre wichtig, in der sich unsere Gäste wohlfühlen. <br> <span>Nabo Gato</span> ist ein Ort, der mit Herz geschaffen wurde – ohne große Worte, aber mit viel Liebe zum Detail.",
+		"since": "Gegründet im Jahr 2023",
+		"contentTitle": "<span>NABO GATO Sushi Bar</span> – ein Geschmack, den du nicht vergisst! 🍣",
+		"contentDescription": "Besuche die NABO GATO Sushi Bar in Danzig und Gdingen! Wir bieten frisches Sushi, darunter klassische Rollen, Spezialsets und vegane Optionen. Jedes Gericht wird mit Leidenschaft zubereitet – eine Verbindung aus Tradition und modernen Akzenten.",
+		"btnMoreOpinion": "Mehr Bewertungen"
 	}
 }

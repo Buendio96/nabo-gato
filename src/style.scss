@@ -1,6 +1,5 @@
 @use "./styles/fonts";
 @use "./styles/reset";
-@use "./styles/ukraine";
 @use "./styles/vars" as *;
 @use "./styles/response" as *;
 @use "./styles/sections/header";
@@ -24,6 +23,9 @@ html[lang="en"],
 html[lang="de"] {
 	font-family: "Ando";
 }
+html[lang="ua"] {
+	font-family: "AlumniSans", "Ando", sans-serif;
+}
 
 [class*="__container"] {
 	max-width: 1890px;
@@ -39,7 +41,6 @@ html[lang="de"] {
 // }
 
 main {
-	overflow: hidden;
 }
 ::-webkit-scrollbar {
 	width: 8px;
