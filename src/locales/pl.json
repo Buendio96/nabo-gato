@@ -1,7 +1,7 @@
 {
 	"about-us": "O nas",
 	"menu-link": "Menu",
-	"communication": "Komunikacja",
+	"communicationLink": "Komunikacja",
 	"contacts": "Kontakty",
 	"button-all": "Pokaż wszystko",
 	"button-add": "+ Dodać",
@@ -109,6 +109,12 @@
 		"since": "Założona w 2023 roku",
 		"contentTitle": "<span>NABO GATO Sushi Bar</span> – smak, który zapamiętasz na długo! 🍣",
 		"contentDescription": "Zapraszamy do NABO GATO Sushi Bar w Gdańsku i Gdyni! Oferujemy świeże sushi, w tym klasyczne rolki, zestawy specjalne i opcje wegańskie. Każde danie przygotowujemy z pasją, łącząc tradycyjne smaki z nowoczesnymi akcentami.",
-		"btnMoreOpinion": "Więcej recenzji"
+		"btnMoreOpinion": "Więcej recenzji",
+		"backTitle": "Co ludzie mówią o nas",
+		"backSubtitle": "Opinie naszych gości znaczą dla nas bardzo wiele. To dzięki nim wiemy, co robimy dobrze, a co możemy jeszcze poprawić. Dziękujemy, że dzielicie się swoimi wrażeniami!"
+	},
+	"communication": {
+		"title": "Komunikacja",
+		"subtitle": "Tutaj znajdziesz wszystkie informacje, jak najlepiej skontaktować się z nami i dotrzeć do naszego lokalu. Wybierz sposób, który będzie dla Ciebie najwygodniejszy."
 	}
 }

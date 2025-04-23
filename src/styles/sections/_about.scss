@@ -1,14 +1,13 @@
 @use "../vars" as *;
 @use "../response" as *;
+@use "../mixins" as *;
 .about {
 	padding: 30px 0;
 	@include respond(mobile-large) {
 		padding: 10px 0;
 	}
-	&__container {
-	}
-	&__wrapper {
-	}
+	// &__container {
+	// }
 	&__title {
 		color: $title-text-color;
 		line-height: 1.2;
@@ -17,7 +16,7 @@
 	&__subtitle {
 		max-width: 60%;
 		line-height: 1.5;
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		@include ad-font(18, 14);
 		span {
 			color: $title-text-color;
@@ -103,7 +102,7 @@
 		visibility: hidden;
 	}
 	&__content-since {
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		font-size: 16px;
 		font-weight: 600;
 	}
@@ -111,6 +110,7 @@
 		margin: 15px 0 0;
 		line-height: 1.2;
 		@include ad-font(64, 24);
+
 		span {
 			color: $title-text-color;
 		}
@@ -121,7 +121,7 @@
 	}
 	&__content-description {
 		line-height: 1.5;
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		@include ad-font(16, 14);
 		@include respond(mobile-small) {
 			margin: 10px 0 0;
@@ -166,14 +166,14 @@
 	}
 	&__item-person {
 		width: 100%;
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		letter-spacing: 1px;
 		font-weight: 600;
 		line-height: 1.5;
 		font-size: 16px;
 	}
 	&__item-place {
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		letter-spacing: 0.5px;
 		line-height: 1.5;
 		font-size: 16px;
@@ -190,7 +190,7 @@
 	}
 	&__item-text {
 		margin: 10px 0 0;
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		font-size: 14px;
 		letter-spacing: 01px;
 		line-height: 1.5;
@@ -213,7 +213,7 @@
 		margin: 25px 0 0;
 		align-self: flex-start;
 		color: $btn-text-color;
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		font-size: 16px;
 		font-weight: 600;
 		letter-spacing: 1px;
@@ -295,7 +295,7 @@
 	}
 	&__back-subtitle {
 		letter-spacing: 0.5px;
-		font-family: var(--second-font-family);
+		@include adaptive-text;
 		@include ad-font(18, 16);
 	}
 }
@@ -331,7 +331,6 @@
 			background: $btn-bg-color;
 		}
 	}
-
 	&__buttons {
 		width: 130px;
 		display: flex;

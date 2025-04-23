@@ -1,5 +1,6 @@
 @use "../vars" as *;
 @use "../response" as *;
+@use "../mixins" as *;
 
 .header {
 	display: flex;
@@ -121,12 +122,11 @@
 		}
 	}
 	&__link {
-		font-family: $second-font-family;
 		font-weight: 500;
-		letter-spacing: 0.7px;
 		white-space: nowrap;
 		transition: all 0.3s ease;
 		text-shadow: 0 0 2px black;
+		@include adaptive-text;
 	}
 	&__social {
 		display: flex;
@@ -237,11 +237,10 @@
 		color: $alt-btn-text-color;
 		font-weight: 600;
 		border-radius: 15px;
-		letter-spacing: 0.7px;
 		transition: all 0.4s ease;
 		z-index: 1;
-		font-family: $second-font-family;
 		font-weight: 600;
+		font-family: $second-font-family;
 		@media (max-width: 850px) {
 			margin: 20px 0 0;
 			width: 100%;
@@ -261,12 +260,11 @@
 		overflow: hidden;
 		border-radius: 0 0 15px 15px;
 		font-weight: 600;
-		letter-spacing: 0.5px;
 		transform: translateY(-60%) scaleY(0);
 		transition: all 0.4s ease;
-		font-family: $second-font-family;
 		font-size: 15px;
 		z-index: 0;
+		font-family: $second-font-family;
 	}
 
 	.active-box {

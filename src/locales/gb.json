@@ -1,7 +1,7 @@
 {
 	"about-us": "About Us",
 	"menu-link": "Menu",
-	"communication": "Communication",
+	"communicationLink": "Communication",
 	"contacts": "Contacts",
 	"hero": {
 		"title": "Delicious Sushi with Delivery in the Tri-City Area",
@@ -64,7 +64,7 @@
 		"1": "Fish",
 		"2": "Eggs",
 		"3": "Soy",
-		"4": "Citrus fruits",
+		"4": "Citrus",
 		"5": "Nuts",
 		"6": "Crustaceans",
 		"7": "Sesame",
@@ -79,6 +79,12 @@
 		"since": "Founded in 2023",
 		"contentTitle": "<span>NABO GATO Sushi Bar</span> – a taste you’ll remember for long! 🍣",
 		"contentDescription": "Visit NABO GATO Sushi Bar in Gdańsk and Gdynia! We offer fresh sushi including classic rolls, special sets, and vegan options. Every dish is crafted with passion, blending traditional flavors with a modern twist.",
-		"btnMoreOpinion": "More reviews"
+		"btnMoreOpinion": "More reviews",
+		"backTitle": "What people say about us",
+		"backSubtitle": "Our guests' opinions mean a lot to us. They help us understand what we’re doing well and what we can still improve. Thank you for sharing your impressions!"
+	},
+	"communication": {
+		"title": "Communication",
+		"subtitle": "Here you will find all the information on how to best get in touch with us and reach our location. Choose the method that is most convenient for you."
 	}
 }

@@ -37,17 +37,8 @@ $card-bg-color: #fcb700;
 
 //Fonts
 $second-font-family: "Montserrat";
-$ukraine-font-family: "AlumniSans", "Ando", sans-serif;
+$main-font-family: "Ando";
 
-:root {
-	--second-font-family: "Montserrat", sans-serif;
-	--second-font-zise: 16px;
-}
-
-html[lang="ua"] {
-	--second-font-family: "AlumniSans", "Montserrat", sans-serif;
-	--second-font-zise: 22px;
-}
 //Scroll
 $bg-scroll: #fcb700;
 $thumb-scroll: #fcb700;

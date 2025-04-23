@@ -1,5 +1,6 @@
 @use "../vars" as *;
 @use "../response" as *;
+@use "../mixins" as *;
 
 .hero {
 	padding: 30px 0;
@@ -41,7 +42,7 @@
 	}
 	&__content {
 		flex: 0 1 50%;
-		font-family: $second-font-family;
+		@include adaptive-text;
 		@include ad-font(18, 14);
 		@include respond(mobile-large) {
 			flex: 0 1 60%;
@@ -250,7 +251,7 @@
 	&__description-text {
 		color: $alt-text-color;
 		line-height: 1.5;
-		font-family: $second-font-family;
+		@include adaptive-text;
 		letter-spacing: 0.7px;
 		@include ad-font(18, 14);
 		@include respond(mobile-small) {

@@ -1,0 +1,222 @@
+@use "../vars" as *;
+@use "../response" as *;
+@use "../mixins" as *;
+
+.communication {
+	padding: 80px 0 0;
+	@include respond(mobile-large) {
+		padding: 50px 0 0;
+	}
+	@include respond(mobile-medium) {
+		padding: 30px 0 0;
+	}
+	&__container {
+	}
+	&__title {
+		color: $title-text-color;
+		line-height: 1.2;
+		@include ad-font(96, 30);
+	}
+	&__subtitle {
+		max-width: 60%;
+		line-height: 1.5;
+		@include ad-font(18, 14);
+		@include adaptive-text;
+		span {
+			color: $title-text-color;
+			font-weight: 700;
+			@include ad-font(22, 18);
+		}
+		@include respond(mobile-large) {
+			max-width: 100%;
+		}
+	}
+	&__body {
+		width: 100%;
+		margin: 55px 0 0;
+		display: flex;
+		justify-content: space-between;
+		@include respond(mobile-large) {
+			margin: 35px 0 0;
+		}
+		@include respond(mobile-medium) {
+			margin: 20px 0 0;
+			flex-direction: column;
+			row-gap: 30px;
+		}
+	}
+	&__body-box {
+		width: 49%;
+		@include respond(mobile-medium) {
+			width: 100%;
+		}
+	}
+	&__box-image {
+		position: relative;
+		border-radius: 20px;
+		overflow: hidden;
+		aspect-ratio: 1.9;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		@include respond(mobile-medium) {
+			aspect-ratio: 2.1;
+		}
+		@include respond(mobile-small) {
+			aspect-ratio: 1.9;
+		}
+	}
+	&__image-qr {
+		width: 110px;
+		height: 110px;
+		position: absolute;
+		display: block;
+		overflow: hidden;
+		border: 10px solid whitesmoke;
+		border-radius: 10px;
+		bottom: 10px;
+		right: 10px;
+		transition: all 0.5s ease;
+		@media (hover: hover) {
+			&:hover {
+				transform: scale(1.2) translate(-10px, -10px);
+			}
+		}
+		@include respond(mobile-large) {
+			width: 70px;
+			height: 70px;
+		}
+		@include respond(mobile-small) {
+			width: 55px;
+			height: 55px;
+			border-width: 5px;
+		}
+	}
+	&__box-info {
+		margin: 30px 0 0;
+		@include adaptive-text;
+		display: grid;
+		grid-template: repeat(4, auto) / auto minmax(180px, 420px);
+		align-items: center;
+		column-gap: 24px;
+		a:not(:last-child) {
+			transition: all 0.3s ease-out;
+			position: relative;
+			margin: 0 0 5px 0;
+			padding: 0 0 4px 0;
+			overflow: hidden;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 4px;
+				background-color: $hov-link-color;
+				transform: translateX(-100%);
+				opacity: 0;
+				transition: all 0.6s ease-out;
+			}
+			@media (hover: hover) {
+				&:hover {
+					font-size: 18px;
+					color: $hov-link-color;
+					&::before {
+						transform: translateX(0);
+						opacity: 1;
+					}
+				}
+			}
+		}
+		@include respond(mobile-large) {
+			grid-template: repeat(4, auto) / 1fr 1fr;
+			column-gap: 10px;
+			a {
+				margin: 0;
+				padding: 0;
+			}
+		}
+		@include respond(mobile-medium) {
+			font-size: 14px;
+			margin: 15px 0 0;
+		}
+		@include respond(mobile-small) {
+			row-gap: 10px;
+		}
+	}
+	&__info-title {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		font-family: $main-font-family;
+		text-transform: uppercase;
+		color: $title-text-color;
+		line-height: 1.2;
+		@include ad-font(72, 24);
+	}
+	&__info-addres {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		@include respond(mobile-medium) {
+			font-size: 14px;
+		}
+	}
+	&__info-phone {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	&__info-email {
+		grid-column: 1/2;
+		grid-row: 4/5;
+		@include respond(mobile-large) {
+			grid-column: 1/3;
+		}
+		@include respond(mobile-medium) {
+			grid-column: 1/3;
+		}
+	}
+	&__info-map {
+		grid-column: 2/3;
+		grid-row: 1/5;
+		border-radius: 20px;
+		overflow: hidden;
+		height: 100%;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+		@include respond(mobile-large) {
+			grid-row: 1/4;
+		}
+	}
+	&__box-btn {
+		margin: 15px 0 0;
+		color: $btn-text-color;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		position: relative;
+		transition: transform 0.3s ease;
+		display: inline-flex;
+		&::before {
+			content: "";
+			position: absolute;
+			border-top: 3px solid $main-brd-color;
+			border-right: 3px solid $main-brd-color;
+			width: 8px;
+			height: 8px;
+			right: -20px;
+			transform: translateY(50%) rotate(45deg);
+		}
+		@include adaptive-text;
+		@include respond(mobile-medium) {
+			margin: 0;
+		}
+	}
+	&__box-btn:hover {
+		transform: scale(1.1);
+	}
+}

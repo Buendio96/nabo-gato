@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	toggleBurgerMenu()
 	updateMainFlag()
 	handleResize()
-	translateElements()
 
 	createdHeroSwiper()
 
@@ -23,4 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	initAboutSection()
 	window.addEventListener('resize', handleResize)
+
+	translateElements()
+
 })

@@ -1,7 +1,7 @@
 {
 	"about-us": "Über uns",
 	"menu-link": "Speisekarte",
-	"communication": "Kommunikation",
+	"communicacommunicationLinktion": "Kommunikation",
 	"contacts": "Kontakt",
 	"hero": {
 		"title": "Leckeres Sushi mit Lieferung im Dreistadt-Gebiet",
@@ -64,14 +64,14 @@
 		"1": "Fische",
 		"2": "Eier",
 		"3": "Soja",
-		"4": "Zitrusfrüchte",
+		"4": "Zitrus",
 		"5": "Nüsse",
-		"6": "Krebstiere",
+		"6": "Krebs",
 		"7": "Sesam",
 		"8": "Honig",
 		"9": "Milch",
 		"10": "Senf",
-		"11": "Weichtiere"
+		"11": "Weicht."
 	},
 	"about": {
 		"title": "ÜBER NABO GATO",
@@ -79,6 +79,12 @@
 		"since": "Gegründet im Jahr 2023",
 		"contentTitle": "<span>NABO GATO Sushi Bar</span> – ein Geschmack, den du nicht vergisst! 🍣",
 		"contentDescription": "Besuche die NABO GATO Sushi Bar in Danzig und Gdingen! Wir bieten frisches Sushi, darunter klassische Rollen, Spezialsets und vegane Optionen. Jedes Gericht wird mit Leidenschaft zubereitet – eine Verbindung aus Tradition und modernen Akzenten.",
-		"btnMoreOpinion": "Mehr Bewertungen"
+		"btnMoreOpinion": "Mehr Bewertungen",
+		"backTitle": "Was die Leute über uns sagen",
+		"backSubtitle": "Die Meinungen unserer Gäste bedeuten uns sehr viel. Sie zeigen uns, was wir gut machen und wo wir uns noch verbessern können. Vielen Dank, dass Sie Ihre Eindrücke mit uns teilen!"
+	},
+	"communication": {
+		"title": "Kommunikation",
+		"subtitle": "Hier finden Sie alle Informationen, wie Sie am besten mit uns in Kontakt treten und unser Lokal erreichen können. Wählen Sie die für Sie bequemste Methode."
 	}
 }

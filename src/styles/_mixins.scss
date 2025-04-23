@@ -1,0 +1,20 @@
+@use "./vars" as *;
+@use "./response" as *;
+
+:root {
+	--second-font-family: "Montserrat", sans-serif;
+	--second-font-zise: 16px;
+	--letter-spacing: 0.7px;
+}
+
+html[lang="ua"] {
+	--second-font-family: "AlumniSans", "Montserrat", sans-serif;
+	--second-font-zise: 20px;
+	--letter-spacing: 1.2px;
+}
+
+@mixin adaptive-text($font-size: var(--second-font-zise)) {
+	font-family: var(--second-font-family);
+	font-size: $font-size;
+	letter-spacing: var(--letter-spacing);
+}
