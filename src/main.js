@@ -6,9 +6,13 @@ import { createdHeroSwiper } from './scripts/hero/heroSwiper'
 import { createdAllergensList } from './scripts/menu/allergens'
 import { createdLegendSwiper } from './scripts/menu/legend'
 import { createdMenu } from './scripts/menu/menu'
+import { checkCookies } from './scripts/page/cookies'
+import { showPopup } from './scripts/page/popup'
 import './style.scss'
 
 document.addEventListener("DOMContentLoaded", () => {
+	checkCookies()
+
 	toggleBurgerMenu()
 	updateMainFlag()
 	handleResize()
@@ -21,8 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	createdMenu()
 
 	initAboutSection()
-	window.addEventListener('resize', handleResize)
+	showPopup()
 
+	window.addEventListener('resize', handleResize)
 	translateElements()
 
 })

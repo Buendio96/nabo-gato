@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="header__container">
       <div class="header__wrapper">
@@ -44,7 +45,7 @@
             </a>
             </li>
             <a href="#" class="header__social-link">
-              <img src="./Instagram.svg" alt="Facebook">
+              <img src="./Instagram.svg" alt="Instagram">
             </a>
             <div class="header__leng">
               <button id="languageButton" class="header__leng-toggle">
@@ -190,7 +191,7 @@
               Opinie naszych gości znaczą dla nas bardzo wiele. To dzięki nim wiemy, co robimy dobrze, a co możemy
               jeszcze poprawić. Dziękujemy, że dzielicie się swoimi wrażeniami!
             </p>
-            <button id="buttonCloseMoreOpinion" class="about__back-btn">
+            <button id="buttonCloseMoreOpinion" class="closeButton">
               <span></span><span></span>
             </button>
             <div class="swiper aboutSwiper">
@@ -245,10 +246,8 @@
               <a href="mailto:nabogatogdynia@gmail.com" target="_blank" class="communication__info-email">
                 Email: nabogatogdynia@gmail.com
               </a>
-              <div class="communication__info-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.332779196162!2d18.584405977835562!3d54.351100272597684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd758be3491da3%3A0x9ea0b0b574d2209!2sNabogato%20Sushi%20Gda%C5%84sk!5e0!3m2!1sru!2spl!4v1745411735591!5m2!1sru!2spl"
-                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="communication__info-map" id="gdanskMap">
+
               </div>
             </div>
             <a href="tel:+48583800085" class="communication__box-btn">
@@ -278,10 +277,8 @@
               <a href="mailto:nabogatogdynia@gmail.com" target="_blank" class="communication__info-email">
                 Email: nabogatogdynia@gmail.com
               </a>
-              <div class="communication__info-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2316.215941259519!2d18.536510977841534!3d54.51205297265038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda73228ada4fd%3A0x1faf7aeda4c98de9!2sNabogato%20Sushi%20Bar!5e0!3m2!1sru!2spl!4v1745412035018!5m2!1sru!2spl"
-                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="communication__info-map" id="gdyniaMap">
+
               </div>
             </div>
             <a href="tel:+48583800909" class="communication__box-btn">
@@ -291,8 +288,99 @@
         </div>
       </div>
     </section>
+
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__wrapper">
+        <div class="footer__head">
+          <div class="footer__logo">
+            <span class="footer__logo-left">NABO GATO</span>
+            <img src="./logo.svg" alt="NABO-GATO">
+            <span class="footer__logo-right">SUSHI BAR</span>
+          </div>
+          <nav class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__item-link" data-i18n="about-us">O nas</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link" data-i18n=" menu-link">Menu</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__item-link" data-i18n=" communicationLink">Komunikacja</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">
+              <img src="./Facebook.svg" alt="Facebook">
+            </a>
+            </li>
+            <a href="#" class="footer__social-link">
+              <img src="./Instagram.svg" alt="Instagram">
+            </a>
+          </div>
+        </div>
+        <div class="footer__body">
+          <h3 class="footer__body-title">
+            © 2024 NABO GATO. All rights reserved.
+          </h3>
+          <ul class="footer__body-privacy">
+            <li class="footer__privacy-item" data-popup-key="rodo">
+              <a href="#">RODO</a>
+            </li>
+            <li class="footer__privacy-item" data-popup-key="policy">
+              <a href="#">Regulamin</a>
+            </li>
+            <li class="footer__privacy-item" data-popup-key="privacy">
+              <a href="#">Polityka Prywatności</a>
+            </li>
+            <li class="footer__privacy-item" data-popup-key="cookies">
+              <a href="#">Cookies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__gopos">
+          <h3 class="footer__gopos-title">
+            Używamy systemu zamówień
+          </h3>
+          <div class="footer__gopos-img">
+            <img src="./src/assets/icons/goPos.svg" alt="GoPos">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="popup" id="popup">
+    <div class="popup__body">
+      <div class="closeButton" id="buttonClosePopup">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="popup__content" id="popupContent">
+      </div>
+    </div>
+  </section>
+  <section class="cookies" id="cookies">
+    <div class="cookies__body">
+      <p class="cookies__body-text">
+        By clicking “Accept”, you agree to the storing of cookies on your device to enhance site navigation, analyze
+        site usage, and assist in our marketing efforts. View our Privacy Policy for more information.
+      </p>
+      <div class="cookies__body-buttons">
+        <button class="cookies__buttons-btn" id="buttonAccept" data-i18n="buttonAccept">Zgoda</button>
+        <button class="cookies__buttons-btn" id="buttonDecline" data-i18n="buttonDecline">Odrzuć</button>
+      </div>
+    </div>
+    <div class="closeButton" id="buttonClosePopup">
+      <span></span>
+      <span></span>
+    </div>
+  </section>
 </body>
 
 </html>
+<div>
+
+</div>

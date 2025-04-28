@@ -1,0 +1,27 @@
+@use "../vars" as *;
+@use "../response" as *;
+@use "../mixins" as *;
+
+.cookies {
+	background: $fir-popup-bg-color;
+	opacity: 0;
+	visibility: 1;
+	z-index: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	&__body {
+	}
+	&__body-text {
+	}
+	&__body-buttons {
+	}
+
+	.closeButton {
+	}
+}
+.show-cookies {
+	opacity: 1;
+	visibility: visible;
+	z-index: 1000;
+}
