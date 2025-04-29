@@ -5,6 +5,43 @@ import { Pagination } from 'swiper/modules'
 import { legendlist } from './legendList'
 
 
+
+export const createdLegendSwiper = () => {
+	const swiperContainer = document.getElementById('legendSwiper')
+
+	const slidesHtml = legendlist.map((item, index) => legendItem(item, index))
+	swiperContainer.innerHTML = slidesHtml.join('')
+	toggleBackground()
+
+	const isMobile = window.innerWidth <= 1024
+
+	if (isMobile) {
+		const swiper = new Swiper(".legendSwiper", {
+			slidesPerView: 3,
+			spaceBetween: 10,
+			modules: [Pagination],
+			pagination: {
+				el: ".swiper-pagination",
+				type: "progressbar",
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 5,
+					spaceBetween: 16
+				},
+			}
+		})
+	}
+}
+
+const legendItem = (item, index) => `
+	<li class="swiper-slide legend__item">
+		<a href="#${item.id}" data-i18n="legend.${index}" class="legend__link">
+			${item.text}
+		</a>
+	</li>
+	`
+
 const toggleBackground = () => {
 	const stickyElement = document.querySelector('.legend')
 	const targetElement = document.getElementById('menu')
@@ -36,41 +73,4 @@ const toggleBackground = () => {
 	})
 }
 
-
-const legendItem = (item, index) =>
-	`
-	<li class="swiper-slide legend__item">
-		<a href="#${item.id}" data-i18n="legend.${index}" class="legend__link">
-			${item.text}
-		</a>
-	</li>
-	`
-
-export const createdLegendSwiper = () => {
-	const swiperContainer = document.getElementById('legendSwiper')
-
-	const slidesHtml = legendlist.map((item, index) => legendItem(item, index))
-	swiperContainer.innerHTML = slidesHtml.join('')
-	toggleBackground()
-
-	const isMobile = window.innerWidth <= 1024
-
-	if (isMobile) {
-		const swiper = new Swiper(".legendSwiper", {
-			slidesPerView: 3,
-			spaceBetween: 10,
-			modules: [Pagination],
-			pagination: {
-				el: ".swiper-pagination",
-				type: "progressbar",
-			},
-			breakpoints: {
-				768: {
-					slidesPerView: 5,
-					spaceBetween: 16
-				},
-			}
-		})
-	}
-}
 

@@ -3,14 +3,8 @@ let isListenerAdded = false
 const button = document.getElementById('contactsToggle')
 const box = document.getElementById('contactsBox')
 
-function toggleBox() {
-	box.classList.toggle('active-box')
-	button.classList.toggle('active-btn')
-}
-
 export const handleResize = () => {
 	const isMobile = window.innerWidth <= 850
-
 
 	if (!button || !box) return
 
@@ -22,6 +16,13 @@ export const handleResize = () => {
 		isListenerAdded = false
 	}
 }
+
+const toggleBox = () => {
+	box.classList.toggle('active-box')
+	button.classList.toggle('active-btn')
+}
+
+
 
 
 

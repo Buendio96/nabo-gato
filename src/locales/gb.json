@@ -1,13 +1,30 @@
 {
-	"about-us": "About Us",
-	"menu-link": "Menu",
-	"communicationLink": "Communication",
-	"contacts": "Contacts",
+	"button-about": "About Us",
+	"button-menu": "Menu",
+	"button-communication": "Communication",
+	"button-contacts": "Contacts",
+
+	"button-call": "Call",
+	"button-all": "Show All",
+	"button-add": "+ Add",
+
+	"cookies": "By clicking “Accept”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. View our Privacy Policy for more information.",
+	"buttonAcceptCookies": "Accept",
+	"buttonDeclineCookies": "Decline",
+
+	"rights": "© 2024 NABO GATO. All rights reserved.",
+	"goPos": "We use an ordering system",
+	"button-GDPR": "GDPR",
+	"button-policy": "Terms & Conditions",
+	"button-privacy": "Privacy Policy",
+	"button-cookies": "Cookies",
+
 	"hero": {
 		"title": "Delicious Sushi with Delivery in the Tri-City Area",
 		"subtitle": "Check out and love our rolls and sets! Fresh ingredients, authentic flavors, and the craftsmanship of our sushi masters make every roll a small work of art. Choose your favorite set, enjoy the delicate taste of fish and aromatic rice. Welcome to the world of Japanese culinary experiences – taste, explore, and enjoy every moment!"
 	},
 	"toggle-city": "Select your city:",
+
 	"easter": {
 		"title": "Easter Specials at Nabo Gato!",
 		"description": "For Easter, we invite you to Nabo Gato Sushi Bar for exceptional sushi that will surprise your taste buds.",
@@ -42,6 +59,7 @@
 			"4": "Dreaming of a unique sushi cake? Call or message ‘Nabo Gato’ to place an order and discuss the details. We operate in Gdańsk, Gdynia, and the entire Tri-City area, delivering our masterpieces straight to your table. Your perfect sushi cake is within reach!"
 		}
 	},
+
 	"legend": {
 		"0": "Show all",
 		"1": "Ramen",
@@ -73,6 +91,7 @@
 		"10": "Mustard",
 		"11": "Molluscs"
 	},
+
 	"about": {
 		"title": "ABOUT NABO GATO",
 		"subtitle": "We are a small team that simply enjoys what we do. Every day, we prepare food with care – the kind of food we would love to eat ourselves. We value a relaxed, friendly atmosphere where our guests feel comfortable. <br> <span>Nabo Gato</span> is a place created with heart – not with big words, but with great attention to detail.",
@@ -83,6 +102,7 @@
 		"backTitle": "What people say about us",
 		"backSubtitle": "Our guests' opinions mean a lot to us. They help us understand what we’re doing well and what we can still improve. Thank you for sharing your impressions!"
 	},
+
 	"communication": {
 		"title": "Communication",
 		"subtitle": "Here you will find all the information on how to best get in touch with us and reach our location. Choose the method that is most convenient for you."

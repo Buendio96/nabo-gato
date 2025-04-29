@@ -1,13 +1,30 @@
 {
-	"about-us": "Über uns",
-	"menu-link": "Speisekarte",
-	"communicacommunicationLinktion": "Kommunikation",
-	"contacts": "Kontakt",
+	"button-about": "Über uns",
+	"button-menu": "Speisekarte",
+	"button-communication": "Kommunikation",
+	"button-contacts": "Kontakt",
+
+	"button-call": "Anrufen",
+	"button-all": "Alle anzeigen",
+	"button-add": "+ Hinzufügen",
+
+	"cookies": "Durch Klicken auf „Akzeptieren“ stimmen Sie der Speicherung von Cookies auf Ihrem Gerät zu, um die Seitennavigation zu verbessern, die Seitennutzung zu analysieren und unsere Marketingbemühungen zu unterstützen. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
+	"buttonAcceptCookies": "Akzeptieren",
+	"buttonDeclineCookies": "Ablehnen",
+
+	"rights": "© 2024 NABO GATO. Alle Rechte vorbehalten.",
+	"goPos": "Wir verwenden ein Bestellsystem",
+	"button-GDPR": "DSGVO",
+	"button-policy": "Nutzungsbedingungen",
+	"button-privacy": "Datenschutzrichtlinie",
+	"button-cookies": "Cookies",
+
 	"hero": {
 		"title": "Leckeres Sushi mit Lieferung im Dreistadt-Gebiet",
 		"subtitle": "Entdecken und lieben Sie unsere Rollen und Sets! Frische Zutaten, authentische Aromen und die Kunstfertigkeit unserer Sushi-Meister machen jede Rolle zu einem kleinen Kunstwerk. Wählen Sie Ihr Lieblingsset, genießen Sie den zarten Geschmack des Fisches und des aromatischen Reises. Willkommen in der Welt der japanischen kulinarischen Erlebnisse – kosten, entdecken und jeden Moment genießen!"
 	},
 	"toggle-city": "Wählen Sie Ihre Stadt:",
+
 	"easter": {
 		"title": "Osterspezialitäten im Nabo Gato!",
 		"description": "Zu Ostern laden wir Sie ins Nabo Gato Sushi Bar ein, um außergewöhnliches Sushi zu genießen, das Ihre Geschmacksknospen überraschen wird.",
@@ -42,6 +59,7 @@
 			"4": "Träumen Sie von einer einzigartigen Sushi-Torte? Rufen Sie uns an oder schreiben Sie uns bei „Nabo Gato“, um Ihre Bestellung aufzugeben und Details zu klären. Wir liefern in Danzig, Gdynia und ganz Trójmiasto und bringen unsere Kunstwerke direkt auf Ihren Tisch. Ihre perfekte Sushi-Torte ist nur einen Anruf entfernt!"
 		}
 	},
+
 	"legend": {
 		"0": "Alles anzeigen",
 		"1": "Ramen",
@@ -73,6 +91,7 @@
 		"10": "Senf",
 		"11": "Weicht."
 	},
+
 	"about": {
 		"title": "ÜBER NABO GATO",
 		"subtitle": "Wir sind ein kleines Team, das einfach liebt, was es tut. Jeden Tag bereiten wir mit Engagement Essen zu, das wir selbst gerne essen würden. Uns ist eine lockere, freundliche Atmosphäre wichtig, in der sich unsere Gäste wohlfühlen. <br> <span>Nabo Gato</span> ist ein Ort, der mit Herz geschaffen wurde – ohne große Worte, aber mit viel Liebe zum Detail.",
@@ -83,6 +102,7 @@
 		"backTitle": "Was die Leute über uns sagen",
 		"backSubtitle": "Die Meinungen unserer Gäste bedeuten uns sehr viel. Sie zeigen uns, was wir gut machen und wo wir uns noch verbessern können. Vielen Dank, dass Sie Ihre Eindrücke mit uns teilen!"
 	},
+
 	"communication": {
 		"title": "Kommunikation",
 		"subtitle": "Hier finden Sie alle Informationen, wie Sie am besten mit uns in Kontakt treten und unser Lokal erreichen können. Wählen Sie die für Sie bequemste Methode."

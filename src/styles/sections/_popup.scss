@@ -15,14 +15,64 @@
 	display: flex;
 	align-items: center;
 	z-index: 0;
+	transition: all 0.3s ease;
 	justify-content: center;
 	&__body {
 		background-color: $fir-popup-bg-color;
 		border-radius: 25px;
-		max-height: 500px;
-		overflow-y: auto;
+		max-width: 700px;
+		position: relative;
+		padding: 40px 30px;
+	}
+	.closeButton {
+		top: 15px;
+		right: 15px;
+		span {
+			width: 25px;
+			background-color: $alt-btn-bg-color;
+		}
 	}
 	&__content {
+		margin: 15px 0 0;
+		padding: 0 15px 0 0;
+		max-height: 500px;
+		overflow-y: auto;
+		color: $alt-text-color;
+	}
+	&__content-title {
+		line-height: 1.3;
+		text-transform: uppercase;
+		@include ad-font(44, 24);
+	}
+	&__content-description {
+		margin: 15px 0 0;
+		@include adaptive-text(_, 0);
+	}
+	&__content-subtitle {
+		margin: 20px 0 0;
+		font-weight: 600;
+		@include adaptive-text(18px);
+	}
+	&__content-text {
+		margin: 10px 0 0;
+		ul {
+			list-style: inside;
+		}
+		@include adaptive-text();
+		@include adaptive-text(_, 0);
+	}
+	::-webkit-scrollbar {
+		width: 4px;
+	}
+	::-webkit-scrollbar-track {
+		background: rgba($color: $alt-bg-scroll, $alpha: 0.4);
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgba($color: $alt-bg-scroll, $alpha: 0.5);
+		border-radius: 15px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: rgba($color: $alt-bg-scroll, $alpha: 1);
 	}
 }
 

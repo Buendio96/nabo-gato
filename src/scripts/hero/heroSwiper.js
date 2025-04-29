@@ -7,29 +7,6 @@ import byDefault from '../../assets/images/hero/default.png'
 import { banerList } from './banerList'
 
 
-const sliderItem = (item) => `
-	<div class="swiper-slide heroSwiper__slide heroSlide ${item.name}">
-		<div class="heroSlide__wrapper">
-			<div class="heroSlide__front  ${item.name}__front">
-				<img class="heroSlide__logo ${item.name}__logo" src="./logo.svg" alt="logo">
-				<div class="heroSlide__description ${item.name}__description">
-					<h2 class="heroSlide__description-title" data-i18n="${item.name}.title">${item.title}</h2>
-					<p class="heroSlide__description-text" data-i18n="${item.name}.description">${item.description}</p>
-				</div>
-				<div class="heroSlide__box ${item.name}__box">
-				<img onerror="this.onerror=null;this.src=${byDefault}" class="heroSlide__box-img" src=${item.image || byDefault} alt="${item.name}">
-				</div >
-			</div >
-	<div class="heroSlide__back">
-		<h3 class="heroSlide__back-title ${item.name}__back-title" data-i18n="${item.name}.backTitle">${item.backTitle}</h3>
-		<div class="heroSlide__back-text ${item.name}__back-text">
-			${item.backTexts.map((text, index) => `<p data-i18n="${item.name}.backText.${index}">${text}</p>`).join('')}
-		</div>
-	</div>
-		</div >
-	</div >
-	`
-
 export const createdHeroSwiper = () => {
 	const swiperContainer = document.getElementById('heroSwiper')
 
@@ -56,9 +33,31 @@ export const createdHeroSwiper = () => {
 			onlyInViewport: true
 		}
 	})
-
-
 }
+
+const sliderItem = (item) => `
+	<div class="swiper-slide heroSwiper__slide heroSlide ${item.name}">
+		<div class="heroSlide__wrapper">
+			<div class="heroSlide__front  ${item.name}__front">
+				<img class="heroSlide__logo ${item.name}__logo" src="./logo.svg" alt="logo">
+				<div class="heroSlide__description ${item.name}__description">
+					<h2 class="heroSlide__description-title" data-i18n="${item.name}.title">${item.title}</h2>
+					<p class="heroSlide__description-text" data-i18n="${item.name}.description">${item.description}</p>
+				</div>
+				<div class="heroSlide__box ${item.name}__box">
+				<img onerror="this.onerror=null;this.src=${byDefault}" class="heroSlide__box-img" src=${item.image || byDefault} alt="${item.name}">
+				</div >
+			</div >
+	<div class="heroSlide__back">
+		<h3 class="heroSlide__back-title ${item.name}__back-title" data-i18n="${item.name}.backTitle">${item.backTitle}</h3>
+		<div class="heroSlide__back-text ${item.name}__back-text">
+			${item.backTexts.map((text, index) => `<p data-i18n="${item.name}.backText.${index}">${text}</p>`).join('')}
+		</div>
+	</div>
+		</div >
+	</div >
+	`
+
 
 
 

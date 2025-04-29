@@ -7,50 +7,11 @@ import { Grid, Keyboard, Navigation, Pagination } from 'swiper/modules'
 import star from '../../assets/icons/star.svg'
 import { opinionList } from './opinionList'
 
-const opinionElement = (item, allItems = false) =>
-	`
-	<div class="about__opinion-item ${allItems ? 'swiper-slide' : ''} ">
-  <div class="about__item-wrapper">
-    <div class="about__item-header">
-      <p class="about__item-person">
-        ${item.person}
-      </p>
-      <div class="about__item-stars">
-        ${Array(5).fill(`<img src="${star}" alt="star">`).join('')}
-      </div>
-    </div>
-    <p class="about__item-place">
-      ${item.place}
-    </p>
-    <p class="about__item-text">
-      ${item.text}
-    </p>
-   </div>
-</div>
-	`
-
-const showFullOpinion = () => {
-	const opinionItems = document.querySelectorAll('.about__opinion-item')
-
-	opinionItems.forEach(item => {
-		item.addEventListener('click', (e) => {
-			e.stopPropagation()
-			const textBLock = item.querySelector('.about__item-text')
-
-			const isAlreadyOpen = textBLock.classList.contains('show-full-opinion')
-
-			document
-				.querySelectorAll('.about__item-text.show-full-opinion')
-				.forEach(item => {
-					item.classList.remove('show-full-opinion')
-					item.scrollTop = 0
-				})
-
-			if (!isAlreadyOpen) {
-				textBLock.classList.add('show-full-opinion')
-			}
-		})
-	})
+export const initAboutSection = () => {
+	cretedTwoRandomOpinions()
+	createdOpinionsSwiper()
+	toggleMoreOpinions()
+	showFullOpinion()
 }
 
 const cretedTwoRandomOpinions = () => {
@@ -66,28 +27,12 @@ const cretedTwoRandomOpinions = () => {
 	container.innerHTML = slidesHtml.join('')
 }
 
-const breakpoints = {
-	500: {
-		slidesPerView: 2,
-		spaceBetween: 12,
-
-	},
-	769: {
-		slidesPerView: 3,
-		spaceBetween: 12,
-		grid: {
-			rows: 2,
-		},
-	}
-}
-
 const createdOpinionsSwiper = () => {
 	const swiperContainer = document.getElementById('aboutSwiper')
 
 	const slidesHtml = opinionList.map(item => opinionElement(item, true))
 	swiperContainer.innerHTML = slidesHtml.join('')
 
-	const isMobile = window.innerWidth <= 850
 
 	const swiper = new Swiper(".aboutSwiper", {
 		modules: [Navigation, Keyboard, Pagination, Grid],
@@ -109,7 +54,20 @@ const createdOpinionsSwiper = () => {
 			enabled: true,
 			onlyInViewport: true
 		},
-		breakpoints: breakpoints
+		breakpoints: {
+			500: {
+				slidesPerView: 2,
+				spaceBetween: 12,
+
+			},
+			769: {
+				slidesPerView: 3,
+				spaceBetween: 12,
+				grid: {
+					rows: 2,
+				},
+			}
+		}
 	})
 }
 
@@ -136,7 +94,6 @@ const toggleMoreOpinions = () => {
 		targetForToggle.classList.add('show-back')
 		aboutBody.classList.add('expanded')
 
-
 	})
 	closeButton.addEventListener('click', () => {
 		firstElement.classList.remove('move-to-left')
@@ -145,9 +102,54 @@ const toggleMoreOpinions = () => {
 		aboutBody.classList.remove('expanded')
 	})
 }
-export const initAboutSection = () => {
-	cretedTwoRandomOpinions()
-	createdOpinionsSwiper()
-	toggleMoreOpinions()
-	showFullOpinion()
+
+const showFullOpinion = () => {
+	const opinionItems = document.querySelectorAll('.about__opinion-item')
+
+	opinionItems.forEach(item => {
+		item.addEventListener('click', (e) => {
+			e.stopPropagation()
+			const textBLock = item.querySelector('.about__item-text')
+
+			const isAlreadyOpen = textBLock.classList.contains('show-full-opinion')
+
+			document
+				.querySelectorAll('.about__item-text.show-full-opinion')
+				.forEach(item => {
+					item.classList.remove('show-full-opinion')
+					item.scrollTop = 0
+				})
+
+			if (!isAlreadyOpen) {
+				textBLock.classList.add('show-full-opinion')
+			}
+		})
+	})
 }
+
+const opinionElement = (item, allItems = false) =>
+	`
+	<div class="about__opinion-item ${allItems ? 'swiper-slide' : ''} ">
+  <div class="about__item-wrapper">
+    <div class="about__item-header">
+      <p class="about__item-person">
+        ${item.person}
+      </p>
+      <div class="about__item-stars">
+        ${Array(5).fill(`<img src="${star}" alt="star">`).join('')}
+      </div>
+    </div>
+    <p class="about__item-place">
+      ${item.place}
+    </p>
+    <p class="about__item-text">
+      ${item.text}
+    </p>
+   </div>
+</div>
+	`
+
+
+
+
+

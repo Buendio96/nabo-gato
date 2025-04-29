@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	showPopup()
 
 	window.addEventListener('resize', handleResize)
+
 	translateElements()
 
 })

@@ -13,8 +13,8 @@ html[lang="ua"] {
 	--letter-spacing: 1.2px;
 }
 
-@mixin adaptive-text($font-size: var(--second-font-zise)) {
+@mixin adaptive-text($font-size: var(--second-font-zise), $letter-spacing: var(--letter-spacing)) {
 	font-family: var(--second-font-family);
 	font-size: $font-size;
-	letter-spacing: var(--letter-spacing);
+	letter-spacing: $letter-spacing;
 }
