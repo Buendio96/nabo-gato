@@ -185,7 +185,7 @@ const slideElement = (item, index) => {
 								<span class="menuSlide__info-price">${item.price}</span>
 								<p class="menuSlide__info-description" data-i18n='menu.${item.id}.slides.${index}.description'>${item.description}</p>
 							</div>
-							<a href="#" class="menuSlide__button-add" data-i18n="button-add"><span>+ Dodać</span>	</a>
+							<a href="#" class="menuSlide__button-add" data-i18n="button-add"><span>+ Dodać</span></a>
 						</div>
 				</div>
 `

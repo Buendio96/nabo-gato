@@ -7,6 +7,7 @@
 @use "./styles/sections/legend";
 @use "./styles/sections/menu";
 @use "./styles/sections/about";
+@use "./styles/sections/footer";
 @use "./styles/sections/communication";
 @use "./styles/sections/cookies";
 @use "./styles/sections/popup";
@@ -70,6 +71,27 @@ html[lang="ua"] {
 		width: 35px;
 		height: 35px;
 		top: 20px;
+	}
+}
+.logo {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	padding: 4px 0;
+	column-gap: 15px;
+	font-weight: 300;
+	img {
+		width: 52px;
+		@include respond(mobile-large) {
+			width: 40px;
+		}
+	}
+	@include ad-font(60, 24);
+	&__left {
+		font-weight: 400;
+		color: $title-text-color;
+	}
+	&__right {
 	}
 }
 

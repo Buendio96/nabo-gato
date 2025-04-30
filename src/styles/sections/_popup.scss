@@ -14,15 +14,21 @@
 	backdrop-filter: blur(15px);
 	display: flex;
 	align-items: center;
-	z-index: 0;
-	transition: all 0.3s ease;
+	z-index: -999;
 	justify-content: center;
+	transition: all 0.5s ease;
 	&__body {
+		margin: 0 15px;
 		background-color: $fir-popup-bg-color;
 		border-radius: 25px;
 		max-width: 700px;
 		position: relative;
 		padding: 40px 30px;
+		top: 100%;
+		transition: top 0.4s ease;
+		@include respond(mobile-small) {
+			padding: 20px 15px;
+		}
 	}
 	.closeButton {
 		top: 15px;
@@ -31,6 +37,9 @@
 			width: 25px;
 			background-color: $alt-btn-bg-color;
 		}
+		@include respond(mobile-small) {
+			right: 10px;
+		}
 	}
 	&__content {
 		margin: 15px 0 0;
@@ -38,20 +47,34 @@
 		max-height: 500px;
 		overflow-y: auto;
 		color: $alt-text-color;
+		@include respond(mobile-small) {
+			margin: 35px 0 0;
+			padding: 0 10px 0 0;
+		}
 	}
 	&__content-title {
 		line-height: 1.3;
 		text-transform: uppercase;
-		@include ad-font(44, 24);
+		@include ad-font(44, 28);
+		@include respond(mobile-small) {
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
 	}
 	&__content-description {
 		margin: 15px 0 0;
 		@include adaptive-text(_, 0);
+		@include respond(mobile-small) {
+			margin: 5px 0 0;
+		}
 	}
 	&__content-subtitle {
 		margin: 20px 0 0;
 		font-weight: 600;
 		@include adaptive-text(18px);
+		@include respond(mobile-small) {
+			margin: 10px 0 0;
+		}
 	}
 	&__content-text {
 		margin: 10px 0 0;
@@ -79,5 +102,8 @@
 .show-popup {
 	opacity: 1;
 	visibility: visible;
-	z-index: 1000;
+	z-index: 999;
+	.popup__body {
+		top: 0;
+	}
 }

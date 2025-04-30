@@ -5,26 +5,27 @@ const popupElement = document.getElementById('popup')
 
 export const showPopup = () => {
 	const showPopupButtons = document.querySelectorAll(".footer__privacy-item")
-	showPopupButtons.forEach(button => {
-		button.addEventListener('click', (e) => {
-			e.preventDefault()
+	if (showPopupButtons)
+		showPopupButtons.forEach(button => {
+			button.addEventListener('click', (e) => {
+				e.preventDefault()
 
-			const lang = localStorage.getItem('language') || 'pl'
-			const key = button.getAttribute('data-popup-key')
+				const lang = localStorage.getItem('language') || 'pl'
+				const key = button.getAttribute('data-popup-key')
 
-			const item = popupList[lang][key]
+				const item = popupList[lang][key]
 
-			if (key === 'cookies') {
-				showCookiesForm()
-			} else if (
-				item !== undefined
-				&& key !== 'cookies'
-			) {
-				openPopup()
-				popup(item)
-			}
+				if (key === 'cookies') {
+					showCookiesForm()
+				} else if (
+					item !== undefined
+					&& key !== 'cookies'
+				) {
+					openPopup()
+					popup(item)
+				}
+			})
 		})
-	})
 }
 
 const popup = (content) => {
@@ -36,19 +37,28 @@ const popup = (content) => {
 		!contentConteiner ||
 		!closePopupBtn
 	) return
-
+	contentConteiner.scrollTop = 0
 	contentConteiner.innerHTML = content
+	popupElement.addEventListener('click', (e) => {
+		if (e.target === popupElement) {
+			closePopup()
+		}
+	})
 	closePopupBtn.addEventListener('click', closePopup)
 }
 
 const openPopup = () => {
-	popupElement.classList.add('show-popup')
-	document.body.style.overflow = 'hidden'
+	if (popupElement) {
+		popupElement.classList.add('show-popup')
+		document.body.style.overflow = 'hidden'
+	}
 }
 
 const closePopup = () => {
-	popupElement.classList.remove('show-popup')
-	document.body.style.overflow = ''
+	if (popupElement) {
+		popupElement.classList.remove('show-popup')
+		document.body.style.overflow = ''
+	}
 }
 
 

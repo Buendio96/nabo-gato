@@ -6,7 +6,7 @@
 
 	"button-call": "Anrufen",
 	"button-all": "Alle anzeigen",
-	"button-add": "+ Hinzufügen",
+	"button-add": "<span>+ Hinzufügen</span>",
 
 	"cookies": "Durch Klicken auf „Akzeptieren“ stimmen Sie der Speicherung von Cookies auf Ihrem Gerät zu, um die Seitennavigation zu verbessern, die Seitennutzung zu analysieren und unsere Marketingbemühungen zu unterstützen. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
 	"buttonAcceptCookies": "Akzeptieren",
@@ -25,16 +25,18 @@
 	},
 	"toggle-city": "Wählen Sie Ihre Stadt:",
 
-	"easter": {
-		"title": "Osterspezialitäten im Nabo Gato!",
-		"description": "Zu Ostern laden wir Sie ins Nabo Gato Sushi Bar ein, um außergewöhnliches Sushi zu genießen, das Ihre Geschmacksknospen überraschen wird.",
-		"backTitle": "Osterspezialitäten im Nabo Gato Sushi Bar! 🐣🌸",
+	"spring": {
+		"title": "Frühjahrs-Set!!!🌸",
+		"description": "Frühjahrs-Set: 5 Arten von Rollen mit Avocado, Garnelen, Lachs und Pfirsich nur für 129 zł!",
+		"backTitle": "Frühjahrs-Set – Frische und Geschmack der Saison! 🌸",
 		"backText": {
-			"0": "Zu Ostern laden wir Sie ins Nabo Gato Sushi Bar ein, um außergewöhnliches Sushi zu genießen, das Ihre Geschmacksknospen überraschen wird! 🎉 Frische Zutaten, authentische Aromen und unvergessliche kulinarische Erlebnisse erwarten Sie.",
-			"1": "🌟 Besondere Osteraktion: Beim Bestellen eines Sushi-Sets erhalten Sie <span>20% Rabatt</span> auf das zweite Set! Es ist eine großartige Gelegenheit, etwas Neues auszuprobieren und unsere sorgfältig zubereiteten Rollen zu genießen.",
-			"2": "Wir bereiten jedes Sushi mit Leidenschaft und Liebe zum Detail zu, damit jeder Bissen unvergessliche Eindrücke hinterlässt. Von traditionellem Nigiri bis hin zu kreativen Fusion-Rollen finden Sie etwas Perfektes für sich!",
-			"3": "Es ist die perfekte Gelegenheit, unsere köstlichen Kompositionen zu probieren und sie mit Ihren Lieben zu teilen. Nabo Gato Sushi Bar – genießen Sie Ostern in bester Qualität! 🍣✨ Wir laden Sie ein, Bestellungen online aufzugeben oder unser Lokal zu besuchen, wo Sie eine einzigartige Atmosphäre und Gastfreundschaft erwarten.",
-			"4": "Feiern Sie mit uns und gönnen Sie sich einen Moment des Genusses mit dem besten Sushi in der Stadt! 🎊🥢"
+			"0": "Ein Sushi-Set voller Frische und frühlingshafter Aromen! 🌸 Zarte Kombinationen aus Avocado, Garnelen, Lachs, Gemüse und Früchten in knusprigem Tempura. Die perfekte Wahl für ein frühlingshaftes Gericht, das Ihre Sinne belebt und Ihnen Energie für warme Tage gibt.",
+			"1": "Bestehend aus:",
+			"2": "• California Avocado mit Garnelen in Panko (4 Stück) – eine zarte Kombination aus Avocado und knusprigen Garnelen.",
+			"3": "• California Tanuki mit scharfem Thunfisch (4 Stück) – eine mutige Mischung aus Schärfe und frischem Thunfisch.",
+			"4": "• California mit Lachs in Tempura und Pfirsich (4 Stück) – eine Kombination aus zartem Lachs, knusprigem Tempura und der Süße des Pfirsichs.",
+			"5": "• California mit Ebi-Majo-Sauce, umwickelt mit Gurke (4 Stück) – elegante Rolle mit Garnelen, Mayonnaise und erfrischender Gurke.",
+			"6": "• Futomaki mit Gemüse in Tempura und spicy Majo (6 Stück) – knusprige Futomaki voller Gemüse in Tempura, serviert mit scharfem Mayonnaise."
 		}
 	},
 	"catering": {
@@ -57,6 +59,39 @@
 			"2": "Sushi-Torten sind eine großartige Möglichkeit, jede Feier unvergesslich zu machen. Egal, ob Sie ein kleines Abendessen oder eine große Party organisieren, eine Sushi-Torte von „Nabo Gato“ wird ein außergewöhnliches Highlight sein. Überraschen Sie Ihre Freunde oder Kollegen mit etwas, das sie sicherlich nicht erwartet haben, und sorgen Sie dafür, dass die Erinnerungen an diesen Tag noch lange in ihren Köpfen bleiben.",
 			"3": "Kontaktieren Sie uns und bestellen Sie Ihre Sushi-Torte noch heute! ✨",
 			"4": "Träumen Sie von einer einzigartigen Sushi-Torte? Rufen Sie uns an oder schreiben Sie uns bei „Nabo Gato“, um Ihre Bestellung aufzugeben und Details zu klären. Wir liefern in Danzig, Gdynia und ganz Trójmiasto und bringen unsere Kunstwerke direkt auf Ihren Tisch. Ihre perfekte Sushi-Torte ist nur einen Anruf entfernt!"
+		}
+	},
+	"fivenabogato": {
+		"title": "🍣 Stelle dein Set zusammen – erhalte -20%!",
+		"description": "Wähle 5 beliebige Rollen, gib das Geheimwort „5 Nabo Gato“ an – und der Rabatt gehört dir! Lecker, bequem und ohne unnötige Formalitäten.",
+		"backTitle": "Dein Set – deine Regeln. Und dazu 20 % Rabatt! 🍣",
+		"backText": {
+			"0": "Träumst du von der perfekten Geschmackskombination? Jetzt hast du die Chance, dein eigenes, einzigartiges Set mit 5 köstlichen Rollen zu kreieren – wähle aus Avocado, Garnelen, Lachs, scharfem Thunfisch oder knusprigem Tempura! 🍣",
+			"1": "Gib einfach unser geheimes Passwort „5 Nabo Gato“ bei der Bestellung an und erhalte 20% Rabatt auf das gesamte Set! 😍",
+			"2": "Ideal für Treffen mit Freunden, ein Familienessen oder einfach für dich selbst – ein Geschmack, der jeden begeistert! 🎉 Eine köstliche Möglichkeit zu sparen und ein außergewöhnliches Mahl zu genießen!"
+		}
+	},
+	"happyhours": {
+		"title": "Happy Hours:<br> - 20 % auf alle Rollen!",
+		"description": "Von Montag bis Donnerstag, 12:00-15:00 Uhr – leckere Rollen mit 20% Rabatt!",
+		"backTitle": "Happy Hours – Deine Lieblingsrollen mit 20 % Rabatt!",
+		"backText": {
+			"0": "Hungrig? Wir haben großartige Neuigkeiten für dich! <span>Montag bis Donnerstag zwischen 12:00 und 15:00 Uhr</span> gibt es <span>‘Happy Hours’</span> – eine spezielle Zeit, in der alle Rollen auf unserer Karte dank <span>20% Rabatt</span> noch besser schmecken!",
+			"1": "💥 <span>Wann?</span> Mo-Do, 12:00-15:00",
+			"2": "💥 <span>Was ist im Angebot?</span> Alle Rollen auf der Karte!",
+			"3": "💥 <span>Wie erhalte ich den Rabatt?</span> Bestelle einfach während dieser Stunden – der Rabatt wird automatisch berechnet."
+		}
+	},
+	"stickers": {
+		"title": "Sticker = Rabatte!<br> Sammle 10 und erhalte 60 zł Rabatt! 🎁",
+		"description": "Für jede Bestellung über <span>100 zł</span> – <span>1 Sticker</span>. Sammle <span>10 Sticker</span> und erhalte <span>60 zł Rabatt</span> auf deine nächste Bestellung!",
+		"backTitle": "Jede Bestellung bringt dich näher zu 60 zł Rabatt! Sammle einfach 10 Sticker! 🎁",
+		"backText": {
+			"0": "Möchtest du, dass jede Bestellung sich mehr lohnt? Mach bei unserer Aktion mit!",
+			"1": "<span>Wie funktioniert das?</span>",
+			"2": "• Für jede <span>100 zł</span> auf der Rechnung – <span>1 Sticker</span>",
+			"3": "• Sammle <span>10 Sticker</span> – und erhalte <span>60 zł Rabatt</span> auf deine nächste Bestellung!",
+			"4": "• Wenn du <span>telefonisch oder online</span> bestellst, informiere uns bitte, dass du 10 Sticker hast – erwähne es im Gespräch oder schreibe es in den Kommentar zur Bestellung, und wir berücksichtigen den Rabatt bei der Abrechnung."
 		}
 	},
 

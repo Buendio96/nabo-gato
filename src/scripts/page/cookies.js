@@ -15,6 +15,7 @@ export const showCookiesForm = () => {
 	const cookiesForm = document.getElementById('cookies')
 	const buttonAccept = document.getElementById('buttonAccept')
 	const buttonDecline = document.getElementById('buttonDecline')
+	const closeCookiesForm = document.getElementById('buttonCloseCookies')
 
 	cookiesForm.classList.add('show-cookies')
 
@@ -27,6 +28,9 @@ export const showCookiesForm = () => {
 		localStorage.setItem('cookies', 'false')
 		cookiesForm.classList.remove('show-cookies')
 		showMaps(false)
+	})
+	closeCookiesForm.addEventListener('click', () => {
+		cookiesForm.classList.remove('show-cookies')
 	})
 }
 

@@ -325,9 +325,13 @@
 			font-weight: 700;
 			color: $title-text-color;
 		}
+		@include respond(mobile-medium) {
+			margin: 10px 20px 15px;
+			padding: 0 10px 0 0;
+		}
 		@include respond(mobile-small) {
 			margin: 10px 20px 15px;
-			padding: 0 20px 0 0;
+			padding: 0 5px 0 0;
 			p:not(:first-child) {
 				margin: 10px 0 0;
 			}
@@ -335,7 +339,7 @@
 	}
 }
 
-.easter {
+.spring {
 	&__front {
 		background-color: #f4e1e1;
 	}
@@ -349,10 +353,20 @@
 	}
 	&__description {
 		flex: 0 1 60%;
+		p {
+			max-width: 300px;
+			background-color: rgba($color: #f4e1e1, $alpha: 0.6);
+			backdrop-filter: blur(10px);
+			border-radius: 25px;
+		}
 		@include respond(mobile-small) {
 			h2 {
 				max-width: 100%;
 			}
+		}
+		@include respond(mobile-medium) {
+			position: relative;
+			top: -15%;
 		}
 	}
 	&__box {
@@ -360,13 +374,16 @@
 		border-radius: 135px 0 0 0;
 		height: 100%;
 		background-color: $card-bg-color;
+		overflow: visible;
 		img {
+			width: 100%;
 			right: 0;
+			overflow: visible;
 		}
-		@include respond(mobile-small) {
+		@include respond(mobile-medium) {
 			img {
-				object-fit: contain;
-				bottom: 0;
+				width: 60%;
+				bottom: -30px;
 			}
 		}
 	}
@@ -390,6 +407,9 @@
 	}
 	&__description {
 		flex: 0 1 50%;
+		p {
+			color: $main-text-color;
+		}
 		@include respond(mobile-small) {
 			h2 {
 				max-width: 100%;
@@ -438,6 +458,9 @@
 	}
 	&__description {
 		flex: 0 1 60%;
+		p {
+			color: $main-text-color;
+		}
 		@include respond(mobile-small) {
 			p {
 				line-height: 1;
@@ -465,5 +488,196 @@
 		p:nth-child(even) {
 			font-weight: 700;
 		}
+	}
+}
+.fivenabogato {
+	&__front {
+		background-color: #928cc8;
+	}
+	&__logo {
+		bottom: -5%;
+		left: -2%;
+		@include respond(mobile-small) {
+			bottom: -2%;
+			left: -2%;
+		}
+	}
+	&__description {
+		flex: 0 1 60%;
+		h2 {
+			@include ad-font(54, 24);
+		}
+		p {
+			margin: 20px 0 0;
+			color: $main-text-color;
+			max-width: 540px;
+		}
+		@include respond(mobile-medium) {
+			flex: 0 1 70%;
+			p {
+				margin: 0;
+			}
+		}
+	}
+	&__box {
+		flex: 0 1 40%;
+		height: 80%;
+		background-color: #ffc700;
+		border-radius: 135px 0 0 135px;
+		img {
+			width: 80%;
+			min-height: 350px;
+			height: auto;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		@include respond(mobile-medium) {
+			img {
+				object-fit: contain;
+			}
+		}
+	}
+	&__back-title {
+		@include ad-font(48, 20);
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+	&__back-text {
+		p:nth-child(even) {
+			font-weight: 700;
+		}
+	}
+}
+.happyhours {
+	&__front {
+		background-color: #66be60;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	&__logo {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(2);
+		opacity: 0.7;
+		max-width: 100%;
+		@include respond(mobile-medium) {
+			transform: translate(-50%, -50%) scale(1.5);
+		}
+		@include respond(mobile-small) {
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+	&__description {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		h2 {
+			max-width: 100%;
+		}
+		p {
+			color: $main-text-color;
+			text-shadow: 0 0 2px black;
+			max-width: 35%;
+			margin: 0 auto;
+		}
+		@include respond(mobile-medium) {
+			p {
+				max-width: 80%;
+			}
+		}
+		@include respond(mobile-small) {
+			p {
+				max-width: 100%;
+			}
+		}
+	}
+	&__box {
+		width: 150px;
+		height: 150px;
+		@include respond(mobile-small) {
+			width: 100px;
+			height: 100px;
+		}
+	}
+	&__back-title {
+		@include ad-font(48, 20);
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+	&__back-text {
+	}
+}
+.stickers {
+	&__front {
+		background-color: #629cd6;
+		flex-direction: row-reverse;
+	}
+	&__logo {
+		left: 50%;
+		bottom: -50%;
+		max-width: 100%;
+		opacity: 0.8;
+		transform: translate(-50%, -40%) scale(2.5);
+		@include respond(mobile-medium) {
+			transform: translate(-50%, -40%) scale(2);
+		}
+		@include respond(mobile-small) {
+			bottom: -60%;
+			transform: translate(-50%, 0%) scale(1);
+		}
+	}
+	&__description {
+		text-align: center;
+		position: relative;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 25px;
+		background-color: rgba($color: #629cd6, $alpha: 0.4);
+		backdrop-filter: blur(10px);
+		h2 {
+			position: relative;
+			&::before,
+			&::after {
+				content: "🎁";
+				top: -10%;
+				@include ad-font(80, 30);
+				position: absolute;
+			}
+			&::before {
+				left: 0;
+				transform: translateX(-100%) rotate(-25deg);
+			}
+			&::after {
+				right: 0;
+				transform: translateX(100%) rotate(25deg);
+			}
+		}
+		p {
+			max-width: 60%;
+			margin: 0 auto;
+			color: $main-text-color;
+			text-shadow: 0 0 2px black;
+			span {
+				font-weight: 700;
+			}
+		}
+		@include respond(mobile-small) {
+			p {
+				max-width: 100%;
+			}
+		}
+	}
+	&__box {
+		display: none;
+	}
+	&__back-title {
+		@include ad-font(48, 20);
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+	&__back-text {
 	}
 }

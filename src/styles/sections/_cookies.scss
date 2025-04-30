@@ -3,25 +3,95 @@
 @use "../mixins" as *;
 
 .cookies {
-	background: $fir-popup-bg-color;
+	background: rgba($color: $fir-popup-bg-color, $alpha: 0.8);
+	backdrop-filter: blur(5px);
 	opacity: 0;
 	visibility: 1;
-	z-index: 0;
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	bottom: 25px;
+	right: -100%;
+	border-radius: 15px;
+	overflow: hidden;
+	max-width: 60%;
+	transition: all 0.4s ease;
+	@include respond(mobile-large) {
+		max-width: 100%;
+	}
 	&__body {
+		display: flex;
+		align-items: center;
+		padding: 30px 40px;
+		@include respond(mobile-medium) {
+			padding: 15px 20px;
+		}
+		@media (max-width: 520px) {
+			flex-direction: column;
+		}
 	}
 	&__body-text {
+		@include adaptive-text();
 	}
 	&__body-buttons {
+		display: flex;
+		column-gap: 15px;
+		padding: 0 25px 0;
+		@include respond(mobile-medium) {
+			flex-direction: column;
+			row-gap: 10px;
+		}
+		@media (max-width: 520px) {
+			align-self: flex-start;
+			flex-direction: row;
+			padding: 0;
+			margin: 15px 0 0;
+			width: 100%;
+		}
 	}
-
+	&__buttons-btn {
+		color: $alt-text-color;
+		border: 2px solid $alt-text-color;
+		border-radius: 15px;
+		padding: 12px 24px;
+		transition: all 0.4s ease;
+		@include adaptive-text();
+		@media (hover: hover) {
+			&:hover {
+				background-color: black;
+				color: $main-text-color;
+			}
+		}
+		@media (max-width: 520px) {
+			padding: 10px 0;
+			width: 50%;
+		}
+	}
 	.closeButton {
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		span {
+			background-color: black;
+			width: 25px;
+		}
+		@include respond(mobile-medium) {
+			right: 10px;
+			span {
+				width: 35px;
+			}
+		}
+		@media (max-width: 520px) {
+			top: 10px;
+			transform: translateY(0);
+		}
 	}
 }
 .show-cookies {
 	opacity: 1;
 	visibility: visible;
+	right: 25px;
 	z-index: 1000;
+	@include respond(mobile-large) {
+		right: 15px;
+		left: 15px;
+	}
 }

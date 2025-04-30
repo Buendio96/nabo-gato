@@ -6,7 +6,7 @@
 
 	"button-call": "Call",
 	"button-all": "Show All",
-	"button-add": "+ Add",
+	"button-add": "<span>+ Add</span>",
 
 	"cookies": "By clicking “Accept”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. View our Privacy Policy for more information.",
 	"buttonAcceptCookies": "Accept",
@@ -25,16 +25,18 @@
 	},
 	"toggle-city": "Select your city:",
 
-	"easter": {
-		"title": "Easter Specials at Nabo Gato!",
-		"description": "For Easter, we invite you to Nabo Gato Sushi Bar for exceptional sushi that will surprise your taste buds.",
-		"backTitle": "Easter Specials at Nabo Gato Sushi Bar! 🐣🌸",
+	"spring": {
+		"title": "SPRING Set!!!🌸",
+		"description": "Spring set: 5 types of rolls with avocado, shrimp, salmon, and peach for only 129 zł!",
+		"backTitle": "SPRING Set – Freshness and taste of the season! 🌸",
 		"backText": {
-			"0": "For Easter, we invite you to Nabo Gato Sushi Bar for exceptional sushi that will surprise your taste buds! 🎉 Fresh ingredients, authentic flavors, and unforgettable culinary experiences await you.",
-			"1": "🌟 Special Easter offer: When you order a sushi set, you’ll get <span>20% off</span> on the second set! It’s a great opportunity to try something new and indulge in our carefully prepared rolls.",
-			"2": "We make every sushi with passion and attention to the smallest details, so that every bite delivers unforgettable sensations. From traditional nigiri to creative fusion rolls, you’ll find something perfect for you!",
-			"3": "It’s the perfect opportunity to try our delicious compositions and share them with loved ones. Nabo Gato Sushi Bar – taste Easter at its best! 🍣✨ We invite you to place orders online or visit our restaurant, where you’ll find a unique atmosphere and hospitality.",
-			"4": "Celebrate with us and treat yourself to a moment of pleasure with the best sushi in town! 🎊🥢"
+			"0": "A sushi set full of freshness and spring flavors! 🌸 Delicate combinations of avocado, shrimp, salmon, vegetables, and fruits in light, crispy tempura. The perfect choice for a spring meal that will awaken your senses and energize you for warm days.",
+			"1": "Consisting of:",
+			"2": "• California Avocado with shrimp in panko (4 pcs.) – a delicate combination of avocado and crispy shrimp.",
+			"3": "• California Tanuki with spicy tuna (4 pcs.) – a bold mix of spiciness and fresh tuna.",
+			"4": "• California with salmon in tempura and peach (4 pcs.) – a combination of delicate salmon, crispy tempura, and the sweetness of peach.",
+			"5": "• California with Ebi mayo sauce, wrapped in cucumber (4 pcs.) – an elegant roll with shrimp, mayo, and refreshing cucumber.",
+			"6": "• Futomaki with tempura vegetables and spicy mayo (6 pcs.) – crispy futomaki filled with tempura vegetables, served with spicy mayo."
 		}
 	},
 	"catering": {
@@ -57,6 +59,39 @@
 			"2": "Sushi cakes are a great way to make any occasion unforgettable. Whether you're hosting an intimate dinner or a large party, a sushi cake from ‘Nabo Gato’ will be a special addition. Surprise your loved ones or coworkers with something they definitely wouldn't expect, and make sure the memories of that day stay with them for a long time.",
 			"3": "Contact us and order your sushi cake today!✨",
 			"4": "Dreaming of a unique sushi cake? Call or message ‘Nabo Gato’ to place an order and discuss the details. We operate in Gdańsk, Gdynia, and the entire Tri-City area, delivering our masterpieces straight to your table. Your perfect sushi cake is within reach!"
+		}
+	},
+	"fivenabogato": {
+		"title": "🍣 Create your set – get -20%!",
+		"description": "Choose 5 rolls of your choice, provide the secret phrase '5 Nabo Gato' – and the discount is yours! Delicious, convenient, and no unnecessary formalities.",
+		"backTitle": "Your set – your rules. And 20% off on top! 🍣",
+		"backText": {
+			"0": "Dreaming of the perfect flavor combination? Now you have the chance to create your own unique set with 5 delicious rolls – choose from avocado, shrimp, salmon, spicy tuna, or crispy tempura! 🍣",
+			"1": "Simply provide our secret phrase '5 Nabo Gato' when ordering and get a 20% discount on the entire set! 😍",
+			"2": "Perfect for hanging out with friends, a family meal, or just for yourself – a taste that will wow everyone! 🎉 A tasty way to save and enjoy an exceptional meal!"
+		}
+	},
+	"happyhours": {
+		"title": "Happy Hours:<br> - 20 % on all rolls!",
+		"description": "From Monday to Thursday, 12:00-15:00 – delicious rolls with a 20% discount!",
+		"backTitle": "Happy Hours – Your favorite rolls with 20% off!",
+		"backText": {
+			"0": "Feeling hungry? We have great news for you! <span>Every Monday, Tuesday, Wednesday, and Thursday between 12:00 and 15:00</span>, we have <span>‘Happy Hours’</span> – a special time when all rolls on our menu taste even better with <span>20% off!</span>",
+			"1": "💥 <span>When?</span> Mon-Thu, 12:00-15:00",
+			"2": "💥 <span>What’s on promotion?</span> All rolls on the menu!",
+			"3": "💥 <span>How to get the discount?</span> Just place an order during these hours – the discount will be applied automatically."
+		}
+	},
+	"stickers": {
+		"title": "Stickers = Savings!<br> Collect 10 and get 60 zł off! 🎁",
+		"description": "For every <span>100 zł</span> spent – <span>1 sticker</span>. Collect <span>10 stickers</span> and receive <span>60 zł discount</span> on your next order!",
+		"backTitle": "Each order brings you closer to 60 zł off! Just collect 10 stickers! 🎁",
+		"backText": {
+			"0": "Want to make every order more rewarding? Join our promotion!",
+			"1": "<span>How does it work?</span>",
+			"2": "• For every <span>100 zł</span> on your receipt – <span>1 sticker</span>",
+			"3": "• Collect <span>10 stickers</span> – and get <span>60 zł discount</span> on your next order!",
+			"4": "• If you're <span>ordering by phone or online</span>, let us know you have 10 stickers – mention it during the call or write it in the order comments, and we'll apply the discount during checkout."
 		}
 	},
 

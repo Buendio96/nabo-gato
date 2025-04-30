@@ -17,27 +17,6 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	&__logo {
-		display: flex;
-		align-items: center;
-		white-space: nowrap;
-		padding: 4px 0;
-		column-gap: 15px;
-		font-weight: 300;
-		img {
-			width: 52px;
-			@include respond(mobile-large) {
-				width: 40px;
-			}
-		}
-		@include ad-font(60, 24);
-	}
-	&__logo-left {
-		font-weight: 400;
-		color: $title-text-color;
-	}
-	&__logo-right {
-	}
 
 	&__burger {
 		display: none;
