@@ -14,8 +14,10 @@ export const createdMenu = () => {
 
 	const swiperContainer = document.getElementById('menu')
 
-	const slidesHtml = menu.map(item => sectionElement(item, currentSpv))
-	swiperContainer.innerHTML = slidesHtml.join('')
+	const slidesHtml = menu.map(item => sectionElement(item, currentSpv)).join('')
+	console.log(slidesHtml)
+
+	swiperContainer.innerHTML = slidesHtml
 
 	toggleMoreInfo()
 
@@ -60,6 +62,7 @@ export const createdMenu = () => {
 				swiper.enable()
 			}
 		})
+
 	})
 }
 
@@ -144,7 +147,7 @@ const sectionElement = (item, currentSpv) => {
 		</div>
 		<div class="swiper menu__section-swiper">
 			<div class="swiper-wrapper menu__swiper-wrapper">
-				${item.slides.map((slide, index) => slideElement(slide, index)).join('')}
+				${item.slides.map((slide, index) => slideElement(item.id, slide, index)).join('')}
 			</div>
 			${showNavigation ? `
 				<div class="menu__swiper-navigation">
@@ -164,7 +167,7 @@ const sectionElement = (item, currentSpv) => {
 	`
 }
 
-const slideElement = (item, index) => {
+const slideElement = (id, item, index) => {
 	const getAllergensByIds = (ids) => allrgensList.filter(item => ids.includes(item.id))
 
 	return `
@@ -181,9 +184,11 @@ const slideElement = (item, index) => {
 								<img src="${item.image}" alt="${item.name}">
 							</div>
 							<div class="menuSlide__info">
-								<h4 class="menuSlide__info-name" data-i18n='menu.${item.id}.slides.${index}.name'>${item.name}</h4>
+								<div class="menuSlide__info-head">
+							<p class="menuSlide__info-name" data-i18n="menu.${id}.slides.${index}.name">${item.name}</p>
 								<span class="menuSlide__info-price">${item.price}</span>
-								<p class="menuSlide__info-description" data-i18n='menu.${item.id}.slides.${index}.description'>${item.description}</p>
+								</div>
+								<p class="menuSlide__info-description" data-i18n='menu.${id}.slides.${index}.description'>${item.description}</p>
 							</div>
 							<a href="#" class="menuSlide__button-add" data-i18n="button-add"><span>+ Dodać</span></a>
 						</div>

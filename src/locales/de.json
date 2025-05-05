@@ -19,6 +19,11 @@
 	"button-privacy": "Datenschutzrichtlinie",
 	"button-cookies": "Cookies",
 
+	"city": "Du wählst <span id='cityIs'></span> als deine Stadt.",
+	"city-question": "Bist du damit einverstanden?",
+	"city-answer-yes": "Ja",
+	"city-answer-no": "Nein",
+
 	"hero": {
 		"title": "Leckeres Sushi mit Lieferung im Dreistadt-Gebiet",
 		"subtitle": "Entdecken und lieben Sie unsere Rollen und Sets! Frische Zutaten, authentische Aromen und die Kunstfertigkeit unserer Sushi-Meister machen jede Rolle zu einem kleinen Kunstwerk. Wählen Sie Ihr Lieblingsset, genießen Sie den zarten Geschmack des Fisches und des aromatischen Reises. Willkommen in der Welt der japanischen kulinarischen Erlebnisse – kosten, entdecken und jeden Moment genießen!"
@@ -98,12 +103,12 @@
 	"legend": {
 		"0": "Alles anzeigen",
 		"1": "Ramen",
-		"2": "Vorspeisen",
-		"3": "Sets",
-		"4": "Futomaki",
-		"5": "California",
-		"6": "Hosomaki",
-		"7": "Nigiri",
+		"2": "Sets",
+		"3": "Futomaki",
+		"4": "California",
+		"5": "Hosomaki",
+		"6": "Nigiri",
+		"7": "Vorspeisen",
 		"8": "Tatar",
 		"9": "Gunkani",
 		"10": "Sashimi",

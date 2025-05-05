@@ -127,7 +127,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 
@@ -137,9 +137,9 @@ table {
 }
 
 button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -154,8 +154,8 @@ input[type='submit'] {
 }
 
 button:focus,
-input[type='button']:focus,
-input[type='reset']:focus,
-input[type='submit']:focus {
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
 	outline: none; /* Убирает обводку при фокусе */
 }

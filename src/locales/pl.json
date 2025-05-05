@@ -19,6 +19,10 @@
 	"button-privacy": "Polityka Prywatności",
 	"button-cookies": "Cookies",
 
+	"city": "Wybierasz <span id='cityIs'></span> jako swoje miasto.",
+	"city-question": "Zgadzasz się z tym?",
+	"city-answer-yes": "Tak",
+	"city-answer-no": "Nie",
 	"hero": {
 		"title": "Pyszne Sushi z dostawą na terenie Trójmiasta",
 		"subtitle": "Sprawdź i pokochaj nasze rolki i zestawy! Świeże składniki, autentyczne smaki i kunszt naszych sushi masterów sprawią, że każda rolka to małe dzieło sztuki. Wybierz swój ulubiony zestaw, delektuj się delikatnym smakiem ryb i aromatycznym ryżem. Zapraszamy do świata japońskich doznań kulinarnych – smakuj, odkrywaj i ciesz się każdą chwilą!"
@@ -98,12 +102,12 @@
 	"legend": {
 		"0": "Pokaż wszystko",
 		"1": "Ramen",
-		"2": "Przystawki",
-		"3": "Zestawy",
-		"4": "Futomaki",
-		"5": "Californie",
-		"6": "Hosomaki",
-		"7": "Nigiri",
+		"2": "Zestawy",
+		"3": "Futomaki",
+		"4": "Californie",
+		"5": "Hosomaki",
+		"6": "Nigiri",
+		"7": "Przystawki",
 		"8": "Tatary",
 		"9": "Gunkany",
 		"10": "Sashimi",
@@ -126,7 +130,6 @@
 		"10": "Gorczyca",
 		"11": "Mięczaki"
 	},
-
 	"menu": {
 		"ramen": {
 			"title": "Ramen ラーメン",
@@ -142,20 +145,226 @@
 				}
 			}
 		},
-		"przystawki": {
-			"title": "Ramen (ラーメン)",
-			"subtitle": "Japońska zupa z pszenicznym makaronem ramen i aromatycznym bulionem. Tradycyjnie podawana z dodatkami takimi jak jajko, mięso, warzywa i przyprawy.",
-			"tantan": {
-				"name": "Tan Tan Men Ramen",
-				"description": "gęsty, lekko pikantny bulion wołowo-drobiowy z orzechowo sezamową tare, pikantna wołowina, marynowane jajko, blanszowane pak choi, grillowane brązowe pieczarki, nori, olej chilli, makaron ramen"
-			},
-			"shoyu": {
-				"name": "Shoyu Ramen",
-				"description": "klarowny bulion wołowo-drobiowy z dodatkiem tare katsuobushi, boczek Chashu, marynowane jajko, grillowana kukurydza, narutomaki, nori, olej czosnkowy, makaron ramen"
+		"zestawySushi": {
+			"title": "Zestawy Sushi 寿司セット",
+			"subtitle": "Starannie skomponowane zestawy sushi, idealne do dzielenia się lub odkrywania różnorodnych smaków Japonii — od klasycznych nigiri po uramaki i futomaki.Do każdego zestawu dokładamy komplet pałeczek, sos sojowy, wasabi i imbir.",
+			"slides": {
+				"0": {
+					"name": "Hoso maki set (24szt.)",
+					"description": "• Hoso- maki z łososiem, serkiem, szczypiorkiem i sosem sriracha 6szt.<br>• Hoso- maki z krewetką 6szt.<br>• Hoso- maki z tykwą kanpyo i sezamem 6szt.<br>• Hoso- maki z ogórkiem i sezamem 6szt."
+				},
+				"1": {
+					"name": "Mini set (16szt.)",
+					"description": "• Futo łosoś Edomae grill 6szt.<br>• California vegi tempura 4szt.<br>• Hoso maki krewetka 6szt."
+				},
+				"2": {
+					"name": "Vegi set (18szt.)",
+					"description": "• Futo vegi tempura 6szt.<br>• California tofu awokado 4szt.<br>• Hoso- maki mix warzyw, serek, sezam 6szt.<br>• Nigiri awokado, kanpyo, sezam 2szt."
+				},
+				"3": {
+					"name": "Vegan set (12szt.)",
+					"description": "• Futo Tofu 6szt.<br>• California awokado vegi tempura 4szt.<br>• Gunkan goma wakame 2szt."
+				},
+				"4": {
+					"name": "Nigiri set (12szt.)",
+					"description": "• Tuńczyk 2szt.<br>• Łosoś 2szt.<br>• Dorada 2szt.<br>• Tamago 2szt.<br>• Krewetka 2szt.<br>• Maślana 2szt."
+				},
+				"5": {
+					"name": "Futomaki set (24szt.)",
+					"description": "• Futo łosoś 6szt.<br>• Futo ebi temura 6szt.<br>• Futo maślana grill 6szt.<br>• Futo tuńczyk edomae (cała rolka w tempurze) 6szt."
+				},
+				"6": {
+					"name": "California set (16szt.)",
+					"description": "• California awokado 4szt.<br>• California Dorada grill 4szt.<br>• California łosoś edomae 4szt.<br>• California tuńczyk edomae 4szt."
+				},
+				"7": {
+					"name": "Mix set nr. 1 (24szt.)",
+					"description": "• Futo ebi panko 6szt.<br>• California awokado 4szt.<br>• California łosoś nabo gato 4szt.<br>• California tuńczyk ebi tempura 4szt.<br>• Hoso- maki krewetka 6szt."
+				},
+				"8": {
+					"name": "Mix set nr. 2 (24szt.)",
+					"description": "• Futo łosoś edomae grill 6szt.<br>• California awokado 4szt.<br>• California łosoś warzywa tempura 4szt.<br>• California tuńczyk ebi tempura 4szt.<br>• Hoso- maki łosoś sezam 6szt."
+				},
+				"9": {
+					"name": "Mix set nr. 3 (24szt.) ŁOSOSIOWY",
+					"description": "• Futo łosoś 6szt.<br>• California łosoś nabo gato 4szt.<br>• California łosoś Edomae 4szt.<br>• California łosoś Kombu 4szt.<br>• Hoso- maki łosoś sezam 6szt."
+				},
+				"10": {
+					"name": "Mix set XL (40szt.)",
+					"description": "• Futo łosos edo grill 6szt.<br>• Futo ebi tempura 6szt.<br>• California awokado 4szt.<br>• California łosoś nabo gato 4szt.<br>• Califonia tuńczyk ebi tempra 4szt.<br>• Hoso- maki tuńczyk sriracha 6szt.<br>• Nigiri: łosoś / łosoś kombu / tuńczyk / tamago / krewetka 10szt."
+				},
+				"11": {
+					"name": "Mix set XXL (64szt.)",
+					"description": "• Futo łosoś edomae grill 6szt.<br>• Futo ebi tempura 6szt.<br>• Futo łosoś 6szt.<br>• California awokado 4szt.<br>• California tuńczyk ebi tempura 4szt.<br>• California łosoś grill 8szt.<br>• California vegi tempura 4szt.<br>• Hoso- maki łosoś sezam 6szt.<br>• Hoso- maki tuńczyk sriracha 6szt.<br>• Nigiri: łosoś / łosoś kombu / tuńczyk / krewetka / tamago / maślana / dorada grill 14szt."
+				},
+				"12": {
+					"name": "Nabo gato grill set (26szt.)",
+					"description": "• Futo ebi panko 6szt.<br>• California łosoś grill 4szt.<br>• California węgorz grill 4szt.<br>• California dorada grill 4szt.<br>• Hoso-maki łosos edo grill 6szt.<br>• Nigiri kalmar tempura 2szt."
+				},
+				"13": {
+					"name": "Gato grill set (12szt.)",
+					"description": "• Futo ebi tempura 6szt.<br>• California dorada grill 4szt.<br>• Nigiri łosoś tempra 2szt."
+				},
+				"14": {
+					"name": "Nabo grill set (12szt.)",
+					"description": "• Futo ebi panko 6szt.<br>• California łosoś grill 4szt.<br>• Nigiri kalmar tempura 2szt."
+				},
+				"15": {
+					"name": "Pół na pół set (32szt.)",
+					"description": "• Futo łosoś 6szt.<br>• California łosoś kombu 4szt.<br>• California tuńczyk 4szt.<br>• Nigiri łosoś nabo gato 2szt.<br>• Futo ebi tempura 6szt.<br>• California łosoś grill 4szt.<br>• California awokado 4szt.<br>• Nigiri kalmar tempura 2szt."
+				}
+			}
+		},
+		"futomaki": {
+			"title": "Futomaki (6szt.) 太巻き",
+			"subtitle": "Duże rolki maki sushi, każda pokrojona na 6 kawałków. W środku świeża sałata, ogórek, awokado i starannie dobrane dodatki — idealne do odkrywania różnorodnych smaków.",
+			"slides": {
+				"0": {
+					"name": "Futo vegi",
+					"description": "Sweet majo, oshinko, kanpyo, omlet tamago, sałata, ogórek, awokado"
+				},
+				"1": {
+					"name": "Futo vegi tempura",
+					"description": "Sweet majo, warzywa w tempurze, oshinko, sos kabayaki, sezam, sałata, ogórek, awokado"
+				},
+				"2": {
+					"name": "Futo łosoś",
+					"description": "Serek, łosoś, sałata, ogórek, awokado"
+				},
+				"3": {
+					"name": "Futo maślana",
+					"description": "Sweet majo, grillowana maślana, oshinko, sos kabayaki, sałata, ogórek, awokado"
+				},
+				"4": {
+					"name": "Futo surimi",
+					"description": "Sweet majo, paluszek krabowy, kanpyo, kawior tobiko, sałata, ogórek, awokado"
+				},
+				"5": {
+					"name": "Futo krewetka",
+					"description": "Sweet majo, krewetka parzona, omlet tamago, kanpyo, sałata, ogórek, awokado"
+				},
+				"6": {
+					"name": "Futo ebi tempura",
+					"description": "Sweet majo, krewetka w tempurze, kanpyo, sos kabayaki, sos sweet chili, sezam, sałata, ogórek, awokado"
+				},
+				"7": {
+					"name": "Futo ebi panko",
+					"description": "Sweet majo, krewetka w panko, oshinko, sos kabayaki, sos sweet chili, sezam, sałata, ogórek, awokado"
+				},
+				"8": {
+					"name": "Futo tuńczyk Edomae",
+					"description": "Serek, marynowany tuńczyk, oshinko, sałata, ogórek, awokado"
+				},
+				"9": {
+					"name": "Futo węgorz grill",
+					"description": "Sweet majo, węgorz, kanpyo, płatki tempury, sos kabayaki, sezam, sałata, ogórek, awokado"
+				},
+				"10": {
+					"name": "Futo węgorz tempura",
+					"description": "Sweet majo, węgorz w tempurze, brzoskwinia, sos kabayaki, sezam, sałata, ogórek, awokado"
+				},
+				"11": {
+					"name": "Futo tatar łosoś",
+					"description": "Sweet majo, tatar łosoś (łosoś, kapary, szczypiorek, sos sriracha, sos sojowy, pieprz), oshinko, sałata, ogórek, awokado"
+				},
+				"12": {
+					"name": "Futo tatar tuńczyk",
+					"description": "Sweet majo, tatar tuńczyk (tuńczyk, por, awokado, sos sriracha, sos sojowy, sezam, olej sezamowy), sałata, ogórek, awokado"
+				},
+				"13": {
+					"name": "Futo kalmar tempura",
+					"description": "Sweet majo, kalmar w tempurze, oshinko, sos kabayaki, sos sweet chili, sezam, sałata, ogórek, awokado"
+				},
+				"14": {
+					"name": "Futo łosoś edomae grill",
+					"description": "Sweet majo, marynowany grillowany łosoś, ananas, sos kabayaki, sezam, sałata, ogórek, awokado"
+				},
+				"15": {
+					"name": "Futo łosoś tempura",
+					"description": "Sweet majo, łosoś w tempurze, kanpyo, sos kabayaki, sezam, sałata, ogórek, awokado"
+				}
+			}
+		},
+		"california": {
+			"title": "California – maki roll (4szt.) カリフォルニア巻き",
+			"subtitle": "Maki – sushi zawijane w sposób kalifornijski z ryżem na zewnątrz, oferujące wyjątkową harmonię smaków i tekstur.",
+
+			"slides": {
+				"0": {
+					"name": "California vegi tempura",
+					"description": "Sweet majo, warzywa w tempurze, oshinko, sos kabayaki, sos sweet chili, na wierzchu: sezam, sos kabayki, sos sweet chili"
+				},
+				"1": {
+					"name": "California awokado vegi tempura",
+					"description": "Sweet majo, warzywa w tempurze, oshinko, na wierzchu: awokado, sos kabayaki, sezam"
+				},
+				"2": {
+					"name": "California tofu awokado",
+					"description": "Smażone tofu, kanpyo, na wierzchu: awokado, sos mango, sezam"
+				},
+				"3": {
+					"name": "California awokado",
+					"description": "Sweet majo, krewetka w panko, oshinko, na wierzchu: awokado, sos sweet chili i sezam"
+				},
+				"4": {
+					"name": "California łosoś",
+					"description": "Serek śmietanowy, łosoś, awokado, ogórek, na wierzchu: sezam"
+				},
+				"5": {
+					"name": "California łosoś nabo gato",
+					"description": "Serek śmietankowy, łosoś, awokado, ogórek, na wierzchu: łosoś, kawior tobiko"
+				},
+				"6": {
+					"name": "California łosoś grill",
+					"description": "Serek śmietanowy, paluszek krabowy, kanpyo, na wierzchu: łosoś, dressing, sos kabayaki"
+				},
+				"7": {
+					"name": "California łosoś Edomae",
+					"description": "Serek śmietanowy, marynowany łosoś w stylu edomae, awokado, kanpyo, na wierzchu: łosoś, sezam"
+				},
+				"8": {
+					"name": "California avokado łosoś kombu",
+					"description": "Sweet majo, łosoś marynowany w wodorostach kombu, ogórek, oshinko, na wierzchu: awokado, sezam"
+				},
+				"9": {
+					"name": "California łosoś ebi tempura",
+					"description": "Spicy majo, krewetka w tempurze, oshinko, awokado, na wierzchu: łosoś, spicy majo"
+				},
+				"10": {
+					"name": "California węgorz grill",
+					"description": "Serek śmietankowy, krewetka w tempurze, kanpyo, na wierzchu: węgorz, sos kabayaki, sezam"
+				},
+				"11": {
+					"name": "California dorada grill",
+					"description": "Serek śmietankowy, krewetka parzona, awokado, kanpyo, na wierzchu: dorada, dressing, sos kabayaki"
+				},
+				"12": {
+					"name": "California tuńczyk",
+					"description": "Serek śmietankowy, tuńczyk, oshinko, awokado, na wierzchu: tuńczyk, sos sriracha"
+				},
+				"13": {
+					"name": "California tuńczyk edomae",
+					"description": "Serek śmietankowy, tuńczyk tataki marynowany w stylu edomae, awokado, ogórek, na wierzchu: tuńczyk, kizami wasabi"
+				},
+				"14": {
+					"name": "California tuńczyk ebi tempura",
+					"description": "Spicy majo, krewetka w tempurze, oshinko, awokado, na wierzchu: tuńczyk tataki, spicy majo"
+				},
+				"15": {
+					"name": "California ebi tempura",
+					"description": "Sweet majo, krewetka w tempurze, oshinko, awokado, na wierzchu: sezam, sos kabayaki, sos sweet chili"
+				},
+				"16": {
+					"name": "California ebi panko",
+					"description": "Sweet majo, krewetka w panko, oshinko, awokado, na wierzchu: sos kabayaki, sos sweet chili, sezam"
+				},
+				"17": {
+					"name": "California tatar ebi panko",
+					"description": "Sweet majo, krewetka w panko, oshinko, awokado, na wierzchu: tatar z łososia (łosoś, kapary, szczypiorek, sos sojowy, sriracha)"
+				}
 			}
 		}
 	},
-
 	"about": {
 		"title": "O NABO GATO",
 		"subtitle": "Jesteśmy niewielkim zespołem, który po prostu lubi to, co robi. Codziennie z zaangażowaniem przygotowujemy jedzenie, które sami chcielibyśmy jeść. Zależy nam na luźnej, przyjaznej atmosferze i tym, żeby nasi goście czuli się u nas swobodnie. <br> <span>Nabo Gato</span> to miejsce tworzone z sercem – bez wielkich słów, za to z dużą dbałością o detale.",

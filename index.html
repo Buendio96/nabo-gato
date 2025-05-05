@@ -11,7 +11,7 @@
   <script type="module" defer src="./src/main.js"></script>
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="header__container">
       <div class="header__wrapper">
@@ -30,17 +30,17 @@
         <nav class="header__navigation" id="navigationList">
           <ul class="header__list">
             <li class="header__item">
-              <a href="#" class="header__link" data-i18n="button-about">O nas</a>
+              <a href="#about" class="header__link scrollTo" data-i18n="button-about">O nas</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link" data-i18n="button-menu">Menu</a>
+              <a href="#menuSection" class="header__link scrollTo" data-i18n="button-menu">Menu</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link" data-i18n="button-communication">Komunikacja</a>
+              <a href="#communication" class="header__link scrollTo" data-i18n="button-communication">Komunikacja</a>
             </li>
           </ul>
           <div class="header__social">
-            <a href="#" class="header__social-link">
+            <a href="https://www.facebook.com/@NabogatoSushi" target="_blank" class="header__social-link">
               <img src="./Facebook.svg" alt="Facebook">
             </a>
             </li>
@@ -89,7 +89,6 @@
     </div>
   </header>
 
-
   <main class="main">
     <section id="hero" class="hero">
       <div class="hero__container">
@@ -107,12 +106,12 @@
               </p>
               <div class="hero__toggle">
                 <h2 class="hero__toggle-title" data-i18n="toggle-city">Wybierz swoje miasto:</h2>
-                <button class="hero__toggle-button" id="gdansk">Gdańsk</button>
-                <button class="hero__toggle-button" id="gdynia">Gdynia</button>
+                <button class="hero__toggle-button" data-cityIs="Gdansk" id="buttonIsGdansk">Gdańsk</button>
+                <button class="hero__toggle-button" data-cityIs="Gdynia" id="buttonIsGdynia">Gdynia</button>
               </div>
             </div>
           </div>
-          <div class="swiper heroSwiper">
+          <div class="swiper heroSwiper" data-lenis-prevent>
             <div class="swiper-wrapper" id="heroSwiper">
             </div>
             <div class="heroSwiper__navigation">
@@ -150,7 +149,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__container">
         <h2 class="about__title" data-i18n="about.title">
           O NABO GATO
@@ -215,7 +214,7 @@
         </div>
       </div>
     </section>
-    <section class="communication">
+    <section class="communication" id="communication">
       <div class="communication__container">
         <h2 class="communication__title" data-i18n="communication.title">
           Komunikacja
@@ -304,18 +303,18 @@
           <nav class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="#" class="footer__item-link" data-i18n="button-about">O nas</a>
+                <a href="#about" class="footer__item-link" data-i18n="button-about">O nas</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__item-link" data-i18n="button-menu">Menu</a>
+                <a href="#menuSection" class="footer__item-link" data-i18n="button-menu">Menu</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__item-link" data-i18n="button-communication">Komunikacja</a>
+                <a href="#communication" class="footer__item-link" data-i18n="button-communication">Komunikacja</a>
               </li>
             </ul>
           </nav>
           <div class="footer__social">
-            <a href="#" class="footer__social-link">
+            <a href="https://www.facebook.com/@NabogatoSushi" target="_blank" class="footer__social-link">
               <img src="./Facebook.svg" alt="Facebook">
             </a>
             </li>
@@ -382,6 +381,24 @@
       <span></span>
     </div>
   </section>
+
+  <div class="city" id="city">
+    <div class="city__body">
+      <p class="city__title" data-i18n="city">
+        Wybierasz
+        <span id="cityIs"></span>
+        jako swoje miasto.
+      </p>
+
+      <p class="city__subtitle" data-i18n="city-question">
+        Zgadzasz się z tym?
+      </p>
+      <div class="city__buttons">
+        <button id="answerYes" data-i18n="city-answer-yes">Tak</button>
+        <button id="answerNo" data-i18n="city-answer-no">Nie</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

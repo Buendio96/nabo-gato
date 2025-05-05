@@ -11,6 +11,7 @@
 @use "./styles/sections/communication";
 @use "./styles/sections/cookies";
 @use "./styles/sections/popup";
+@use "./styles/sections/chooseCity";
 
 body {
 	color: $main-text-color;
@@ -18,9 +19,11 @@ body {
 	line-height: 150%;
 	font-size: 16px;
 	overflow-x: hidden;
+	min-height: 100%;
+	position: relative;
 }
 html {
-	min-height: 100%;
+	scroll-behavior: smooth;
 }
 html[lang="pl"],
 html[lang="en"],

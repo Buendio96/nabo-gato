@@ -110,6 +110,11 @@
 			margin: 5px 0 0;
 		}
 	}
+	.choosen-city {
+		color: $main-text-color;
+		background-color: $btn-bg-color;
+		border-color: $alt-brd-color;
+	}
 	&__toggle-button:last-child {
 		margin: 15px 0 0 15px;
 		@include respond(mobile-small) {

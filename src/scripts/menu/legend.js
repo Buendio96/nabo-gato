@@ -2,14 +2,12 @@ import Swiper from 'swiper'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import { Pagination } from 'swiper/modules'
-import { legendlist } from './legendList'
-
-
+import { legendList } from './legendList'
 
 export const createdLegendSwiper = () => {
 	const swiperContainer = document.getElementById('legendSwiper')
 
-	const slidesHtml = legendlist.map((item, index) => legendItem(item, index))
+	const slidesHtml = legendList.map((item, index) => legendItem(item, index))
 	swiperContainer.innerHTML = slidesHtml.join('')
 	toggleBackground()
 

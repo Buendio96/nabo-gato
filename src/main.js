@@ -8,6 +8,7 @@ import { createdLegendSwiper } from './scripts/menu/legend'
 import { createdMenu } from './scripts/menu/menu'
 import { checkCookies } from './scripts/page/cookies'
 import { showPopup } from './scripts/page/popup'
+import { checkCity } from './scripts/page/toogleCity'
 import './style.scss'
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	updateMainFlag()
 	handleResize()
 
+	checkCity()
 	createdHeroSwiper()
 
 	createdLegendSwiper()
@@ -27,8 +29,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	initAboutSection()
 	showPopup()
 
-	window.addEventListener('resize', handleResize)
-
 	translateElements()
-
 })
