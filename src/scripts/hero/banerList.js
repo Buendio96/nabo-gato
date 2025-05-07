@@ -1,8 +1,8 @@
-import slide1 from '../../assets/images/hero/slide1.png'
-import slide2 from '../../assets/images/hero/slide2.png'
-import slide3 from '../../assets/images/hero/slide3.png'
-import slide4 from '../../assets/images/hero/slide4.png'
-import slide5 from '../../assets/images/hero/slide5.png'
+import slide1 from '../../assets/images/hero/slide1.webp'
+import slide2 from '../../assets/images/hero/slide2.webp'
+import slide3 from '../../assets/images/hero/slide3.webp'
+import slide4 from '../../assets/images/hero/slide4.webp'
+import slide5 from '../../assets/images/hero/slide5.webp'
 
 
 export const banerList = [

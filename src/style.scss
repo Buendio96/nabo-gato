@@ -18,9 +18,9 @@ body {
 	background: $main-bg-color 0 0 no-repeat;
 	line-height: 150%;
 	font-size: 16px;
-	overflow-x: hidden;
 	min-height: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 html {
 	scroll-behavior: smooth;
@@ -85,6 +85,7 @@ html[lang="ua"] {
 	font-weight: 300;
 	img {
 		width: 52px;
+		height: auto;
 		@include respond(mobile-large) {
 			width: 40px;
 		}

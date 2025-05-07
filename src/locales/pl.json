@@ -104,7 +104,7 @@
 		"1": "Ramen",
 		"2": "Zestawy",
 		"3": "Futomaki",
-		"4": "Californie",
+		"4": "California",
 		"5": "Hosomaki",
 		"6": "Nigiri",
 		"7": "Przystawki",
@@ -130,6 +130,7 @@
 		"10": "Gorczyca",
 		"11": "Mięczaki"
 	},
+
 	"menu": {
 		"ramen": {
 			"title": "Ramen ラーメン",
@@ -145,7 +146,7 @@
 				}
 			}
 		},
-		"zestawySushi": {
+		"sushiSets": {
 			"title": "Zestawy Sushi 寿司セット",
 			"subtitle": "Starannie skomponowane zestawy sushi, idealne do dzielenia się lub odkrywania różnorodnych smaków Japonii — od klasycznych nigiri po uramaki i futomaki.Do każdego zestawu dokładamy komplet pałeczek, sos sojowy, wasabi i imbir.",
 			"slides": {
@@ -363,8 +364,256 @@
 					"description": "Sweet majo, krewetka w panko, oshinko, awokado, na wierzchu: tatar z łososia (łosoś, kapary, szczypiorek, sos sojowy, sriracha)"
 				}
 			}
+		},
+		"hosomaki": {
+			"title": "Hoso-maki (6szt.) 細巻き",
+			"subtitle": "Rolki maki-sushi z jednym składnikiem i wasabi. Minimalizm i tradycja w każdej porcji – idealne dla miłośników czystych smaków.",
+			"slides": {
+				"0": {
+					"name": "Łosoś",
+					"description": "Tradycyjna rolka z łososiem i wasabi. Prosto i klasycznie."
+				},
+				"1": {
+					"name": "Tuńczyk",
+					"description": "Delikatny tuńczyk w klasycznej formie hoso-maki z dodatkiem wasabi."
+				},
+				"2": {
+					"name": "Krewetka",
+					"description": "Parzona krewetka z nutą wasabi, zawinięta w klasyczny ryż i nori."
+				},
+				"3": {
+					"name": "Tamago",
+					"description": "Słodki japoński omlet tamago – łagodna alternatywa w klasycznej formie maki."
+				},
+				"4": {
+					"name": "Surimi",
+					"description": "Paluszek krabowy (surimi) z dodatkiem wasabi, owinięty ryżem i nori."
+				},
+				"5": {
+					"name": "Warzywa",
+					"description": "Wegetariańska propozycja z mieszanką (ogórek/kanpyo/oshinko/awokado) klasycznych japońskich warzyw i wasabi."
+				}
+			}
+		},
+		"nigiri": {
+			"title": "Nigiri (2szt.) 握り寿司",
+			"subtitle": "Tradycyjne sushi – ręcznie formowane porcje ryżu z dodatkiem ryby lub warzyw na wierzchu. Klasyka japońskiej prostoty i smaku.",
+			"slides": {
+				"0": {
+					"name": "Awokado, kanpyo, sezam",
+					"description": "Delikatne połączenie awokado, marynowanej tykwy i sezamu – wege nigiri pełne świeżości."
+				},
+				"1": {
+					"name": "Łosoś",
+					"description": "Klasyczne nigiri z surowym łososiem – czysty smak ryby na lekko zaprawionym ryżu."
+				},
+				"2": {
+					"name": "Łosoś edomae",
+					"description": "Marynowany łosoś w stylu Edo, z nutą umami – tradycyjna technika z Tokio."
+				},
+				"3": {
+					"name": "Łosoś kombu",
+					"description": "Łosoś marynowany w glonach kombu – głęboki, morski smak i kremowa tekstura."
+				},
+				"4": {
+					"name": "Łosoś nabogato",
+					"description": "Bogato podany łosoś z dodatkami – pełna porcja smaku i kontrastów."
+				},
+				"5": {
+					"name": "Tuńczyk",
+					"description": "Surowy tuńczyk – klasyk wśród nigiri, lekko słodki i mięsisty."
+				},
+				"6": {
+					"name": "Tuńczyk edomae",
+					"description": "Marynowany tuńczyk w stylu Edo – intensywny smak i miękka struktura."
+				},
+				"7": {
+					"name": "Węgorz",
+					"description": "Grillowany węgorz z sosem kabayaki – słodko-słony przysmak o bogatym aromacie."
+				},
+				"8": {
+					"name": "Krewetka",
+					"description": "Gotowana krewetka ułożona na ryżu – subtelne, lekko słodkie nigiri."
+				},
+				"9": {
+					"name": "Dorada",
+					"description": "Delikatna i lekko tłusta dorada – elegancki wybór dla smakoszy."
+				},
+				"10": {
+					"name": "Tamago",
+					"description": "Słodki japoński omlet – idealny jako lekka i tradycyjna przekąska."
+				},
+				"11": {
+					"name": "Kalmar/krewetka w tempurze",
+					"description": "Chrupiąca tempura z kalmarem lub krewetką – kontrast faktur na miękkim ryżu."
+				}
+			}
+		},
+		"appetizers": {
+			"title": "Przystawki 前菜",
+			"subtitle": "Różnorodne smaki i tekstury w jednym kęsie, idealne do rozpoczęcia kulinarnej podróży",
+			"slides": {
+				"0": {
+					"name": "Pierożki gyoza z kaczką",
+					"description": "Smażone pierożki z soczystym farszem z kaczki – miękkie na zewnątrz, aromatyczne w środku."
+				},
+				"1": {
+					"name": "Pierożki gyoza z krewetkami",
+					"description": "Delikatne pierożki z farszem z krewetek – lekko miękkie i pełne morskiego smaku."
+				},
+				"2": {
+					"name": "Krewetki w tempurze/panko 5szt.",
+					"description": "Chrupiące krewetki w tempurze lub panko – klasyczna japońska przystawka."
+				},
+				"3": {
+					"name": "Krewetki w tempurze/panko 8szt.",
+					"description": "Większa porcja chrupiących krewetek – idealna do dzielenia się."
+				},
+				"4": {
+					"name": "Warzywa w tempurze",
+					"description": "Sezonowe warzywa w lekkim cieście tempura – chrupkie i pełne świeżości."
+				},
+				"5": {
+					"name": "Kimchi",
+					"description": "Pikantna koreańska kiszonka z kapusty – fermentowany akcent do każdego dania."
+				},
+				"6": {
+					"name": "Fasolki edamame",
+					"description": "Gotowane, lekko solone młode soje – zdrowa, pełna białka przekąska."
+				},
+				"7": {
+					"name": "Sałatka wakame",
+					"description": "Marynowane glony wakame z sezamem – świeży, morski smak w lekko słodkiej odsłonie."
+				}
+			}
+		},
+		"tartars": {
+			"title": "Tatary タルタル",
+			"subtitle": "Świeżo siekane tatary, podawane w koszyku z awokado, z kiszonkami i chipsami krewetkowymi.",
+			"slides": {
+				"0": {
+					"name": "Łosoś 120g",
+					"description": "Kapary, szczypiorek, sos sojowy, sriracha, pieprz – klasyczny tatar z łososia z pikantnym akcentem."
+				},
+				"1": {
+					"name": "Tuńczyk 120g",
+					"description": "Por, awokado, sos sojowy, sriracha, sezam, olej sezamowy – aromatyczny tatar z tuńczyka z nutą Azji."
+				}
+			}
+		},
+		"gunkans": {
+			"title": "Gunkan Sushi (2szt.) 軍艦寿司",
+			"subtitle": "Ręcznie formowane kulki ryżu, owinięte wodorostem nori, lub ogórkiem z nadzieniem. Kształtem przypominające łódkę.",
+			"slides": {
+				"0": {
+					"name": "Łosoś tatar",
+					"description": "Tatar: kapary, szczypiorek, sos sojowy, sriracha, pieprz – klasyczna wersja z łososia."
+				},
+				"1": {
+					"name": "Krewetka",
+					"description": "Sałatka: krewetka, surimi, tobiko, awokado, sweet majo – kremowe i chrupiące połączenie."
+				},
+				"2": {
+					"name": "Tuńczyk tatar",
+					"description": "Tatar: por, awokado, sos sojowy, sriracha, sezam, olej sezamowy – intensywny smak tuńczyka."
+				},
+				"3": {
+					"name": "Wodorosty goma wakame",
+					"description": "Orzeźwiająca sałatka z wakame, skropiona sezamowym dressingiem – lekka i wegetariańska."
+				}
+			}
+		},
+		"sashimi": {
+			"title": "Sashimi 刺身",
+			"subtitle": "Japoński sposób serwowania surowej ryby i owoców morza, z różnymi dodatkami",
+			"slides": {
+				"0": {
+					"name": "3 ryby 150g",
+					"description": "Do wyboru: łosoś, tuńczyk, dorada, maślana – świeże, wysokiej jakości sashimi."
+				},
+				"1": {
+					"name": "5 ryb 250g",
+					"description": "Do wyboru: łosoś, tuńczyk, dorada, maślana – większa porcja dla smakoszy."
+				}
+			}
+		},
+		"oNigiri": {
+			"title": "O-nigiri (1szt.) おにぎり",
+			"subtitle": "Ręcznie formowana kanapka ryżowa w kształcie kuli, z różnymi nadzieniami.",
+			"slides": {
+				"0": {
+					"name": "Łosoś, awokado, sos sojowy",
+					"description": "Świeży łosoś z awokado, podany z sosem sojowym – klasyczne i pyszne."
+				},
+				"1": {
+					"name": "Łosoś tempura",
+					"description": "Chrupiący łosoś w tempurze z sosem kabayaki i sezamem."
+				},
+				"2": {
+					"name": "Tuńczyk tatar",
+					"description": "Świeży tuńczyk tatar, idealnie przyprawiony – intensywny i soczysty smak."
+				},
+				"3": {
+					"name": "Krewetka",
+					"description": "Połączenie krewetek, surimi, tobiko, awokado i słodkiego majonezu – wyraziste i kremowe."
+				},
+				"4": {
+					"name": "Wodorosty goma wakame",
+					"description": "Smakowite wodorosty goma wakame – idealna wegetariańska propozycja."
+				}
+			}
+		},
+		"misoSoups": {
+			"title": "Zupa misoshiru 味噌汁",
+			"subtitle": "Zupa robiona na bazie pasty miso i bulionu rybnego „dashi”",
+			"slides": {
+				"0": {
+					"name": "Miso klasyczne",
+					"description": "Wodorosty wakame, tofu, grzyby shitake, szczypior, sezam – klasyczne, rozgrzewające miso."
+				},
+				"1": {
+					"name": "Miso łosoś",
+					"description": "Jak wyżej, dodatkowo łosoś – bardziej sycąca wersja klasycznej zupy."
+				},
+				"2": {
+					"name": "Miso nabo gato",
+					"description": "Jak wyżej, z łososiem, krewetką, surimi, tamago, porem i ostrą nutą srirachy – pełna kompozycja smaków."
+				}
+			}
+		},
+		"sides": {
+			"title": "Dodatki",
+			"subtitle": "Dodatki do sushi, które wzbogacą smak Twojego posiłku.",
+			"slides": {
+				"0": {
+					"name": "Porcja ryżu",
+					"description": "Świeżo przygotowana porcja ryżu do sushi – idealna do dań głównych."
+				},
+				"1": {
+					"name": "Porcja imbiru",
+					"description": "Zestaw marynowanego imbiru – oczyszcza podniebienie między kęsami."
+				},
+				"2": {
+					"name": "Porcja sosu",
+					"description": "Do wyboru: sojowy, sweet mayo, spicy mayo, sweet chili lub kabayaki – dobierz ulubiony smak."
+				},
+				"3": {
+					"name": "Rolka cała w tempurze",
+					"description": "Rolka sushi całkowicie pokryta chrupiącą tempurą – coś dla fanów kontrastów."
+				},
+				"4": {
+					"name": "Wymiana nori na papier ryżowy",
+					"description": "Zamień klasyczne nori na papier ryżowy – delikatniejsza alternatywa dla wrażliwych."
+				}
+			}
 		}
 	},
+
+	"menu-modal": {
+		"title": "Wybierz miasto",
+		"text": " Nie wiemy, gdzie jesteś. Żeby złożyć zamówienie, musimy wiedzieć, gdzie się znajdujesz<br> Proszę, wybierz swoje miasto."
+	},
+
 	"about": {
 		"title": "O NABO GATO",
 		"subtitle": "Jesteśmy niewielkim zespołem, który po prostu lubi to, co robi. Codziennie z zaangażowaniem przygotowujemy jedzenie, które sami chcielibyśmy jeść. Zależy nam na luźnej, przyjaznej atmosferze i tym, żeby nasi goście czuli się u nas swobodnie. <br> <span>Nabo Gato</span> to miejsce tworzone z sercem – bez wielkich słów, za to z dużą dbałością o detale.",

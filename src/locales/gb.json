@@ -132,6 +132,487 @@
 		"11": "Molluscs"
 	},
 
+	"menu": {
+		"ramen": {
+			"title": "Ramen ラーメン",
+			"subtitle": "Japanese soup with wheat ramen noodles and aromatic broth. Traditionally served with toppings such as egg, meat, vegetables, and spices.",
+			"slides": {
+				"0": {
+					"name": "Tan Tan Men Ramen",
+					"description": "rich, mildly spicy beef-chicken broth with nutty sesame tare, spicy minced beef, marinated egg, blanched pak choi, grilled brown mushrooms, nori, chili oil, ramen noodles"
+				},
+				"1": {
+					"name": "Shoyu Ramen",
+					"description": "clear beef-chicken broth with katsuobushi tare, chashu pork belly, marinated egg, grilled corn, narutomaki, nori, garlic oil, ramen noodles"
+				}
+			}
+		},
+		"sushiSets": {
+			"title": "Sushi Sets 寿司セット",
+			"subtitle": "Carefully crafted sushi sets, perfect for sharing or discovering the diverse flavors of Japan — from classic nigiri to uramaki and futomaki. Each set comes with chopsticks, soy sauce, wasabi, and ginger.",
+			"slides": {
+				"0": {
+					"name": "Hoso Maki Set (24pcs)",
+					"description": "• Hoso-maki with salmon, cream cheese, spring onions, and sriracha sauce 6pcs.<br>• Hoso-maki with shrimp 6pcs.<br>• Hoso-maki with kanpyo pumpkin and sesame 6pcs.<br>• Hoso-maki with cucumber and sesame 6pcs."
+				},
+				"1": {
+					"name": "Mini Set (16pcs)",
+					"description": "• Futo salmon Edomae grill 6pcs.<br>• California vegi tempura 4pcs.<br>• Hoso-maki shrimp 6pcs."
+				},
+				"2": {
+					"name": "Vegi Set (18pcs)",
+					"description": "• Futo vegi tempura 6pcs.<br>• California tofu avocado 4pcs.<br>• Hoso-maki mixed vegetables, cream cheese, sesame 6pcs.<br>• Nigiri avocado, kanpyo, sesame 2pcs."
+				},
+				"3": {
+					"name": "Vegan Set (12pcs)",
+					"description": "• Futo tofu 6pcs.<br>• California avocado vegi tempura 4pcs.<br>• Gunkan goma wakame 2pcs."
+				},
+				"4": {
+					"name": "Nigiri Set (12pcs)",
+					"description": "• Tuna 2pcs.<br>• Salmon 2pcs.<br>• Dorado 2pcs.<br>• Tamago 2pcs.<br>• Shrimp 2pcs.<br>• Butterfish 2pcs."
+				},
+				"5": {
+					"name": "Futomaki Set (24pcs)",
+					"description": "• Futo salmon 6pcs.<br>• Futo ebi tempura 6pcs.<br>• Futo butterfish grill 6pcs.<br>• Futo tuna Edomae (whole roll in tempura) 6pcs."
+				},
+				"6": {
+					"name": "California Set (16pcs)",
+					"description": "• California avocado 4pcs.<br>• California dorado grill 4pcs.<br>• California salmon Edomae 4pcs.<br>• California tuna Edomae 4pcs."
+				},
+				"7": {
+					"name": "Mix Set No.1 (24pcs)",
+					"description": "• Futo ebi panko 6pcs.<br>• California avocado 4pcs.<br>• California salmon Nabo Gato 4pcs.<br>• California tuna ebi tempura 4pcs.<br>• Hoso-maki shrimp 6pcs."
+				},
+				"8": {
+					"name": "Mix Set No.2 (24pcs)",
+					"description": "• Futo salmon Edomae grill 6pcs.<br>• California avocado 4pcs.<br>• California salmon vegetable tempura 4pcs.<br>• California tuna ebi tempura 4pcs.<br>• Hoso-maki salmon sesame 6pcs."
+				},
+				"9": {
+					"name": "Mix Set No.3 (24pcs) SALMON",
+					"description": "• Futo salmon 6pcs.<br>• California salmon Nabo Gato 4pcs.<br>• California salmon Edomae 4pcs.<br>• California salmon kombu 4pcs.<br>• Hoso-maki salmon sesame 6pcs."
+				},
+				"10": {
+					"name": "Mix Set XL (40pcs)",
+					"description": "• Futo salmon Edo grill 6pcs.<br>• Futo ebi tempura 6pcs.<br>• California avocado 4pcs.<br>• California salmon Nabo Gato 4pcs.<br>• California tuna ebi tempura 4pcs.<br>• Hoso-maki tuna sriracha 6pcs.<br>• Nigiri: salmon / salmon kombu / tuna / tamago / shrimp 10pcs."
+				},
+				"11": {
+					"name": "Mix Set XXL (64pcs)",
+					"description": "• Futo salmon Edomae grill 6pcs.<br>• Futo ebi tempura 6pcs.<br>• Futo salmon 6pcs.<br>• California avocado 4pcs.<br>• California tuna ebi tempura 4pcs.<br>• California salmon grill 8pcs.<br>• California vegi tempura 4pcs.<br>• Hoso-maki salmon sesame 6pcs.<br>• Hoso-maki tuna sriracha 6pcs.<br>• Nigiri: salmon / salmon kombu / tuna / shrimp / tamago / butterfish / dorado grill 14pcs."
+				},
+				"12": {
+					"name": "Nabo Gato Grill Set (26pcs)",
+					"description": "• Futo ebi panko 6pcs.<br>• California salmon grill 4pcs.<br>• California unagi grill 4pcs.<br>• California dorado grill 4pcs.<br>• Hoso-maki salmon Edo grill 6pcs.<br>• Nigiri squid tempura 2pcs."
+				},
+				"13": {
+					"name": "Gato Grill Set (12pcs)",
+					"description": "• Futo ebi tempura 6pcs.<br>• California dorado grill 4pcs.<br>• Nigiri salmon tempura 2pcs."
+				},
+				"14": {
+					"name": "Nabo Grill Set (12pcs)",
+					"description": "• Futo ebi panko 6pcs.<br>• California salmon grill 4pcs.<br>• Nigiri squid tempura 2pcs."
+				},
+				"15": {
+					"name": "Half & Half Set (32pcs)",
+					"description": "• Futo salmon 6pcs.<br>• California salmon kombu 4pcs.<br>• California tuna 4pcs.<br>• Nigiri salmon Nabo Gato 2pcs.<br>• Futo ebi tempura 6pcs.<br>• California salmon grill 4pcs.<br>• California avocado 4pcs.<br>• Nigiri squid tempura 2pcs."
+				}
+			}
+		},
+		"futomaki": {
+			"title": "Futomaki (6pcs) 太巻き",
+			"subtitle": "Large sushi rolls, each cut into 6 pieces. Inside, you'll find fresh lettuce, cucumber, avocado, and carefully selected toppings — perfect for discovering a variety of flavors.",
+			"slides": {
+				"0": {
+					"name": "Futo Vegi",
+					"description": "Sweet mayo, oshinko, kanpyo, tamago omelette, lettuce, cucumber, avocado"
+				},
+				"1": {
+					"name": "Futo Vegi Tempura",
+					"description": "Sweet mayo, tempura vegetables, oshinko, kabayaki sauce, sesame, lettuce, cucumber, avocado"
+				},
+				"2": {
+					"name": "Futo Salmon",
+					"description": "Cream cheese, salmon, lettuce, cucumber, avocado"
+				},
+				"3": {
+					"name": "Futo Butterfish",
+					"description": "Sweet mayo, grilled butterfish, oshinko, kabayaki sauce, lettuce, cucumber, avocado"
+				},
+				"4": {
+					"name": "Futo Surimi",
+					"description": "Sweet mayo, crab stick, kanpyo, tobiko caviar, lettuce, cucumber, avocado"
+				},
+				"5": {
+					"name": "Futo Shrimp",
+					"description": "Sweet mayo, poached shrimp, tamago omelette, kanpyo, lettuce, cucumber, avocado"
+				},
+				"6": {
+					"name": "Futo Ebi Tempura",
+					"description": "Sweet mayo, tempura shrimp, kanpyo, kabayaki sauce, sweet chili sauce, sesame, lettuce, cucumber, avocado"
+				},
+				"7": {
+					"name": "Futo Ebi Panko",
+					"description": "Sweet mayo, panko shrimp, oshinko, kabayaki sauce, sweet chili sauce, sesame, lettuce, cucumber, avocado"
+				},
+				"8": {
+					"name": "Futo Tuna Edomae",
+					"description": "Cream cheese, marinated tuna, oshinko, lettuce, cucumber, avocado"
+				},
+				"9": {
+					"name": "Futo Eel Grill",
+					"description": "Sweet mayo, eel, kanpyo, tempura flakes, kabayaki sauce, sesame, lettuce, cucumber, avocado"
+				},
+				"10": {
+					"name": "Futo Eel Tempura",
+					"description": "Sweet mayo, tempura eel, peach, kabayaki sauce, sesame, lettuce, cucumber, avocado"
+				},
+				"11": {
+					"name": "Futo Salmon Tartare",
+					"description": "Sweet mayo, salmon tartare (salmon, capers, chives, sriracha sauce, soy sauce, pepper), oshinko, lettuce, cucumber, avocado"
+				},
+				"12": {
+					"name": "Futo Tuna Tartare",
+					"description": "Sweet mayo, tuna tartare (tuna, leek, avocado, sriracha sauce, soy sauce, sesame, sesame oil), lettuce, cucumber, avocado"
+				},
+				"13": {
+					"name": "Futo Squid Tempura",
+					"description": "Sweet mayo, tempura squid, oshinko, kabayaki sauce, sweet chili sauce, sesame, lettuce, cucumber, avocado"
+				},
+				"14": {
+					"name": "Futo Salmon Edomae Grill",
+					"description": "Sweet mayo, marinated grilled salmon, pineapple, kabayaki sauce, sesame, lettuce, cucumber, avocado"
+				},
+				"15": {
+					"name": "Futo Salmon Tempura",
+					"description": "Sweet mayo, tempura salmon, kanpyo, kabayaki sauce, sesame, lettuce, cucumber, avocado"
+				}
+			}
+		},
+		"california": {
+			"title": "California – Maki Roll (4 pcs) カリフォルニア巻き",
+			"subtitle": "Maki – sushi rolled California style with rice on the outside, offering an exceptional harmony of flavors and textures.",
+			"slides": {
+				"0": {
+					"name": "California Vegi Tempura",
+					"description": "Sweet mayo, tempura vegetables, oshinko, kabayaki sauce, sweet chili sauce, topped with sesame, kabayaki sauce, sweet chili sauce"
+				},
+				"1": {
+					"name": "California Avocado Vegi Tempura",
+					"description": "Sweet mayo, tempura vegetables, oshinko, topped with avocado, kabayaki sauce, sesame"
+				},
+				"2": {
+					"name": "California Tofu Avocado",
+					"description": "Fried tofu, kanpyo, topped with avocado, mango sauce, sesame"
+				},
+				"3": {
+					"name": "California Avocado",
+					"description": "Sweet mayo, panko shrimp, oshinko, topped with avocado, sweet chili sauce, and sesame"
+				},
+				"4": {
+					"name": "California Salmon",
+					"description": "Cream cheese, salmon, avocado, cucumber, topped with sesame"
+				},
+				"5": {
+					"name": "California Salmon Nabo Gato",
+					"description": "Cream cheese, salmon, avocado, cucumber, topped with salmon, tobiko caviar"
+				},
+				"6": {
+					"name": "California Salmon Grill",
+					"description": "Cream cheese, crab stick, kanpyo, topped with salmon, dressing, kabayaki sauce"
+				},
+				"7": {
+					"name": "California Salmon Edomae",
+					"description": "Cream cheese, marinated salmon in Edomae style, avocado, kanpyo, topped with salmon, sesame"
+				},
+				"8": {
+					"name": "California Avocado Salmon Kombu",
+					"description": "Sweet mayo, salmon marinated in kombu seaweed, cucumber, oshinko, topped with avocado, sesame"
+				},
+				"9": {
+					"name": "California Salmon Ebi Tempura",
+					"description": "Spicy mayo, tempura shrimp, oshinko, avocado, topped with salmon, spicy mayo"
+				},
+				"10": {
+					"name": "California Eel Grill",
+					"description": "Cream cheese, tempura shrimp, kanpyo, topped with eel, kabayaki sauce, sesame"
+				},
+				"11": {
+					"name": "California Dorado Grill",
+					"description": "Cream cheese, poached shrimp, avocado, kanpyo, topped with dorado, dressing, kabayaki sauce"
+				},
+				"12": {
+					"name": "California Tuna",
+					"description": "Cream cheese, tuna, oshinko, avocado, topped with tuna, sriracha sauce"
+				},
+				"13": {
+					"name": "California Tuna Edomae",
+					"description": "Cream cheese, tuna tataki marinated in Edomae style, avocado, cucumber, topped with tuna, kizami wasabi"
+				},
+				"14": {
+					"name": "California Tuna Ebi Tempura",
+					"description": "Spicy mayo, tempura shrimp, oshinko, avocado, topped with tuna tataki, spicy mayo"
+				},
+				"15": {
+					"name": "California Ebi Tempura",
+					"description": "Sweet mayo, tempura shrimp, oshinko, avocado, topped with sesame, kabayaki sauce, sweet chili sauce"
+				},
+				"16": {
+					"name": "California Ebi Panko",
+					"description": "Sweet mayo, panko shrimp, oshinko, avocado, topped with kabayaki sauce, sweet chili sauce, sesame"
+				},
+				"17": {
+					"name": "California Ebi Panko Tartare",
+					"description": "Sweet mayo, panko shrimp, oshinko, avocado, topped with salmon tartare (salmon, capers, chives, soy sauce, sriracha)"
+				}
+			}
+		},
+		"hosomaki": {
+			"title": "Hoso-maki (6pcs) 細巻き",
+			"subtitle": "Maki sushi rolls with one ingredient and wasabi. Minimalism and tradition in every portion – perfect for those who love pure flavors.",
+			"slides": {
+				"0": {
+					"name": "Salmon",
+					"description": "Traditional roll with salmon and wasabi. Simple and classic."
+				},
+				"1": {
+					"name": "Tuna",
+					"description": "Delicate tuna in classic hoso-maki style with wasabi."
+				},
+				"2": {
+					"name": "Shrimp",
+					"description": "Boiled shrimp with a hint of wasabi, wrapped in classic rice and nori."
+				},
+				"3": {
+					"name": "Tamago",
+					"description": "Sweet Japanese tamago omelette – a mild alternative in classic maki form."
+				},
+				"4": {
+					"name": "Surimi",
+					"description": "Crab stick (surimi) with wasabi, wrapped in rice and nori."
+				},
+				"5": {
+					"name": "Vegetables",
+					"description": "Vegetarian option with a mix of (cucumber/kanpyo/oshinko/avocado) classic Japanese vegetables and wasabi."
+				}
+			}
+		},
+		"nigiri": {
+			"title": "Nigiri (2pcs) 握り寿司",
+			"subtitle": "Traditional sushi – hand-formed rice portions topped with fish or vegetables. The classic simplicity and taste of Japan.",
+			"slides": {
+				"0": {
+					"name": "Avocado, kanpyo, sesame",
+					"description": "Delicate combination of avocado, marinated gourd, and sesame – a vegetarian nigiri full of freshness."
+				},
+				"1": {
+					"name": "Salmon",
+					"description": "Classic nigiri with raw salmon – the pure taste of fish on lightly seasoned rice."
+				},
+				"2": {
+					"name": "Salmon Edomae",
+					"description": "Marinated salmon in the Edo style, with a hint of umami – a traditional technique from Tokyo."
+				},
+				"3": {
+					"name": "Salmon Kombu",
+					"description": "Salmon marinated in kombu seaweed – deep, oceanic flavor with creamy texture."
+				},
+				"4": {
+					"name": "Salmon Nabogato",
+					"description": "Richly served salmon with garnishes – a full portion of flavor and contrasts."
+				},
+				"5": {
+					"name": "Tuna",
+					"description": "Raw tuna – a classic among nigiri, slightly sweet and meaty."
+				},
+				"6": {
+					"name": "Tuna Edomae",
+					"description": "Marinated tuna in the Edo style – intense flavor and soft texture."
+				},
+				"7": {
+					"name": "Eel",
+					"description": "Grilled eel with kabayaki sauce – sweet-salty treat with a rich aroma."
+				},
+				"8": {
+					"name": "Shrimp",
+					"description": "Cooked shrimp placed on rice – delicate, slightly sweet nigiri."
+				},
+				"9": {
+					"name": "Dorade",
+					"description": "Delicate and slightly fatty dorade – an elegant choice for gourmets."
+				},
+				"10": {
+					"name": "Tamago",
+					"description": "Sweet Japanese omelette – perfect as a light, traditional snack."
+				},
+				"11": {
+					"name": "Squid/shrimp tempura",
+					"description": "Crispy tempura with squid or shrimp – a contrast of textures on soft rice."
+				}
+			}
+		},
+		"appetizers": {
+			"title": "Appetizers 前菜",
+			"subtitle": "Varied flavors and textures in one bite, perfect to begin the culinary journey",
+			"slides": {
+				"0": {
+					"name": "Duck Gyoza Dumplings",
+					"description": "Fried dumplings with juicy duck filling – soft on the outside, aromatic inside."
+				},
+				"1": {
+					"name": "Shrimp Gyoza Dumplings",
+					"description": "Delicate dumplings with shrimp filling – lightly soft and full of sea flavor."
+				},
+				"2": {
+					"name": "Tempura/Panko Shrimp 5 pcs",
+					"description": "Crispy shrimp in tempura or panko – classic Japanese appetizer."
+				},
+				"3": {
+					"name": "Tempura/Panko Shrimp 8 pcs",
+					"description": "Larger portion of crispy shrimp – perfect for sharing."
+				},
+				"4": {
+					"name": "Tempura Vegetables",
+					"description": "Seasonal vegetables in light tempura batter – crispy and full of freshness."
+				},
+				"5": {
+					"name": "Kimchi",
+					"description": "Spicy Korean fermented cabbage – a tangy accent to any dish."
+				},
+				"6": {
+					"name": "Edamame Beans",
+					"description": "Boiled, lightly salted young soybeans – healthy, protein-packed snack."
+				},
+				"7": {
+					"name": "Wakame Salad",
+					"description": "Marinated wakame seaweed with sesame – fresh, oceanic flavor with a hint of sweetness."
+				}
+			}
+		},
+		"tartars": {
+			"title": "Tartare タルタル",
+			"subtitle": "Freshly chopped tartare, served in a basket with avocado, pickles, and shrimp chips.",
+			"slides": {
+				"0": {
+					"name": "Salmon 120g",
+					"description": "Capers, chives, soy sauce, sriracha, pepper – classic salmon tartare with a spicy kick."
+				},
+				"1": {
+					"name": "Tuna 120g",
+					"description": "Leek, avocado, soy sauce, sriracha, sesame, sesame oil – aromatic tuna tartare with an Asian touch."
+				}
+			}
+		},
+		"gunkans": {
+			"title": "Gunkan Sushi (2 pcs) 軍艦寿司",
+			"subtitle": "Hand-formed rice balls wrapped in nori seaweed or cucumber with fillings. Boat-shaped.",
+			"slides": {
+				"0": {
+					"name": "Salmon Tartare",
+					"description": "Tartare: capers, chives, soy sauce, sriracha, pepper – classic version with salmon."
+				},
+				"1": {
+					"name": "Shrimp",
+					"description": "Salad: shrimp, surimi, tobiko, avocado, sweet mayo – creamy and crispy mix."
+				},
+				"2": {
+					"name": "Tuna Tartare",
+					"description": "Tartare: leek, avocado, soy sauce, sriracha, sesame, sesame oil – intense tuna flavor."
+				},
+				"3": {
+					"name": "Wakame Goma Seaweed",
+					"description": "Refreshing salad with wakame, drizzled with sesame dressing – light and vegetarian."
+				}
+			}
+		},
+		"sashimi": {
+			"title": "Sashimi 刺身",
+			"subtitle": "Japanese style of serving raw fish and seafood with various additions",
+			"slides": {
+				"0": {
+					"name": "3 fish 150g",
+					"description": "Choose from: salmon, tuna, dorado, butterfish – fresh, high-quality sashimi."
+				},
+				"1": {
+					"name": "5 fish 250g",
+					"description": "Choose from: salmon, tuna, dorado, butterfish – a larger portion for enthusiasts."
+				}
+			}
+		},
+		"oNigiri": {
+			"title": "O-nigiri (1 piece) おにぎり",
+			"subtitle": "Hand-formed rice sandwich in the shape of a ball with various fillings.",
+			"slides": {
+				"0": {
+					"name": "Salmon, avocado, soy sauce",
+					"description": "Fresh salmon with avocado, served with soy sauce – classic and delicious."
+				},
+				"1": {
+					"name": "Tempura salmon",
+					"description": "Crispy tempura salmon with kabayaki sauce and sesame."
+				},
+				"2": {
+					"name": "Tuna tartare",
+					"description": "Fresh tuna tartare, perfectly seasoned – intense and juicy flavor."
+				},
+				"3": {
+					"name": "Shrimp",
+					"description": "A combination of shrimp, surimi, tobiko, avocado, and sweet mayo – flavorful and creamy."
+				},
+				"4": {
+					"name": "Goma wakame seaweed",
+					"description": "Tasty goma wakame seaweed – an ideal vegetarian option."
+				}
+			}
+		},
+		"misoSoups": {
+			"title": "Miso Soup 味噌汁",
+			"subtitle": "Soup made with miso paste and fish stock ‘dashi’",
+			"slides": {
+				"0": {
+					"name": "Classic miso",
+					"description": "Wakame seaweed, tofu, shiitake mushrooms, chives, sesame – classic, warming miso."
+				},
+				"1": {
+					"name": "Salmon miso",
+					"description": "As above, with added salmon – a heartier version of the classic soup."
+				},
+				"2": {
+					"name": "Nabo Gato miso",
+					"description": "As above, with salmon, shrimp, surimi, tamago, leek, and a spicy sriracha kick – a full flavor composition."
+				}
+			}
+		},
+		"sides": {
+			"title": "Add-ons",
+			"subtitle": "Add-ons to sushi that will enhance the flavor of your meal.",
+			"slides": {
+				"0": {
+					"name": "Rice portion",
+					"description": "Freshly prepared sushi rice portion – perfect for main dishes."
+				},
+				"1": {
+					"name": "Ginger portion",
+					"description": "A set of pickled ginger – cleanses the palate between bites."
+				},
+				"2": {
+					"name": "Sauce portion",
+					"description": "Choose from: soy, sweet mayo, spicy mayo, sweet chili, or kabayaki – pick your favorite flavor."
+				},
+				"3": {
+					"name": "Tempura-covered roll",
+					"description": "A sushi roll completely covered in crispy tempura – something for fans of contrasts."
+				},
+				"4": {
+					"name": "Nori swap for rice paper",
+					"description": "Swap classic nori for rice paper – a softer alternative for the sensitive."
+				}
+			}
+		}
+	},
+	"menu-modal": {
+		"title": "Choose a city",
+		"text": "We don't know where you are. To place an order, we need to know your location.<br>Please choose your city."
+	},
+
 	"about": {
 		"title": "ABOUT NABO GATO",
 		"subtitle": "We are a small team that simply enjoys what we do. Every day, we prepare food with care – the kind of food we would love to eat ourselves. We value a relaxed, friendly atmosphere where our guests feel comfortable. <br> <span>Nabo Gato</span> is a place created with heart – not with big words, but with great attention to detail.",

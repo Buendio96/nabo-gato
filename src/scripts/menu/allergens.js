@@ -17,6 +17,7 @@ export const createdAllergensList = () => {
 
 		const img = document.createElement("img")
 		img.src = image
+		img.alt = ''
 		img.classList.add("legend__allergens-icon")
 
 

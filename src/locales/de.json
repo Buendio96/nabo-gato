@@ -132,6 +132,487 @@
 		"11": "Weicht."
 	},
 
+	"menu": {
+		"ramen": {
+			"title": "Ramen ラーメン",
+			"subtitle": "Japanische Suppe mit Weizennudeln (Ramen) und aromatischer Brühe. Traditionell serviert mit Toppings wie Ei, Fleisch, Gemüse und Gewürzen.",
+			"slides": {
+				"0": {
+					"name": "Tan Tan Men Ramen",
+					"description": "dicke, leicht pikante Rind-Hähnchen-Brühe mit nussig-sesamiger Tare, würziges Rindfleisch, mariniertes Ei, blanchierter Pak Choi, gebratene braune Champignons, Nori, Chiliöl, Ramen-Nudeln"
+				},
+				"1": {
+					"name": "Shoyu Ramen",
+					"description": "klare Rind-Hähnchen-Brühe mit Katsuobushi-Tare, Chashu-Schweinebauch, mariniertes Ei, gegrillter Mais, Narutomaki, Nori, Knoblauchöl, Ramen-Nudeln"
+				}
+			}
+		},
+		"sushiSets": {
+			"title": "Sushi Sets 寿司セット",
+			"subtitle": "Sorgfältig zusammengestellte Sushi-Sets, ideal zum Teilen oder um die vielfältigen Aromen Japans zu entdecken — von klassischen Nigiri bis hin zu Uramaki und Futomaki. Zu jedem Set gibt es Essstäbchen, Sojasauce, Wasabi und Ingwer.",
+			"slides": {
+				"0": {
+					"name": "Hoso Maki Set (24 Stück)",
+					"description": "• Hoso-Maki mit Lachs, Frischkäse, Frühlingszwiebeln und Sriracha-Sauce 6 Stück.<br>• Hoso-Maki mit Garnelen 6 Stück.<br>• Hoso-Maki mit Kanpyo-Kürbis und Sesam 6 Stück.<br>• Hoso-Maki mit Gurke und Sesam 6 Stück."
+				},
+				"1": {
+					"name": "Mini Set (16 Stück)",
+					"description": "• Futo Lachs Edomae Grill 6 Stück.<br>• California Vegi Tempura 4 Stück.<br>• Hoso Maki Garnelen 6 Stück."
+				},
+				"2": {
+					"name": "Vegi Set (18 Stück)",
+					"description": "• Futo Vegi Tempura 6 Stück.<br>• California Tofu Avocado 4 Stück.<br>• Hoso-Maki Gemüsemix, Frischkäse, Sesam 6 Stück.<br>• Nigiri Avocado, Kanpyo, Sesam 2 Stück."
+				},
+				"3": {
+					"name": "Vegan Set (12 Stück)",
+					"description": "• Futo Tofu 6 Stück.<br>• California Avocado Vegi Tempura 4 Stück.<br>• Gunkan Goma Wakame 2 Stück."
+				},
+				"4": {
+					"name": "Nigiri Set (12 Stück)",
+					"description": "• Thunfisch 2 Stück.<br>• Lachs 2 Stück.<br>• Dorade 2 Stück.<br>• Tamago 2 Stück.<br>• Garnelen 2 Stück.<br>• Butterfisch 2 Stück."
+				},
+				"5": {
+					"name": "Futomaki Set (24 Stück)",
+					"description": "• Futo Lachs 6 Stück.<br>• Futo Ebi Tempura 6 Stück.<br>• Futo Butterfisch Grill 6 Stück.<br>• Futo Thunfisch Edomae (ganz in Tempura) 6 Stück."
+				},
+				"6": {
+					"name": "California Set (16 Stück)",
+					"description": "• California Avocado 4 Stück.<br>• California Dorade Grill 4 Stück.<br>• California Lachs Edomae 4 Stück.<br>• California Thunfisch Edomae 4 Stück."
+				},
+				"7": {
+					"name": "Mix Set Nr. 1 (24 Stück)",
+					"description": "• Futo Ebi Panko 6 Stück.<br>• California Avocado 4 Stück.<br>• California Lachs Nabo Gato 4 Stück.<br>• California Thunfisch Ebi Tempura 4 Stück.<br>• Hoso-Maki Garnelen 6 Stück."
+				},
+				"8": {
+					"name": "Mix Set Nr. 2 (24 Stück)",
+					"description": "• Futo Lachs Edomae Grill 6 Stück.<br>• California Avocado 4 Stück.<br>• California Lachs Gemüse Tempura 4 Stück.<br>• California Thunfisch Ebi Tempura 4 Stück.<br>• Hoso-Maki Lachs Sesam 6 Stück."
+				},
+				"9": {
+					"name": "Mix Set Nr. 3 (24 Stück) LACHS",
+					"description": "• Futo Lachs 6 Stück.<br>• California Lachs Nabo Gato 4 Stück.<br>• California Lachs Edomae 4 Stück.<br>• California Lachs Kombu 4 Stück.<br>• Hoso-Maki Lachs Sesam 6 Stück."
+				},
+				"10": {
+					"name": "Mix Set XL (40 Stück)",
+					"description": "• Futo Lachs Edo Grill 6 Stück.<br>• Futo Ebi Tempura 6 Stück.<br>• California Avocado 4 Stück.<br>• California Lachs Nabo Gato 4 Stück.<br>• California Thunfisch Ebi Tempura 4 Stück.<br>• Hoso-Maki Thunfisch Sriracha 6 Stück.<br>• Nigiri: Lachs / Lachs Kombu / Thunfisch / Tamago / Garnelen 10 Stück."
+				},
+				"11": {
+					"name": "Mix Set XXL (64 Stück)",
+					"description": "• Futo Lachs Edomae Grill 6 Stück.<br>• Futo Ebi Tempura 6 Stück.<br>• Futo Lachs 6 Stück.<br>• California Avocado 4 Stück.<br>• California Thunfisch Ebi Tempura 4 Stück.<br>• California Lachs Grill 8 Stück.<br>• California Vegi Tempura 4 Stück.<br>• Hoso-Maki Lachs Sesam 6 Stück.<br>• Hoso-Maki Thunfisch Sriracha 6 Stück.<br>• Nigiri: Lachs / Lachs Kombu / Thunfisch / Garnelen / Tamago / Butterfisch / Dorade Grill 14 Stück."
+				},
+				"12": {
+					"name": "Nabo Gato Grill Set (26 Stück)",
+					"description": "• Futo Ebi Panko 6 Stück.<br>• California Lachs Grill 4 Stück.<br>• California Unagi Grill 4 Stück.<br>• California Dorade Grill 4 Stück.<br>• Hoso-Maki Lachs Edo Grill 6 Stück.<br>• Nigiri Tintenfisch Tempura 2 Stück."
+				},
+				"13": {
+					"name": "Gato Grill Set (12 Stück)",
+					"description": "• Futo Ebi Tempura 6 Stück.<br>• California Dorade Grill 4 Stück.<br>• Nigiri Lachs Tempura 2 Stück."
+				},
+				"14": {
+					"name": "Nabo Grill Set (12 Stück)",
+					"description": "• Futo Ebi Panko 6 Stück.<br>• California Lachs Grill 4 Stück.<br>• Nigiri Tintenfisch Tempura 2 Stück."
+				},
+				"15": {
+					"name": "Hälfte-Hälfte Set (32 Stück)",
+					"description": "• Futo Lachs 6 Stück.<br>• California Lachs Kombu 4 Stück.<br>• California Thunfisch 4 Stück.<br>• Nigiri Lachs Nabo Gato 2 Stück.<br>• Futo Ebi Tempura 6 Stück.<br>• California Lachs Grill 4 Stück.<br>• California Avocado 4 Stück.<br>• Nigiri Tintenfisch Tempura 2 Stück."
+				}
+			}
+		},
+		"futomaki": {
+			"title": "Futomaki (6Stück) 太巻き",
+			"subtitle": "Große Maki-Sushi-Rollen, jede in 6 Stücke geschnitten. Innen finden sich frischer Salat, Gurke, Avocado und sorgfältig ausgewählte Zutaten – ideal, um verschiedene Geschmacksrichtungen zu entdecken.",
+			"slides": {
+				"0": {
+					"name": "Futo Vegi",
+					"description": "Süße Mayo, Oshinko, Kanpyo, Tamago-Omelette, Salat, Gurke, Avocado"
+				},
+				"1": {
+					"name": "Futo Vegi Tempura",
+					"description": "Süße Mayo, Tempura-Gemüse, Oshinko, Kabayaki-Sauce, Sesam, Salat, Gurke, Avocado"
+				},
+				"2": {
+					"name": "Futo Lachs",
+					"description": "Frischkäse, Lachs, Salat, Gurke, Avocado"
+				},
+				"3": {
+					"name": "Futo Butterfisch",
+					"description": "Süße Mayo, gegrillter Butterfisch, Oshinko, Kabayaki-Sauce, Salat, Gurke, Avocado"
+				},
+				"4": {
+					"name": "Futo Surimi",
+					"description": "Süße Mayo, Surimi (Krabbenstäbchen), Kanpyo, Tobiko-Kaviar, Salat, Gurke, Avocado"
+				},
+				"5": {
+					"name": "Futo Garnele",
+					"description": "Süße Mayo, pochierte Garnele, Tamago-Omelette, Kanpyo, Salat, Gurke, Avocado"
+				},
+				"6": {
+					"name": "Futo Ebi Tempura",
+					"description": "Süße Mayo, Tempura-Garnele, Kanpyo, Kabayaki-Sauce, Süß-Chili-Sauce, Sesam, Salat, Gurke, Avocado"
+				},
+				"7": {
+					"name": "Futo Ebi Panko",
+					"description": "Süße Mayo, Panko-Garnele, Oshinko, Kabayaki-Sauce, Süß-Chili-Sauce, Sesam, Salat, Gurke, Avocado"
+				},
+				"8": {
+					"name": "Futo Thunfisch Edomae",
+					"description": "Frischkäse, marinierten Thunfisch, Oshinko, Salat, Gurke, Avocado"
+				},
+				"9": {
+					"name": "Futo Aal Grill",
+					"description": "Süße Mayo, Aal, Kanpyo, Tempura-Flakes, Kabayaki-Sauce, Sesam, Salat, Gurke, Avocado"
+				},
+				"10": {
+					"name": "Futo Aal Tempura",
+					"description": "Süße Mayo, Tempura-Aal, Pfirsich, Kabayaki-Sauce, Sesam, Salat, Gurke, Avocado"
+				},
+				"11": {
+					"name": "Futo Lachs Tatar",
+					"description": "Süße Mayo, Lachs-Tatar (Lachs, Kapern, Frühlingszwiebeln, Sriracha-Sauce, Sojasauce, Pfeffer), Oshinko, Salat, Gurke, Avocado"
+				},
+				"12": {
+					"name": "Futo Thunfisch Tatar",
+					"description": "Süße Mayo, Thunfisch-Tatar (Thunfisch, Lauch, Avocado, Sriracha-Sauce, Sojasauce, Sesam, Sesamöl), Salat, Gurke, Avocado"
+				},
+				"13": {
+					"name": "Futo Tintenfisch Tempura",
+					"description": "Süße Mayo, Tempura-Tintenfisch, Oshinko, Kabayaki-Sauce, Süß-Chili-Sauce, Sesam, Salat, Gurke, Avocado"
+				},
+				"14": {
+					"name": "Futo Lachs Edomae Grill",
+					"description": "Süße Mayo, marinierten gegrillten Lachs, Ananas, Kabayaki-Sauce, Sesam, Salat, Gurke, Avocado"
+				},
+				"15": {
+					"name": "Futo Lachs Tempura",
+					"description": "Süße Mayo, Tempura-Lachs, Kanpyo, Kabayaki-Sauce, Sesam, Salat, Gurke, Avocado"
+				}
+			}
+		},
+		"california": {
+			"title": "California – Maki-Rolle (4Stück) カリフォルニア巻き",
+			"subtitle": "Maki – Sushi, kalifornisch gerollt mit Reis außen, bieten eine außergewöhnliche Harmonie von Geschmacksrichtungen und Texturen.",
+			"slides": {
+				"0": {
+					"name": "California Vegi Tempura",
+					"description": "Süße Mayo, Tempura-Gemüse, Oshinko, Kabayaki-Sauce, Sweet Chili-Sauce, oben: Sesam, Kabayaki-Sauce, Sweet Chili-Sauce"
+				},
+				"1": {
+					"name": "California Avocado Vegi Tempura",
+					"description": "Süße Mayo, Tempura-Gemüse, Oshinko, oben: Avocado, Kabayaki-Sauce, Sesam"
+				},
+				"2": {
+					"name": "California Tofu Avocado",
+					"description": "Gebratener Tofu, Kanpyo, oben: Avocado, Mangosauce, Sesam"
+				},
+				"3": {
+					"name": "California Avocado",
+					"description": "Süße Mayo, Panko-Garnele, Oshinko, oben: Avocado, Sweet Chili-Sauce und Sesam"
+				},
+				"4": {
+					"name": "California Lachs",
+					"description": "Frischkäse, Lachs, Avocado, Gurke, oben: Sesam"
+				},
+				"5": {
+					"name": "California Lachs Nabo Gato",
+					"description": "Frischkäse, Lachs, Avocado, Gurke, oben: Lachs, Tobiko-Kaviar"
+				},
+				"6": {
+					"name": "California Lachs Grill",
+					"description": "Frischkäse, Krabbenstäbchen, Kanpyo, oben: Lachs, Dressing, Kabayaki-Sauce"
+				},
+				"7": {
+					"name": "California Lachs Edomae",
+					"description": "Frischkäse, mariniertem Lachs im Edomae-Stil, Avocado, Kanpyo, oben: Lachs, Sesam"
+				},
+				"8": {
+					"name": "California Avocado Lachs Kombu",
+					"description": "Süße Mayo, Lachs mariniert in Kombu-Algen, Gurke, Oshinko, oben: Avocado, Sesam"
+				},
+				"9": {
+					"name": "California Lachs Ebi Tempura",
+					"description": "Spicy Mayo, Tempura-Garnele, Oshinko, Avocado, oben: Lachs, Spicy Mayo"
+				},
+				"10": {
+					"name": "California Aal Grill",
+					"description": "Frischkäse, Tempura-Garnele, Kanpyo, oben: Aal, Kabayaki-Sauce, Sesam"
+				},
+				"11": {
+					"name": "California Dorade Grill",
+					"description": "Frischkäse, pochierte Garnele, Avocado, Kanpyo, oben: Dorade, Dressing, Kabayaki-Sauce"
+				},
+				"12": {
+					"name": "California Thunfisch",
+					"description": "Frischkäse, Thunfisch, Oshinko, Avocado, oben: Thunfisch, Sriracha-Sauce"
+				},
+				"13": {
+					"name": "California Thunfisch Edomae",
+					"description": "Frischkäse, Thunfisch Tataki mariniert im Edomae-Stil, Avocado, Gurke, oben: Thunfisch, Kizami Wasabi"
+				},
+				"14": {
+					"name": "California Thunfisch Ebi Tempura",
+					"description": "Spicy Mayo, Tempura-Garnele, Oshinko, Avocado, oben: Thunfisch Tataki, Spicy Mayo"
+				},
+				"15": {
+					"name": "California Ebi Tempura",
+					"description": "Süße Mayo, Tempura-Garnele, Oshinko, Avocado, oben: Sesam, Kabayaki-Sauce, Sweet Chili-Sauce"
+				},
+				"16": {
+					"name": "California Ebi Panko",
+					"description": "Süße Mayo, Panko-Garnele, Oshinko, Avocado, oben: Kabayaki-Sauce, Sweet Chili-Sauce, Sesam"
+				},
+				"17": {
+					"name": "California Tatar Ebi Panko",
+					"description": "Süße Mayo, Panko-Garnele, Oshinko, Avocado, oben: Lachs-Tatar (Lachs, Kapern, Frühlingszwiebeln, Sojasauce, Sriracha)"
+				}
+			}
+		},
+		"hosomaki": {
+			"title": "Hoso-maki (6 Stück) 細巻き",
+			"subtitle": "Maki-Sushi-Rollen mit einer Zutat und Wasabi. Minimalismus und Tradition in jeder Portion – ideal für Liebhaber reiner Aromen.",
+			"slides": {
+				"0": {
+					"name": "Lachs",
+					"description": "Traditionelle Rolle mit Lachs und Wasabi. Einfach und klassisch."
+				},
+				"1": {
+					"name": "Thunfisch",
+					"description": "Zarter Thunfisch in klassischer Hoso-Maki-Form mit Wasabi."
+				},
+				"2": {
+					"name": "Garnele",
+					"description": "Gekochte Garnele mit einem Hauch Wasabi, gewickelt in klassischen Reis und Nori."
+				},
+				"3": {
+					"name": "Tamago",
+					"description": "Süßes japanisches Tamago-Omelett – eine sanfte Alternative in klassischer Maki-Form."
+				},
+				"4": {
+					"name": "Surimi",
+					"description": "Krabbenstäbchen (Surimi) mit Wasabi, umhüllt von Reis und Nori."
+				},
+				"5": {
+					"name": "Gemüse",
+					"description": "Vegetarisches Angebot mit einer Mischung aus klassischen japanischen Gemüsen (Gurke, Kanpyo, Oshinko, Avocado) und Wasabi."
+				}
+			}
+		},
+		"nigiri": {
+			"title": "Nigiri (2 Stück) 握り寿司",
+			"subtitle": "Traditionelles Sushi – handgeformte Reisbällchen mit Fisch oder Gemüse oben drauf. Die Einfachheit und der Geschmack der japanischen Klassiker.",
+			"slides": {
+				"0": {
+					"name": "Avocado, Kanpyo, Sesam",
+					"description": "Zarte Kombination aus Avocado, marinierter Kürbisfleisch und Sesam – vegetarisches Nigiri voller Frische."
+				},
+				"1": {
+					"name": "Lachs",
+					"description": "Klassisches Nigiri mit rohem Lachs – der reine Geschmack von Fisch auf leicht gewürztem Reis."
+				},
+				"2": {
+					"name": "Lachs Edomae",
+					"description": "Marinierter Lachs im Edo-Stil, mit einem Hauch von Umami – traditionelle Technik aus Tokio."
+				},
+				"3": {
+					"name": "Lachs Kombu",
+					"description": "Lachs mariniert in Kombu-Algen – tiefgründiger, maritimer Geschmack und cremige Textur."
+				},
+				"4": {
+					"name": "Lachs Nabogato",
+					"description": "Reichhaltig servierter Lachs mit Beilagen – eine volle Portion Geschmack und Kontraste."
+				},
+				"5": {
+					"name": "Thunfisch",
+					"description": "Roher Thunfisch – ein Klassiker unter den Nigiri, leicht süß und fleischig."
+				},
+				"6": {
+					"name": "Thunfisch Edomae",
+					"description": "Marinierter Thunfisch im Edo-Stil – intensiver Geschmack und weiche Struktur."
+				},
+				"7": {
+					"name": "Aal",
+					"description": "Gegrillter Aal mit Kabayaki-Sauce – süß-salziges Vergnügen mit einem reichen Aroma."
+				},
+				"8": {
+					"name": "Garnele",
+					"description": "Gekochte Garnele auf Reis – zartes, leicht süßes Nigiri."
+				},
+				"9": {
+					"name": "Dorade",
+					"description": "Zarte, leicht fettige Dorade – eine elegante Wahl für Feinschmecker."
+				},
+				"10": {
+					"name": "Tamago",
+					"description": "Süßes japanisches Omelett – ideal als leichte und traditionelle Vorspeise."
+				},
+				"11": {
+					"name": "Tintenfisch/Garnele in Tempura",
+					"description": "Knusprige Tempura mit Tintenfisch oder Garnele – ein Texturkontrast auf weichem Reis."
+				}
+			}
+		},
+		"appetizers": {
+			"title": "Vorspeisen 前菜",
+			"subtitle": "Vielfältige Geschmacksrichtungen und Texturen in einem Bissen, perfekt, um eine kulinarische Reise zu beginnen",
+			"slides": {
+				"0": {
+					"name": "Gyoza mit Ente",
+					"description": "Gebratene Teigtaschen mit saftigem Entenfüllung – außen weich, innen aromatisch."
+				},
+				"1": {
+					"name": "Gyoza mit Garnelen",
+					"description": "Zarte Teigtaschen mit Garnelenfüllung – leicht weich und voller Meergeschmack."
+				},
+				"2": {
+					"name": "Garnelen in Tempura/Panko 5 Stück",
+					"description": "Knusprige Garnelen in Tempura oder Panko – klassische japanische Vorspeise."
+				},
+				"3": {
+					"name": "Garnelen in Tempura/Panko 8 Stück",
+					"description": "Größere Portion knuspriger Garnelen – ideal zum Teilen."
+				},
+				"4": {
+					"name": "Gemüse in Tempura",
+					"description": "Saisonales Gemüse im leichten Tempurateig – knusprig und frisch."
+				},
+				"5": {
+					"name": "Kimchi",
+					"description": "Pikantes koreanisches Sauerkraut aus Kohl – fermentierter Akzent zu jedem Gericht."
+				},
+				"6": {
+					"name": "Edamame Bohnen",
+					"description": "Gekochte, leicht gesalzene junge Sojabohnen – gesunder, proteinreicher Snack."
+				},
+				"7": {
+					"name": "Wakame Salat",
+					"description": "Marinierte Wakame Algen mit Sesam – frischer, maritimer Geschmack mit leicht süßem Akzent."
+				}
+			}
+		},
+		"tartars": {
+			"title": "Tartar タルタル",
+			"subtitle": "Frisch zerkleinerte Tartare, serviert in einem Korb mit Avocado, eingelegtem Gemüse und Garnelenchips.",
+			"slides": {
+				"0": {
+					"name": "Lachs 120g",
+					"description": "Kapern, Schnittlauch, Sojasauce, Sriracha, Pfeffer – klassisches Lachstatar mit scharfer Note."
+				},
+				"1": {
+					"name": "Thunfisch 120g",
+					"description": "Lauch, Avocado, Sojasauce, Sriracha, Sesam, Sesamöl – aromatisches Thunfischtatar mit asiatischem Touch."
+				}
+			}
+		},
+		"gunkans": {
+			"title": "Gunkan Sushi (2 Stück) 軍艦寿司",
+			"subtitle": "Handgeformte Reisbällchen, in Nori-Algen oder Gurke gewickelt, mit Füllung. Die Form erinnert an ein Boot.",
+			"slides": {
+				"0": {
+					"name": "Lachs Tatar",
+					"description": "Tatar: Kapern, Schnittlauch, Sojasauce, Sriracha, Pfeffer – klassische Version mit Lachs."
+				},
+				"1": {
+					"name": "Garnelen",
+					"description": "Salat: Garnelen, Surimi, Tobiko, Avocado, Sweet Majo – cremige und knusprige Mischung."
+				},
+				"2": {
+					"name": "Thunfisch Tatar",
+					"description": "Tatar: Lauch, Avocado, Sojasauce, Sriracha, Sesam, Sesamöl – intensiver Thunfischgeschmack."
+				},
+				"3": {
+					"name": "Wakame Goma Algen",
+					"description": "Erfrischender Salat mit Wakame, in Sesam-Dressing eingelegt – leicht und vegetarisch."
+				}
+			}
+		},
+		"sashimi": {
+			"title": "Sashimi 刺身",
+			"subtitle": "Japanische Art, rohen Fisch und Meeresfrüchte mit verschiedenen Beilagen zu servieren",
+			"slides": {
+				"0": {
+					"name": "3 Fische 150g",
+					"description": "Zur Auswahl: Lachs, Thunfisch, Dorade, Butterfisch – frisches, hochwertiges Sashimi."
+				},
+				"1": {
+					"name": "5 Fische 250g",
+					"description": "Zur Auswahl: Lachs, Thunfisch, Dorade, Butterfisch – eine größere Portion für Feinschmecker."
+				}
+			}
+		},
+		"oNigiri": {
+			"title": "O-nigiri (1 Stück) おにぎり",
+			"subtitle": "Handgeformtes Reisbällchen mit verschiedenen Füllungen.",
+			"slides": {
+				"0": {
+					"name": "Lachs, Avocado, Sojasauce",
+					"description": "Frischer Lachs mit Avocado, serviert mit Sojasauce – klassisch und lecker."
+				},
+				"1": {
+					"name": "Tempura Lachs",
+					"description": "Knuspriger Tempura Lachs mit Kabayaki Sauce und Sesam."
+				},
+				"2": {
+					"name": "Thunfisch Tatar",
+					"description": "Frischer Thunfisch Tatar, perfekt gewürzt – intensiver und saftiger Geschmack."
+				},
+				"3": {
+					"name": "Garnelen",
+					"description": "Eine Kombination aus Garnelen, Surimi, Tobiko, Avocado und süßer Mayo – intensiv und cremig."
+				},
+				"4": {
+					"name": "Goma Wakame Algen",
+					"description": "Leckere Goma Wakame Algen – ideal für Vegetarier."
+				}
+			}
+		},
+		"misoSoups": {
+			"title": "Miso Suppe 味噌汁",
+			"subtitle": "Suppe auf Basis von Miso Paste und Fischbrühe ‚Dashi‘",
+			"slides": {
+				"0": {
+					"name": "Klassisches Miso",
+					"description": "Wakame Algen, Tofu, Shiitake Pilze, Schnittlauch, Sesam – klassische, wärmende Miso."
+				},
+				"1": {
+					"name": "Miso Lachs",
+					"description": "Wie oben, zusätzlich Lachs – eine sättigere Version der klassischen Suppe."
+				},
+				"2": {
+					"name": "Nabo Gato Miso",
+					"description": "Wie oben, mit Lachs, Garnelen, Surimi, Tamago, Lauch und einer scharfen Note von Sriracha – eine vollständige Geschmackskomposition."
+				}
+			}
+		},
+		"sides": {
+			"title": "Beilagen",
+			"subtitle": "Beilagen zum Sushi, die den Geschmack deiner Mahlzeit bereichern.",
+			"slides": {
+				"0": {
+					"name": "Reisportion",
+					"description": "Frisch zubereitete Reisportion für Sushi – perfekt für Hauptgerichte."
+				},
+				"1": {
+					"name": "Ingwerportion",
+					"description": "Ein Set aus eingelegtem Ingwer – reinigt den Gaumen zwischen den Bissen."
+				},
+				"2": {
+					"name": "Soßenportion",
+					"description": "Zur Auswahl: Soja, süße Mayo, scharfe Mayo, süßes Chili oder Kabayaki – wähle deinen Lieblingsgeschmack."
+				},
+				"3": {
+					"name": "Tempura-Rolle",
+					"description": "Eine Sushi-Rolle, die vollständig mit knuspriger Tempura bedeckt ist – etwas für Fans von Kontrasten."
+				},
+				"4": {
+					"name": "Nori auf Reispapier wechseln",
+					"description": "Wechsel Nori gegen Reispapier – eine sanftere Alternative für empfindliche Menschen."
+				}
+			}
+		}
+	},
+	"menu-modal": {
+		"title": "Wähle eine Stadt",
+		"text": "Wir wissen nicht, wo du bist. Um eine Bestellung aufzugeben, müssen wir wissen, wo du dich befindest.<br>Bitte wähle deine Stadt."
+	},
+
 	"about": {
 		"title": "ÜBER NABO GATO",
 		"subtitle": "Wir sind ein kleines Team, das einfach liebt, was es tut. Jeden Tag bereiten wir mit Engagement Essen zu, das wir selbst gerne essen würden. Uns ist eine lockere, freundliche Atmosphäre wichtig, in der sich unsere Gäste wohlfühlen. <br> <span>Nabo Gato</span> ist ein Ort, der mit Herz geschaffen wurde – ohne große Worte, aber mit viel Liebe zum Detail.",

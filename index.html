@@ -44,7 +44,7 @@
               <img src="./Facebook.svg" alt="Facebook">
             </a>
             </li>
-            <a href="#" class="header__social-link">
+            <a href="https://www.instagram.com/nabogatosushibar" target="_blank" class="header__social-link">
               <img src="./Instagram.svg" alt="Instagram">
             </a>
             <div class="header__leng">
@@ -143,8 +143,9 @@
         </div>
       </div>
     </section>
-    <section class="menu" id="menuSection">
+    <section class="menu" id="all">
       <div class="menu__container">
+
         <div class="menu__wrapper" id="menu">
         </div>
       </div>
@@ -303,13 +304,14 @@
           <nav class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="#about" class="footer__item-link" data-i18n="button-about">O nas</a>
+                <a href="#about" class="footer__item-link scrollTo" data-i18n="button-about">O nas</a>
               </li>
               <li class="footer__list-item">
-                <a href="#menuSection" class="footer__item-link" data-i18n="button-menu">Menu</a>
+                <a href="#menuSection" class="footer__item-link scrollTo" data-i18n="button-menu">Menu</a>
               </li>
               <li class="footer__list-item">
-                <a href="#communication" class="footer__item-link" data-i18n="button-communication">Komunikacja</a>
+                <a href="#communication" class="footer__item-link scrollTo"
+                  data-i18n="button-communication">Komunikacja</a>
               </li>
             </ul>
           </nav>
@@ -318,7 +320,7 @@
               <img src="./Facebook.svg" alt="Facebook">
             </a>
             </li>
-            <a href="#" class="footer__social-link">
+            <a href="https://www.instagram.com/nabogatosushibar" target="_blank" class="footer__social-link">
               <img src="./Instagram.svg" alt="Instagram">
             </a>
           </div>
@@ -396,6 +398,30 @@
       <div class="city__buttons">
         <button id="answerYes" data-i18n="city-answer-yes">Tak</button>
         <button id="answerNo" data-i18n="city-answer-no">Nie</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-modal" id="menuModal">
+    <div class="menu-modal__body">
+      <div class="menu-modal__body-head">
+        <h3 class="menu-modal__head-title" data-i18n="menu-modal.title">
+          Wybierz miasto
+        </h3>
+        <div class="closeButton" id="menuModalCloseBtn">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <p class="menu-modal__body-text" data-i18n="menu-modal.text">
+        Nie wiemy, gdzie jesteś. Żeby złożyć zamówienie, musimy wiedzieć, gdzie się znajdujesz<br>
+        Proszę, wybierz swoje miasto.
+      </p>
+      <div class="menu-modal__body-buttons">
+        <button class="menu-modal__buttons-btn" data-main-id="buttonIsGdansk" data-cityIs="Gdansk"
+          id="modalButtonIsGdansk">Gdańsk</button>
+        <button class="menu-modal__buttons-btn" data-main-id="buttonIsGdynia" data-cityIs="Gdynia"
+          id="modalButtonIsGdynia">Gdynia</button>
       </div>
     </div>
   </div>

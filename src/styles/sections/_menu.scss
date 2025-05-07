@@ -1,5 +1,6 @@
 @use "../vars" as *;
 @use "../response" as *;
+@use "../mixins" as *;
 
 .menu {
 	padding: 50px 0;
@@ -14,15 +15,18 @@
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
-		row-gap: 50px;
 		@include respond(mobile-large) {
 			row-gap: 30px;
 		}
 		@include respond(mobile-medium) {
-			row-gap: 15px;
+			row-gap: 10px;
 		}
 	}
 	&__section {
+		padding: 0 0 30px;
+		@include respond(mobile-medium) {
+			padding: 15px 0 0;
+		}
 	}
 	&__section-title {
 		text-transform: uppercase;
@@ -45,6 +49,7 @@
 			flex: 0 1 75%;
 		}
 		@include respond(mobile-small) {
+			line-height: 1.1;
 			flex: 0 1 100%;
 		}
 	}
@@ -63,20 +68,18 @@
 		@include respond(mobile-medium) {
 			padding: 10px 15px;
 		}
+		@include respond(mobile-small) {
+			display: none;
+		}
 	}
 	&__section-swiper {
 		margin: 60px 0 0;
-		display: flex;
-		flex-direction: column;
-		row-gap: 20px;
 		@include respond(mobile-large) {
 			margin: 30px 0 0;
 		}
 		@include respond(mobile-small) {
 			margin: 10px 0 0;
 		}
-	}
-	&__swiper-wrapper {
 	}
 	.hidden {
 		display: none;
@@ -111,14 +114,14 @@
 		}
 	}
 	&__swiper-slide {
-		width: 100%;
+	}
+	&__swiper-wrapper {
 	}
 
 	.menuSlide {
 		&__wrapper {
 			display: flex;
 			flex-direction: column;
-			justify-items: flex-start;
 		}
 		&__image {
 			position: relative;
@@ -176,51 +179,59 @@
 		}
 		&__info {
 			margin: 25px 0 0;
+			flex-grow: 1;
 			display: flex;
 			flex-direction: column;
 			@include respond(mobile-large) {
 				margin: 15px 0 0;
 			}
 		}
-		&__info-head {
-			width: 100%;
+		&__name {
+			margin: 10px 0 0;
+			flex: 0 1 50px;
+			letter-spacing: 0.8px;
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
-		}
-		&__info-name {
-			letter-spacing: 0.8px;
 			text-transform: uppercase;
 			line-height: 1.1;
-			@include ad-font(28, 20);
+			@include ad-font(24, 20);
+			@include respond(mobile-medium) {
+				flex: 0 1 25px;
+			}
 			@include respond(mobile-small) {
-				min-height: auto;
+				flex: 0 1 20px;
 			}
 		}
-		&__info-price {
+		&__price {
+			margin: 5px 0 0;
 			color: $title-text-color;
 			justify-self: flex-end;
 			text-wrap: nowrap;
 			@include ad-font(32, 20);
 		}
-		&__info-description {
-			padding: 0 15px 0 0;
+		&__description {
+			margin: 5px 0 0;
+			padding: 0 10px 0 0;
 			font-family: $second-font-family;
 			font-size: 14px;
 			letter-spacing: 0.5px;
 			line-height: 1.5;
 			display: -webkit-box;
-			min-height: 63px;
+			height: 63px;
 			-webkit-line-clamp: 3;
 			-webkit-box-orient: vertical;
 			overflow: hidden;
 			text-overflow: ellipsis;
+			@include respond(mobile-small) {
+				line-height: 1.2;
+				height: 50px;
+			}
 		}
 		.show-more-info {
 			display: block;
 			overflow-y: auto;
 		}
-		&__button-add {
+		button {
 			margin: 15px 0 0;
 			padding: 8px 20px;
 			display: block;
@@ -280,12 +291,15 @@
 		}
 	}
 	&__swiper-navigation {
+		margin: 30px 0 0;
 		position: relative;
 		width: 100%;
-		height: 50px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@include respond(mobile-medium) {
+			margin: 15px 0 0;
+		}
 		.swiper-pagination {
 			position: relative;
 			display: flex;
@@ -295,23 +309,23 @@
 			left: 0;
 			height: 100%;
 			@include respond(mobile-medium) {
-				width: 80%;
+				margin: 10px 0 0;
+				row-gap: 10px;
+				width: 70%;
+				flex-wrap: wrap;
 			}
 		}
 		.swiper-pagination-bullet {
 			background: $btn-bg-color;
-		}
-		@include respond(mobile-small) {
-			height: 35px;
 		}
 	}
 	&__navigation-buttons {
 		height: 100%;
 		width: 120px;
 		display: flex;
+		column-gap: 20px;
 		justify-content: space-between;
 		padding: 5px;
-
 		@include respond(mobile-small) {
 			width: 85px;
 		}
@@ -347,5 +361,90 @@
 			width: 30px;
 			height: 30px;
 		}
+	}
+}
+.menu-modal {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba($color: #313131, $alpha: 0.4);
+	backdrop-filter: blur(10px);
+	display: flex;
+	align-items: center;
+	z-index: -999;
+	justify-content: center;
+	transition:
+		opacity 0.5s ease,
+		visibility 0.5s ease;
+	&__body {
+		margin: 0 15px;
+		transform: scale(0);
+		transition: all 0.5s ease;
+		border: 7px solid $main-brd-color;
+		padding: 20px 40px;
+		border-radius: 50px;
+		background-color: rgba($color: $alt-btn-bg-color, $alpha: 0.8);
+		color: $main-text-color;
+
+		@include adaptive-text();
+		@include respond(mobile-small) {
+			padding: 30px 15px;
+			border-radius: 15px;
+		}
+	}
+	&__body-head {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+	&__head-title {
+		font-weight: 600;
+		letter-spacing: 0.8px;
+		font-size: 24px;
+	}
+	.closeButton {
+		width: 30px;
+		top: 0;
+		right: 0;
+		transform: translateY(-25%);
+		span {
+			width: 100%;
+			height: 3px;
+			background-color: $btn-bg-color;
+		}
+	}
+	&__body-text {
+		margin: 20px 0 0;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+	&__body-buttons {
+		margin: 20px 0 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		column-gap: 20px;
+	}
+	&__buttons-btn {
+		width: 50%;
+		border-radius: 15px;
+		border: 4px solid $main-brd-color;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 600;
+		padding: 5px 15px;
+		@include ad-font(20, 18);
+	}
+}
+.show-menu-modal {
+	opacity: 1;
+	visibility: visible;
+	z-index: 999;
+	.menu-modal__body {
+		transform: scale(1);
 	}
 }

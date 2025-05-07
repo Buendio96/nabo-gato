@@ -45,7 +45,7 @@ const sliderItem = (item) => `
 					<p class="heroSlide__description-text" data-i18n="${item.name}.description">${item.description}</p>
 				</div>
 				<div class="heroSlide__box ${item.name}__box">
-				<img onerror="this.onerror=null;this.src=${byDefault}" class="heroSlide__box-img" src=${item.image || byDefault} alt="${item.name}">
+				<img onerror="this.onerror=null;this.src=${byDefault}" class="heroSlide__box-img ${item.name}__box-img" src=${item.image || byDefault} alt="${item.name}">
 				</div >
 			</div >
 	<div class="heroSlide__back">

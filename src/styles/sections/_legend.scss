@@ -5,6 +5,7 @@
 	background-color: rgba($color: $main-brd-color, $alpha: 0.1);
 	backdrop-filter: blur(60px);
 	box-shadow: 5px 0 15px 1px rgba($color: $main-brd-color, $alpha: 0.2);
+	transition: all 0.7s ease;
 	.legend__item {
 		text-shadow: 0 0 5px black;
 	}
@@ -13,10 +14,10 @@
 	position: sticky;
 	top: 0;
 	z-index: 999;
-	transition: all 0.5s ease;
+	transition: all 0.7s ease;
 	padding: 20px 0;
 	@include respond(mobile-medium) {
-		padding: 5px 0;
+		padding: 0;
 	}
 	// &__container {
 	// }
@@ -65,15 +66,7 @@
 		width: auto;
 		transition: all 0.4s ease;
 		outline: 2px solid rgba($color: $main-brd-color, $alpha: 0);
-		border-radius: 15px;
 		text-align: center;
-		padding: 5px 15px;
-		&:hover {
-			outline: 2px solid rgba($color: $main-brd-color, $alpha: 1);
-			.legend__link {
-				color: $hov-link-color;
-			}
-		}
 		@media (max-width: 1800px) {
 			flex: 1 0 calc(14% - 25px);
 			text-wrap: nowrap;
@@ -87,11 +80,26 @@
 	}
 	&__link {
 		font-family: Montserrat;
+		display: flex;
+		justify-content: center;
 		line-height: 1.5;
 		letter-spacing: 0.4px;
 		font-weight: 500;
-		@include ad-font(18, 13);
+		@include ad-font(18, 12);
+		text-wrap: nowrap;
+		padding: 5px 15px;
 		transition: all 0.4s ease;
+		border-radius: 15px;
+		@media (hover: hover) {
+			&:hover {
+				outline: 2px solid rgba($color: $main-brd-color, $alpha: 1);
+				color: $hov-link-color;
+			}
+		}
+	}
+	.active-item {
+		outline: 2px solid rgba($color: $main-brd-color, $alpha: 1);
+		color: $hov-link-color;
 	}
 	&__allergens-list {
 		display: flex;
@@ -137,7 +145,8 @@
 		padding: 0 0 0 15px;
 		@include ad-font(32, 20);
 		@include respond(mobile-medium) {
-			padding: 0;
+			padding: 5px 0 0;
+			line-height: 1;
 		}
 	}
 	&__allergens-icon {
