@@ -17,7 +17,7 @@ export const createdLegendSwiper = () => {
 	toggleBackground()
 	scrollTo()
 
-	const isMobile = window.innerWidth < 1024
+	const isMobile = window.innerWidth <= 1024
 
 	if (isMobile) {
 		legendSwiperInstance = new Swiper(".legendSwiper", {

@@ -16,6 +16,9 @@
 	z-index: 999;
 	transition: all 0.7s ease;
 	padding: 20px 0;
+	@include respond(mobile-large) {
+		padding: 10px 0;
+	}
 	@include respond(mobile-medium) {
 		padding: 0;
 	}
@@ -41,8 +44,7 @@
 				background-color: $main-brd-color;
 			}
 		}
-
-		@include respond(mobile-medium) {
+		@include respond(mobile-large) {
 			padding: 0 5px;
 		}
 	}
@@ -106,7 +108,7 @@
 		justify-content: space-between;
 		align-items: center;
 		@include respond(mobile-large) {
-			margin: 10px 0 0;
+			margin: 5px 0 0;
 			column-gap: 5px;
 			row-gap: 10px;
 		}

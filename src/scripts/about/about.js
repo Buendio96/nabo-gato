@@ -58,7 +58,9 @@ const createdOpinionsSwiper = () => {
 			500: {
 				slidesPerView: 2,
 				spaceBetween: 12,
-
+				grid: {
+					rows: 2,
+				},
 			},
 			769: {
 				slidesPerView: 3,
